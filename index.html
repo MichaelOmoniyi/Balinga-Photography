@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balinga Photography</title>
+
+    <!-- Local Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Local CSS styles -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navbar ---------------------------->
+    <header>
+      <nav>
+        <!-- Mobile view -->
+        <div class="navbar-mobile">
+          <div class="nav-display">
+            <div class="nav-toggler">
+              <input
+                type="checkbox"
+                name="nav-btn"
+                id="nav-btn"
+                class="navbar-input"
+              />
+              <label for="nav-btn" class="nav-label">
+                <span class="nav-toggler-icon" id="hamburger"></span>
+              </label>
+            </div>
+            <a href="/" class="navbar-brand">
+              <img
+                src="images/Balinga-Photogrphy-png-1.png"
+                width="100%"
+                height="80"
+                alt="Daniel home"
+              />
+              <!-- <h1 class="h1">Balinga Photography</h1> -->
+            </a>
+          </div>
+          <div class="navbar-extend" id="navbar-extend">
+            <div class="nav-toggler">
+              <input
+                type="checkbox"
+                name="nav-btn-extend"
+                id="nav-btn-extend"
+                class="navbar-input-extend"
+              />
+              <label for="nav-btn-extend" class="nav-label-extend">
+                <span class="nav-toggler-icon-extend" id="hamburger"></span>
+              </label>
+            </div>
+            <div class="navbar-link">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/info">Info</a></li>
+                <li><a href="/gallaries">Gallaries</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/videos">Videos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-lg">
+          <div class="nav-display">
+            <div class="navbar-link">
+              <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/info">Info</a></li>
+              </ul>
+            </div>
+            <a href="/"
+              ><img
+                src="images/Balinga-Photogrphy-png-1.png"
+                width="100%"
+                height="80"
+                alt="Daniel home"
+            /></a>
+            <div class="navbar-link">
+              <ul>
+                <li><a href="/galleries">Gallaries</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/videos">Videos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -------------------------->
+      <section class="section hero">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide carousel-height"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- <img
+              src="images/hero-img-1.jpeg"
+              class="d-block w-100 h-100"
+              alt="hero-img-1"
+            /> -->
+              <div class="d-block w-100 h-100 hero-img hero-img-1"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <img
+              src="images/hero-img-2.jpg"
+              class="d-block w-100"
+              alt="hero-img-1"
+            /> -->
+              <div class="d-block w-100 h-100 hero-img hero-img-2"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <img
+              src="images/hero-img-3.jpg"
+              class="d-block w-100"
+              alt="hero-img-1"
+            /> -->
+              <div class="d-block w-100 h-100 hero-img hero-img-3"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <img
+              src="images/hero-img-4.jpg"
+              class="d-block w-100"
+              alt="hero-img-1"
+            /> -->
+              <div class="d-block w-100 h-100 hero-img hero-img-4"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fourth slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <img
+              src="images/hero-img-5.jpeg"
+              class="d-block w-100"
+              alt="hero-img-1"
+            /> -->
+              <div class="d-block w-100 h-100 hero-img hero-img-5"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fifth slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- About ------------------------->
+      <section class="section about">
+        <div class="container">
+          <div class="about-content-1">
+            <h1 class="h1 section-title revealed" data-reveal="right">
+              Hi, I’m Oni Daniel, a wedding, Lifestyle & Portrait Photographer
+            </h1>
+            <p class="p">I am based in Lagos, Nigeria (Available to travel)</p>
+          </div>
+          <div class="row about-image">
+            <img src="/images/Smooth Portrait.jpg" alt="Balinga Portrait" />
+          </div>
+          <div class="about-content-2">
+            <p class="section-text">
+              A passionate
+              <em class="em">photograher</em>
+              who are working in this field for
+              <em class="em">almost a decade.</em>
+              I’m ready to give you my best.
+            </p>
+            <p class="section-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              maxime nam veritatis quisquam facilis fugit error corporis beatae
+              quos quibusdam, tempore blanditiis numquam obcaecati vero soluta
+              maiores velit doloribus ipsa ducimus voluptates nihil sint qui
+              hic! Inventore veritatis quam quis!
+            </p>
+            <p class="section-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              eaque illum! Repellat voluptas officiis minus iste obcaecati culpa
+              vitae impedit voluptates aperiam! Neque vitae cupiditate
+              laudantium maxime deserunt iste, quisquam, itaque a nulla aperiam
+              nihil amet odit laborum repellendus tempore.
+            </p>
+            <p class="section-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              facilis aliquid ea minus similique numquam eveniet expedita
+              mollitia eaque amet?
+            </p>
+            <button class="btn">Get to know Me</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote ------------------------>
+      <section class="section quote">
+        <div class="container">
+          <h6>- Unknown maybe me</h6>
+          <h2>
+            Actually, it’s love itself that creates the most beautiful canvas,
+            I’m only choosing the perspective.
+          </h2>
+        </div>
+      </section>
+
+      <!-- Photos ----------------------->
+      <section class="section photos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/">
+                <div class="photo photos-1"></div>
+                <div class="photos-description">
+                  <h4>Moses Bliss and Marie Wiseborn</h4>
+                  <p>#MMbliss24</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="/">
+                <div class="photo photos-2"></div>
+                <div class="photos-description">
+                  <h4>The Wedding</h4>
+                  <p>13 June 2021</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/">
+                <div class="photo photos-3"></div>
+                <div class="photos-description">
+                  <h4>The Jacksons</h4>
+                  <p>13 June 2023</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/">
+                <div class="photo photos-4"></div>
+                <div class="photos-description">
+                  <h4>Mayo and Emmanuel</h4>
+                  <p>13 July 2023</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="/">
+                <div class="photo photos-5"></div>
+                <div class="photos-description">
+                  <h4>Chioma and love</h4>
+                  <p>13 June 2021</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/">
+                <div class="photo photos-6"></div>
+                <div class="photos-description">
+                  <h4>Dana Bridal Portfolio</h4>
+                  <p>The shoot at Leicester</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/">
+                <div class="photo photos-7"></div>
+                <div class="photos-description">
+                  <h4>Anya Wedding</h4>
+                  <p>Grand Hotel Leicester</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="/">
+                <div class="photo photos-8"></div>
+                <div class="photos-description">
+                  <h4>Siri Bridal Portrait</h4>
+                  <p>London Uk</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/">
+                <div class="photo photos-9"></div>
+                <div class="photos-description">
+                  <h4>J & S</h4>
+                  <p>London Wedding</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Check-out ------------------>
+      <section class="section check-out">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div>
+                <a href="/" class="check-out-link">
+                  <h3>Take a look at my work</h3>
+                  <h6>Portfolio</h6>
+                </a>
+              </div>
+              <div>
+                <a href="/" class="check-out-link">
+                  <h3>Find out my process</h3>
+                  <h6>Experience</h6>
+                </a>
+              </div>
+              <div>
+                <a href="/" class="check-out-link">
+                  <h3>See my Offering</h3>
+                  <h6>Pricing</h6>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 check-out-images">
+              <div class="check-out-img check-out-img-1"></div>
+              <div class="check-out-img check-out-img-2"></div>
+              <div class="check-out-img check-out-img-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect -->
+      <section class="section connect">
+        <div class="container">
+          <div class="connect-content">
+            <h1
+              class="banner__title animatable animatable--large-title animatable--animated animatable--finished"
+            >
+              <span class="spanify">Let's</span>
+              <span class="spanify">set</span>
+              <span class="spanify">out</span>
+              <span class="spanify">on</span>
+              <span class="spanify">a</span>
+              <span class="spanify">photographic</span>
+              <span class="spanify">adventure</span>
+              <span class="spanify">together</span>
+            </h1>
+            <div class="banner__subtitle-wrapper">
+              <h5
+                class="banner__subtitle animatable animatable--animated animatable--finished"
+              >
+                <span class="spanify">Portrait</span>
+                <span class="spanify">of</span>
+                <span class="spanify">nature</span>
+                <span class="spanify">and</span>
+                <span class="spanify">people</span>
+              </h5>
+              <button class="btn"><a href="/">Let's connect</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Local Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar script -->
+    <script>
+      const openToggle = document.getElementById("nav-btn");
+      const closeToggle = document.getElementById("nav-btn-extend");
+      const dropdown = document.getElementById("navbar-extend");
+
+      openToggle.addEventListener("change", () => {
+        if (openToggle.checked) {
+          dropdown.classList.add("show");
+          closeToggle.checked = true;
+        } else {
+          dropdown.classList.remove("show");
+        }
+      });
+
+      closeToggle.addEventListener("change", () => {
+        if (!closeToggle.checked) {
+          dropdown.classList.remove("show");
+          openToggle.checked = false;
+        } else {
+          dropdown.classList.add("show");
+        }
+      });
+    </script>
+
+    <!-- Check-out Hover script -->
+    <script>
+      const checkoutLinks = document.querySelectorAll(".check-out-link");
+      const checkoutImages = document.querySelectorAll(".check-out-img");
+
+      //   Adds class to current link and image
+      document.addEventListener("DOMContentLoaded", () => {
+        checkoutImages[0].classList.add("show-img");
+        checkoutLinks[0].classList.add("active-link");
+      });
+
+      checkoutLinks.forEach((link, index) => {
+        // Check if a link has been hovered
+        link.addEventListener("mouseenter", () => {
+          // Removes class from all links and images
+          checkoutLinks.forEach((link) => {
+            if (link.classList.contains("active-link")) {
+              link.classList.remove("active-link");
+            }
+          });
+          checkoutImages.forEach((image) => {
+            if (image.classList.contains("show-img")) {
+              image.classList.remove("show-img");
+            }
+          });
+
+          // Adds class to hovered link and respective image
+          checkoutLinks[index].classList.add("active-link");
+          checkoutImages[index].classList.add("show-img");
+        });
+      });
+    </script>
+  </body>
+</html>
