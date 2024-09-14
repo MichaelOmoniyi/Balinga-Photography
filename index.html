@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balinga Photography</title>
 
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-mnfbv0Mwrr3kvE2Q+J5NVOR4u3Hsq5Wg5kZLDf2t5O7O6vCp7qOFDkJvqZ6V3Tz"
+      crossorigin="anonymous"
+    />
+
     <!-- Local Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
     <!-- Local CSS styles -->
     <link rel="stylesheet" href="index.css" />
+
+    <!-- Work Sans fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar ---------------------------->
@@ -51,15 +76,15 @@
                 <span class="nav-toggler-icon-extend" id="hamburger"></span>
               </label>
             </div>
-            <div class="navbar-link">
+            <div class="navbar-links">
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/info">Info</a></li>
-                <li><a href="/gallaries">Gallaries</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/videos">Videos</a></li>
+                <li><a class="navbar-link" href="/">Home</a></li>
+                <li><a class="navbar-link" href="/about">About</a></li>
+                <li><a class="navbar-link" href="/info">Info</a></li>
+                <li><a class="navbar-link" href="/gallaries">Gallaries</a></li>
+                <li><a class="navbar-link" href="/blog">Blog</a></li>
+                <li><a class="navbar-link" href="/contact">Contact</a></li>
+                <li><a class="navbar-link" href="/videos">Videos</a></li>
               </ul>
             </div>
           </div>
@@ -67,7 +92,7 @@
 
         <div class="navbar-lg">
           <div class="nav-display">
-            <div class="navbar-link">
+            <div class="navbar-links">
               <ul>
                 <li><a href="/home">Home</a></li>
                 <li><a href="/about">About</a></li>
@@ -81,7 +106,7 @@
                 height="80"
                 alt="Daniel home"
             /></a>
-            <div class="navbar-link">
+            <div class="navbar-links">
               <ul>
                 <li><a href="/galleries">Gallaries</a></li>
                 <li><a href="/blog">Blog</a></li>
@@ -231,16 +256,16 @@
       <!-- About ------------------------->
       <section class="section about">
         <div class="container">
-          <div class="about-content-1">
+          <div class="about-content-1" id="about-1">
             <h1 class="h1 section-title revealed" data-reveal="right">
               Hi, I’m Oni Daniel, a wedding, Lifestyle & Portrait Photographer
             </h1>
             <p class="p">I am based in Lagos, Nigeria (Available to travel)</p>
           </div>
-          <div class="row about-image">
+          <div class="row about-image" id="about-2">
             <img src="/images/Smooth Portrait.jpg" alt="Balinga Portrait" />
           </div>
-          <div class="about-content-2">
+          <div class="about-content-2" id="about-3">
             <p class="section-text">
               A passionate
               <em class="em">photograher</em>
@@ -275,8 +300,8 @@
       <!-- Quote ------------------------>
       <section class="section quote">
         <div class="container">
-          <h6>- Unknown maybe me</h6>
-          <h2>
+          <h6 id="quote-1">- Unknown maybe me</h6>
+          <h2 id="quote-2">
             Actually, it’s love itself that creates the most beautiful canvas,
             I’m only choosing the perspective.
           </h2>
@@ -287,7 +312,7 @@
       <section class="section photos">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" id="photo-1">
               <a href="/">
                 <div class="photo photos-1"></div>
                 <div class="photos-description">
@@ -298,7 +323,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="photo-2">
               <a href="/">
                 <div class="photo photos-2"></div>
                 <div class="photos-description">
@@ -307,7 +332,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="photo-3">
               <a href="/">
                 <div class="photo photos-3"></div>
                 <div class="photos-description">
@@ -318,7 +343,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" id="photo-4">
               <a href="/">
                 <div class="photo photos-4"></div>
                 <div class="photos-description">
@@ -329,7 +354,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="photo-5">
               <a href="/">
                 <div class="photo photos-5"></div>
                 <div class="photos-description">
@@ -338,7 +363,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="photo-6">
               <a href="/">
                 <div class="photo photos-6"></div>
                 <div class="photos-description">
@@ -349,7 +374,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" id="photo-7">
               <a href="/">
                 <div class="photo photos-7"></div>
                 <div class="photos-description">
@@ -360,7 +385,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="photo-8">
               <a href="/">
                 <div class="photo photos-8"></div>
                 <div class="photos-description">
@@ -369,7 +394,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="photo-9">
               <a href="/">
                 <div class="photo photos-9"></div>
                 <div class="photos-description">
@@ -388,28 +413,28 @@
           <div class="row">
             <div class="col-sm-6">
               <div>
-                <a href="/" class="check-out-link">
+                <a href="/" class="check-out-link" id="check-out-1">
                   <h3>Take a look at my work</h3>
                   <h6>Portfolio</h6>
                 </a>
               </div>
               <div>
-                <a href="/" class="check-out-link">
+                <a href="/" class="check-out-link" id="check-out-2">
                   <h3>Find out my process</h3>
                   <h6>Experience</h6>
                 </a>
               </div>
               <div>
-                <a href="/" class="check-out-link">
+                <a href="/" class="check-out-link" id="check-out-3">
                   <h3>See my Offering</h3>
                   <h6>Pricing</h6>
                 </a>
               </div>
             </div>
             <div class="col-sm-6 check-out-images">
-              <div class="check-out-img check-out-img-1"></div>
-              <div class="check-out-img check-out-img-2"></div>
-              <div class="check-out-img check-out-img-3"></div>
+              <div class="check-out-img check-out-img-1" id="check-out-4"></div>
+              <div class="check-out-img check-out-img-2" id="check-out-5"></div>
+              <div class="check-out-img check-out-img-3" id="check-out-6"></div>
             </div>
           </div>
         </div>
@@ -417,10 +442,10 @@
 
       <!-- Connect -->
       <section class="section connect">
-        <div class="container">
+        <div class="">
           <div class="connect-content">
             <h1
-              class="banner__title animatable animatable--large-title animatable--animated animatable--finished"
+              class="banner__title animatable animatable--large-title animatable--animated animatable--finished" id="connect-1"
             >
               <span class="spanify">Let's</span>
               <span class="spanify">set</span>
@@ -433,7 +458,7 @@
             </h1>
             <div class="banner__subtitle-wrapper">
               <h5
-                class="banner__subtitle animatable animatable--animated animatable--finished"
+                class="banner__subtitle animatable animatable--animated animatable--finished" id="connect-2"
               >
                 <span class="spanify">Portrait</span>
                 <span class="spanify">of</span>
@@ -441,15 +466,130 @@
                 <span class="spanify">and</span>
                 <span class="spanify">people</span>
               </h5>
-              <button class="btn"><a href="/">Let's connect</a></button>
+              <button class="btn" id="connect-3"><a href="/">Let's connect</a></button>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Highlight -->
+      <section class="section highlight">
+        <div class="highlight-container">
+          <a href="/"
+            ><div class="highlight-1" id="highlight-1"></div>
+            <div class="highlight-2" id="highlight-2"></div>
+            <div class="highlight-3" id="highlight-3"></div>
+            <div class="highlight-4" id="highlight-4"></div
+          ></a>
+          <h4>@balinga</h4>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-links">
+            <ul>
+              <li><a class="footer-link" href="/">Home</a></li>
+              <li><a class="footer-link" href="/about">About</a></li>
+              <li><a class="footer-link" href="/info">Info</a></li>
+              <li><a class="footer-link" href="/gallaries">Gallaries</a></li>
+              <li><a class="footer-link" href="/blog">Blog</a></li>
+              <li><a class="footer-link" href="/contact">Contact</a></li>
+              <li><a class="footer-link" href="/videos">Videos</a></li>
+            </ul>
+          </div>
+          <div class="sub-footer">
+            <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div class="copyright">@ 2024 Balinga</div>
+            <div class="go-up">
+              <i class="fas fa-arrow-up"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- Local Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS and Popper.js (for components like modals, dropdowns) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ku+Hk84K+T+vW5ozXphCQCNVk2FzZIY8XtCOvXO0xNfQn6m5eQ1ctguClxFGFj9v"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fade In script -->
+    <script>
+      const elements = document.querySelectorAll(
+        "#about-1, #about-2, #about-3, #photo-1, #photo-2, #photo-3, #photo-4, #photo-5, #photo-6, #photo-7, #photo-8, #photo-9, #quote-1, #quote-2, #check-out-1, #check-out-2, #check-out-3, #check-out-4, #check-out-5, #check-out-6, #connect-1, #connect-2, #connect-3, #highlight-1, #highlight-2, #highlight-3, #highlight-4"
+      );
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Add 'visible' class when the full element is visible
+              entry.target.classList.add("visible");
+              // Stop observing the element after it has become visible
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Trigger the callback when 10% of the entire element is visible
+        }
+      );
+
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+
+    <!-- NavLink and footer links active effect -->
+    <script>
+      const navbarLink = document.querySelectorAll(".navbar-link");
+      const footerLink = document.querySelectorAll(".footer-link");
+      const url = window.location.href;
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get the last part of the URL (the page name)
+        const currentPage = url.split("/").pop();
+
+        if (currentPage === "index.html") {
+          // Add active class to nav link
+          navbarLink.forEach((link) => {
+            link.classList.remove("active");
+          });
+          navbarLink[0].classList.add("active");
+
+          // Add active class to footer link
+          footerLink.forEach((link) => {
+            link.classList.remove("active");
+          });
+          footerLink[0].classList.add("active");
+        } else if (!currentPage) {
+          // Add active class to nav link
+          navbarLink.forEach((link) => {
+            link.classList.remove("active");
+          });
+          navbarLink[0].classList.add("active");
+
+          // Add active class to footer link
+          footerLink.forEach((link) => {
+            link.classList.remove("active");
+          });
+          footerLink[0].classList.add("active");
+        }
+      });
+    </script>
 
     <!-- Navbar script -->
     <script>
