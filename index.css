@@ -509,6 +509,15 @@ section {
   .about-image img {
     height: 100%;
   }
+
+  #about-1,
+  #about-3 {
+    transform: translateX(-30vw);
+  }
+
+  #about-2 {
+    transform: translateX(30vw);
+  }
 }
 
 /* Quote */
@@ -549,11 +558,13 @@ section {
   .quote h2 {
     width: 60%;
     padding-right: 10px;
+    transform: translateX(-30vw);
   }
 
   .quote h6 {
     width: 40%;
     text-align: right;
+    transform: translateX(30vw);
   }
 }
 
@@ -678,6 +689,17 @@ section {
   .photos-7 {
     background-position: 0 -20rem;
   }
+  .photos .row .col-lg-12 {
+    transform: translateX(-30vw);
+  }
+
+  .photos .row .col-sm-6:nth-child(1) {
+    transform: translateX(-30vw);
+  }
+
+  .photos .row .col-sm-6:nth-child(2) {
+    transform: translateX(30vw);
+  }
 }
 
 /* Check-out */
@@ -741,7 +763,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(-80vw);
+    transform: translateX(-30vw);
     opacity: 0;
     transition: all 1s ease-in;
   }
@@ -757,7 +779,7 @@ section {
 
   .check-out-img {
     height: 30vw;
-    transform: translateX(80vw);
+    transform: translateX(30vw);
     opacity: 0;
     transition: all 1s ease-in;
   }
@@ -916,15 +938,15 @@ section {
 }
 
 .highlight-container div:nth-child(1) {
-    transform: translateX(-80vw);
+  transform: translateX(-80vw);
   opacity: 0;
-  transition: all .8s ease-in;
+  transition: all 0.8s ease-in;
 }
 
 .highlight-container div:nth-child(2) {
-    transform: translateX(80vw);
+  transform: translateX(80vw);
   opacity: 0;
-  transition: all .8s ease-in;
+  transition: all 0.8s ease-in;
 }
 
 .highlight-1 {
@@ -996,6 +1018,18 @@ section {
   .highlight-container div:nth-child(3) {
     height: 70vh;
     transform: translateY(20vh);
+    opacity: 0;
+    transition: all 0.8s ease-in;
+  }
+
+  .highlight-container div:nth-child(1) {
+    transform: translateX(-20vw);
+    opacity: 0;
+    transition: all 0.8s ease-in;
+  }
+
+  .highlight-container div:nth-child(2) {
+    transform: translateX(30vw);
     opacity: 0;
     transition: all 0.8s ease-in;
   }
