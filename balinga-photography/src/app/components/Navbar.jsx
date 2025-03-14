@@ -1,0 +1,176 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+const Navbar = () => {
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const navbarLinks = document.querySelectorAll(
+      "#home, #about, #info, #gallaries, #blog, #contact, #videos"
+    );
+    navbarLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === pathname) {
+        link.classList.add("active");
+      } else {
+        navbarLinks[0].classList.add("active");
+      }
+    });
+  }, [pathname]);
+
+  return (
+    <div>
+      <header>
+        <nav>
+          <div className="navbar-mobile">
+            <div className="nav-display">
+              <div className="nav-toggler">
+                <input
+                  type="checkbox"
+                  name="nav-btn"
+                  id="nav-btn"
+                  checked={isOpen}
+                  className="navbar-input"
+                />
+                <label for="nav-btn" className="nav-label">
+                  <span
+                    className="nav-toggler-icon"
+                    id="hamburger"
+                    onClick={() => setIsOpen((prev) => !prev)}
+                  ></span>
+                </label>
+              </div>
+              <a href="/" className="navbar-brand">
+                <img
+                  src="images/Balinga-Photogrphy-png-1.png"
+                  className="w-56 h-auto"
+                  alt="Daniel home"
+                />
+                {/* <h1 className="h1">Balinga Photography</h1> */}
+              </a>
+            </div>
+            <div
+              className={`navbar-extend ${isOpen ? "show" : "hidden"}`}
+              id="navbar-extend"
+            >
+              <div className="nav-toggler">
+                <input
+                  type="checkbox"
+                  name="nav-btn-extend"
+                  id="nav-btn-extend"
+                  checked={isOpen}
+                  className="navbar-input-extend"
+                />
+                <label for="nav-btn-extend" className="nav-label-extend">
+                  <span
+                    className="nav-toggler-icon-extend"
+                    id="hamburger"
+                    onClick={() => setIsOpen((prev) => !prev)}
+                  ></span>
+                </label>
+              </div>
+              <div className="navbar-links">
+                <ul>
+                  <li>
+                    <a id="home" href="/">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a id="about" href="/about">
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a id="info" href="/info">
+                      Info
+                    </a>
+                  </li>
+                  <li>
+                    <a id="gallaries" href="/gallaries">
+                      Gallaries
+                    </a>
+                  </li>
+                  <li>
+                    <a id="blog" href="/blog">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a id="contact" href="/contact">
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a id="videos" href="/videos">
+                      Videos
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="navbar-lg">
+            <div className="nav-display justify-between gap-8 lg:gap-16">
+              <div className="navbar-links w-1/2">
+                <ul>
+                  <li>
+                    <a href="/home" id="home">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about" id="about">
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/info" id="info">
+                      Info
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="/">
+                <img
+                  src="images/Balinga-Photogrphy-png-1.png"
+                  className="w-56 h-auto"
+                  alt="Daniel home"
+                />
+              </a>
+              <div className="navbar-links w-1/2">
+                <ul>
+                  <li>
+                    <a href="/galleries" id="gallaries">
+                      Gallaries
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/blog" id="blog">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contact" id="contact">
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/videos" id="videos">
+                      Videos
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+  );
+};
+
+export default Navbar;
