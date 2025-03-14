@@ -1,0 +1,37 @@
+"use client"; // Must be the first line
+
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import localFont from "next/font/local";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./globals.css";
+
+export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => setLoading(false), 2000); // Simulate a short loading delay
+    return () => clearTimeout(timeout);
+  }, [pathname]); // Runs every time the route changes
+
+  return (
+    <html lang="en">
+      <head>
+        <title>Balinga Photography</title>
+        <meta name="description" content="Capturing your best moments" />
+      </head>
+      <body>
+        {loading ? (
+          <div className="fixed top-0 left-0 w-screen h-screen bg-white flex justify-center items-center">
+            {/* <img src="/images/Balinga-Photography-Logo-2.png" alt="Loading..." /> */}
+            <img src="/images/loading-circle.svg" alt="loading" />
+          </div>
+        ) : (
+          children
+        )}
+      </body>
+    </html>
+  );
+}
