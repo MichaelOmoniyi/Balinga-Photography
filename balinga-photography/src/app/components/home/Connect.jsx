@@ -8,7 +8,8 @@ const Connect = () => {
   return (
     <div>
       <section class="section connect">
-        <div class="">
+        <div class="connect-bg">
+          <div className="overlay"></div>
           <div class="connect-content">
             <h1
               class="text-5xl font-bold text-white text-center animatable animatable--large-title animatable--animated animatable--finished"
