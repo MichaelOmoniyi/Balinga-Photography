@@ -15,7 +15,7 @@ const Highlight = () => {
             <div className="highlight-3" id="highlight-3"></div>
             <div className="highlight-4" id="highlight-4"></div>
           </a>
-          <h4 className="bg-black text-white text-3xl">@balinga</h4>
+          <h4 className="text-white text-5xl">@balinga</h4>
         </div>
       </section>
     </div>
