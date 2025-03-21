@@ -22,22 +22,32 @@ const Links = () => {
         </div>
         <div className="sub-bg w-full relative flex flex-col justify-center items-center rounded-md mt-6 lg:mt-20 pt-6 pr-4 pb-24 pl-4">
           <div className="w-full flex justify-around items-center gap-2 text-white pr-6 pl-6 md:pr-40 md:pl-40 lg:pr-80 lg:pl-80 md:pt-10 md:pb-10">
-            <i className="fab fa-facebook-f text-2xl hover:text-gray-400 transition duration-300"></i>
-            <i className="fab fa-twitter text-2xl hover:text-gray-400 transition duration-300"></i>
-            <i className="fab fa-instagram text-2xl hover:text-gray-400 transition duration-300"></i>
-            <i className="fab fa-pinterest text-2xl hover:text-gray-400 transition duration-300"></i>
-            <i className="fab fa-youtube text-2xl hover:text-gray-400 transition duration-300"></i>
+            <a href="https://www.facebook.com/share/18jzqifpAY/">
+              <i className="fab fa-facebook-f text-2xl hover:text-gray-400 transition duration-300"></i>
+            </a>
+            <a href="https://x.com/Danrewaju?s=09">
+              <i className="fab fa-twitter text-2xl hover:text-gray-400 transition duration-300"></i>
+            </a>
+            <a href="https://www.instagram.com/balinga_?utm_source=qr&igsh=MTkxbjZmOWJmanFydQ==">
+              <i className="fab fa-instagram text-2xl hover:text-gray-400 transition duration-300"></i>
+            </a>
+            {/* <a href=""><i className="fab fa-pinterest text-2xl hover:text-gray-400 transition duration-300"></i></a> */}
+            <a href="https://youtube.com/@balingaphotography?si=5yYd_vkstkEUFTP7">
+              <i className="fab fa-youtube text-2xl hover:text-gray-400 transition duration-300"></i>
+            </a>
           </div>
 
           <div className="links flex flex-col gap-4 md:gap-6 justify-center text-center text-xl text-white font-medium mt-6">
             <a href="/links">BOOKING & ENQUIRY</a>
-            <a href="/links">EDITORIAL WEDDING SHOOT</a>
-            <a href="/links">MARCH CLASS</a>
+            {/* <a href="/links">EDITORIAL WEDDING SHOOT</a> */}
+            {/* <a href="/links">MARCH CLASS</a> */}
             <a href="/links">PORTFOLIO</a>
-            <a href="/links">LR PRESETS</a>
+            {/* <a href="/links">LR PRESETS</a> */}
             <a href="/links">JOIN THE COMMUNITY (WHATSAPP GROUP)</a>
             <a href="/links">MY GEAR BOX</a>
-            <a href="/links">SUBSCRIBE TO MY CHANNEL (FREE CLASS)</a>
+            <a href="https://youtube.com/@balingaphotography?si=5yYd_vkstkEUFTP7">
+              SUBSCRIBE TO MY CHANNEL (FREE CLASS)
+            </a>
           </div>
         </div>
       </main>
