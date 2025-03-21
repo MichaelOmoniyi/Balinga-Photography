@@ -8,14 +8,19 @@ const Navbar = () => {
 
   useEffect(() => {
     const navbarLinks = document.querySelectorAll(
-      "#home, #about, #info, #gallaries, #blog, #contact, #videos"
+      "#home, #about, #info, #gallaries, #blog, #contact, #videos, #home-l, #about-l, #info-l, #gallaries-l, #blog-l, #contact-l, #videos-l"
     );
     navbarLinks.forEach((link) => {
       link.classList.remove("active");
       if (link.getAttribute("href") === pathname) {
-        link.classList.add("active");
+        if (link.id.slice(-2) === "-l") {
+          link.classList.add("active-ls");
+        } else {
+          link.classList.add("active");
+        }
       } else {
         navbarLinks[0].classList.add("active");
+        navbarLinks[7].classList.add("active-ls");
       }
     });
   }, [pathname]);
@@ -118,17 +123,17 @@ const Navbar = () => {
               <div className="navbar-links w-1/2">
                 <ul>
                   <li>
-                    <a href="/home" id="home">
+                    <a href="/home" id="home-l">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/about" id="about">
+                    <a href="/about" id="about-l">
                       About
                     </a>
                   </li>
                   <li>
-                    <a href="/info" id="info">
+                    <a href="/info" id="info-l">
                       Info
                     </a>
                   </li>
@@ -144,22 +149,22 @@ const Navbar = () => {
               <div className="navbar-links w-1/2">
                 <ul>
                   <li>
-                    <a href="/galleries" id="gallaries">
+                    <a href="/galleries" id="gallaries-l">
                       Gallaries
                     </a>
                   </li>
                   <li>
-                    <a href="/blog" id="blog">
+                    <a href="/blog" id="blog-l">
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a href="/contact" id="contact">
+                    <a href="/contact" id="contact-l">
                       Contact
                     </a>
                   </li>
                   <li>
-                    <a href="/videos" id="videos">
+                    <a href="/videos" id="videos-l">
                       Videos
                     </a>
                   </li>
