@@ -18,7 +18,7 @@ const useFadeIn = (selectors) => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     elements.forEach((element) => observer.observe(element));
