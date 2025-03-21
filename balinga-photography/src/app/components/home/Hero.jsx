@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 
 const Hero = () => {
   const images = [
-    "/images/hero-img-1.jpeg",
+    "/images/hero-img-1.jpg",
     "/images/hero-img-2.jpg",
     "/images/hero-img-3.jpg",
     "/images/hero-img-4.jpg",
-    "/images/hero-img-5.jpeg",
+    "/images/hero-img-5.jpg",
   ];
   const totalSlides = images.length;
   const [currentSlide, setCurrentSlide] = useState(0);
