@@ -72,11 +72,21 @@ const Footer = () => {
           </div>
           <div className="sub-footer">
             <div className="icons">
-              <FontAwesomeIcon icon={faFacebookF} />
-              <FontAwesomeIcon icon={faTwitter} />
-              <FontAwesomeIcon icon={faInstagram} />
-              <FontAwesomeIcon icon={faPinterest} />
-              <FontAwesomeIcon icon={faYoutube} />
+              <a href="https://www.facebook.com/share/18jzqifpAY/">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </a>
+              <a href="https://x.com/Danrewaju?s=09">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="https://www.instagram.com/balinga_?utm_source=qr&igsh=MTkxbjZmOWJmanFydQ==">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              {/* <a href="">
+                <FontAwesomeIcon icon={faPinterest} />
+              </a> */}
+              <a href="https://youtube.com/@balingaphotography?si=5yYd_vkstkEUFTP7">
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
             </div>
             <div className="copyright">@ 2024 Balinga</div>
             <div className="go-up">
