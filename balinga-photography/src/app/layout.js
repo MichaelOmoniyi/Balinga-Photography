@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
       <body>
         {loading ? (
           <div className="fixed top-0 left-0 w-screen h-screen bg-white flex justify-center items-center">
-            {/* <img src="/images/Balinga-Photography-Logo-2.png" alt="Loading..." /> */}
-            <img src="/images/loading-circle.svg" alt="loading" />
+            {/* <img src="/images/loading-circle.svg" className="w-30 h-30" alt="loading" /> */}
+            <div class="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
           </div>
         ) : (
           children
