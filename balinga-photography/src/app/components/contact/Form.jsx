@@ -3,9 +3,9 @@ import React from "react";
 const Form = () => {
   return (
     <div className="bg-slate-100 pt-8 pb-8 pl-8 pr-8 md:pr-12 md:pl-12 lg:pl-24 lg:pr-24">
-      <div class="form-container bg-white pt-8 pb-8 pr-8 pl-8 md:pr-12 md:pl-12 rounded-md">
+      <div className="form-container bg-white pt-8 pb-8 pr-8 pl-8 md:pr-12 md:pl-12 rounded-md">
         <form action="#" method="POST">
-          <label for="name">Your Name *</label>
+          <label htmlFor="name">Your Name <span className="text-red-600">*</span></label>
           <input
             type="text"
             id="name"
@@ -16,7 +16,7 @@ const Form = () => {
 
           <div className="md:flex md:gap-6 md:justify-between">
             <div className="w-full flex flex-col">
-              <label for="email">Email *</label>
+              <label htmlFor="email">Email <span className="text-red-600">*</span></label>
               <input
                 type="email"
                 id="email"
@@ -27,7 +27,7 @@ const Form = () => {
             </div>
 
             <div className="w-full flex flex-col">
-              <label for="phone">Phone *</label>
+              <label htmlFor="phone">Phone <span className="text-red-600">*</span></label>
               <input
                 type="text"
                 id="phone"
@@ -38,7 +38,7 @@ const Form = () => {
             </div>
           </div>
 
-          <label for="job-type">Job Type *</label>
+          <label htmlFor="job-type">Job Type <span className="text-red-600">*</span></label>
           <select id="job-type" name="job-type" required>
             <option value="" disabled selected>
               Select Job Type
@@ -62,7 +62,7 @@ const Form = () => {
             <option value="graduation">Graduation Photo or Video</option>
           </select>
 
-          <label for="event-date">Main Shoot / Event Date *</label>
+          <label htmlFor="event-date">Main Shoot / Event Date <span className="text-red-600">*</span></label>
           <input
             type="date"
             id="event-date"
@@ -73,7 +73,7 @@ const Form = () => {
 
           <div className="md:flex md:gap-6 md:justify-between">
             <div className="w-full flex flex-col">
-              <label for="location">Event / Shoot Location *</label>
+              <label htmlFor="location">Event / Shoot Location <span className="text-red-600">*</span></label>
               <input
                 type="text"
                 id="location"
@@ -84,7 +84,7 @@ const Form = () => {
             </div>
 
             <div className="w-full flex flex-col">
-              <label for="referral">How did you hear about us? *</label>
+              <label htmlFor="referral">How did you hear about us? <span className="text-red-600">*</span></label>
               <select id="referral" name="referral" required>
                 <option value="" disabled selected>
                   Choose your option
@@ -98,7 +98,7 @@ const Form = () => {
             </div>
           </div>
 
-          <label for="additional-info">Additional Information</label>
+          <label htmlFor="additional-info">Additional Information</label>
           <textarea
             id="additional-info"
             name="additional-info"

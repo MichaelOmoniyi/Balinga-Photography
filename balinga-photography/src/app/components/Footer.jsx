@@ -37,8 +37,8 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div class="container">
-          <div class="footer-links">
+        <div className="container">
+          <div className="footer-links">
             <ul>
               <li>
                 <a id="home" href="/">

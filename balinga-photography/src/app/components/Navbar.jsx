@@ -52,14 +52,11 @@ const Navbar = () => {
                   name="nav-btn"
                   id="nav-btn"
                   checked={isOpen}
+                  onClick={() => setIsOpen((prev) => !prev)}
                   className="navbar-input"
                 />
-                <label for="nav-btn" className="nav-label">
-                  <span
-                    className="nav-toggler-icon"
-                    id="hamburger"
-                    onClick={() => setIsOpen((prev) => !prev)}
-                  ></span>
+                <label htmlFor="nav-btn" className="nav-label">
+                  <span className="nav-toggler-icon" id="hamburger"></span>
                 </label>
               </div>
               <a href="/" className="navbar-brand">
@@ -81,13 +78,13 @@ const Navbar = () => {
                   name="nav-btn-extend"
                   id="nav-btn-extend"
                   checked={isOpen}
+                  onClick={() => setIsOpen((prev) => !prev)}
                   className="navbar-input-extend"
                 />
-                <label for="nav-btn-extend" className="nav-label-extend">
+                <label htmlFor="nav-btn-extend" className="nav-label-extend">
                   <span
                     className="nav-toggler-icon-extend"
                     id="hamburger"
-                    onClick={() => setIsOpen((prev) => !prev)}
                   ></span>
                 </label>
               </div>
