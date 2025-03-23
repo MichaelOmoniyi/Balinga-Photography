@@ -11,7 +11,14 @@ const Navbar = () => {
       "#home, #about, #info, #gallaries, #blog, #contact, #videos, #home-l, #about-l, #info-l, #gallaries-l, #blog-l, #contact-l, #videos-l"
     );
     navbarLinks.forEach((link) => {
-      link.classList.remove("active");
+      if (link.getAttribute("href") === "/") {
+        navbarLinks[0].classList.add("active");
+        navbarLinks[7].classList.add("active-ls");
+      } else {
+        navbarLinks[0].classList.remove("active");
+        navbarLinks[7].classList.remove("active-ls");
+      }
+
       if (link.getAttribute("href") === pathname) {
         if (link.id.slice(-2) === "-l") {
           link.classList.add("active-ls");
@@ -19,11 +26,19 @@ const Navbar = () => {
           link.classList.add("active");
         }
       } else {
-        navbarLinks[0].classList.add("active");
-        navbarLinks[7].classList.add("active-ls");
+        link.classList.remove("active");
+        link.classList.remove("active-ls");
       }
     });
   }, [pathname]);
+
+  // useEffect(() => {
+  //   const body = document.getElementsByTagName("body")
+
+  //   if (isOpen) {
+  //     body.style = "overflow: hidden;"
+  //   }
+  // }, [])
 
   return (
     <div>
