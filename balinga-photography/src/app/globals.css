@@ -115,10 +115,33 @@ body {
 }
 
 .navbar-links li a {
+  width: 100%;
   font-family: "Playfair Display", serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #969696;
+}
+
+.navbar-links li a::after {
+  content: "";
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.navbar-links li:hover > a::after {
+  width: .5rem;
+  background-color: #969696;
+  height: .5rem;
+  border-radius: 999px;
+  /* position: relative; */
+  position: absolute;
+  opacity: 1;
+  margin-left: .5rem;
+  margin-top: .5rem;
+  /* display: flex;
+  margin-left: 47%;
+  opacity: 1; */
+  /* margin-right: 47%; */
 }
 
 .navbar-links li a:active {
@@ -351,6 +374,10 @@ section {
   .navbar-links li a {
     color: #fff;
     font-family: "Playfair Display", serif;
+  }
+
+  .navbar-links li:hover > a::after {
+    color: #fff;
   }
 }
 
@@ -1267,4 +1294,9 @@ footer .footer-links {
   opacity: 1 !important;
   transform: translateX(0) !important;
   transform: translateY(0) !important;
+}
+
+/* Blur other image frames keeping the current hovered frame visible */
+.blurFrame {
+  filter: blur(3px);
 }
