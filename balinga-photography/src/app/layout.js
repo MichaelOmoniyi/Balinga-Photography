@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import localFont from "next/font/local";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -29,7 +31,11 @@ export default function RootLayout({ children }) {
             <div class="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
           </div>
         ) : (
-          children
+          <>
+            <Navbar />
+            {children}
+            <Footer />
+          </>
         )}
       </body>
     </html>
