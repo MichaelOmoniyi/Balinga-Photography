@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import localFont from "next/font/local";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 import Navbar from "./components/Navbar";
