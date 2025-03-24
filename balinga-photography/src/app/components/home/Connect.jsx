@@ -36,7 +36,7 @@ const Connect = () => {
                 <span className="inline-block">people</span>
               </h5>
               <button className="btn" id="connect-3">
-                <a href="/">Let's connect</a>
+                <a href="/contact">Let's connect</a>
               </button>
             </div>
           </div>
