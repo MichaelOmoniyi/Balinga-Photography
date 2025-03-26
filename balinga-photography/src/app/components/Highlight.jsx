@@ -1,0 +1,16 @@
+import React from 'react'
+import zoomEffect from '../Hooks/zoomEffect';
+
+const Highlight = () => {
+  zoomEffect(".highlight");
+
+  return (
+    <div className="w-full flex justify-center py-8">
+      <h4 className="highlight flex justify-center w-full md:w-5/12 text-white dark:bg-white dark:text-black font-bold text-5xl pb-12 pt-12 scale-110 opacity-0">
+        @balinga
+      </h4>
+    </div>
+  );
+}
+
+export default Highlight
