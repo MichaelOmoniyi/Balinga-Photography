@@ -1,0 +1,42 @@
+"use client";
+import React from "react";
+import frameFocus from "@/app/Hooks/frameFocus";
+import zoomEffect from "@/app/Hooks/zoomEffect";
+
+const Porfolio = () => {
+  frameFocus(".frame");
+  zoomEffect(".frame")
+
+  return (
+    <div className="py-8 px-8 md:px-12 lg:px-24 bg-white">
+      <div class="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-8">
+        <div
+          className="frame w-full h-[calc(100vw) lg:h-[calc(90vh)] bg-cover bg-center bg-no-repeat bg-black scale-110 opacity-0"
+          style={{ backgroundImage: "url('/images/contact-page/img-6.jpg')" }}
+        >
+          <div className="relative flex flex-col w-full h-full justify-end items-center text-white pb-8">
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-0"></div>
+            <div className="flex flex-col justify-center items-center gap-4 z-10">
+              <h1 className="text-5xl font-bold">Wedding</h1>
+              <p className="text-lg">Elegance and Romance</p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="frame w-full h-[calc(100vw)] lg:h-[calc(90vh)] bg-cover bg-center bg-no-repeat bg-black scale-110 opacity-0"
+          style={{ backgroundImage: "url('/images/contact-page/img-7.jpg')" }}
+        >
+          <div className="relative flex flex-col w-full h-full justify-end items-center text-white pb-8">
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-0"></div>
+            <div className="flex flex-col justify-center items-center gap-4 z-10">
+              <h1 className="text-5xl font-bold">Portraits</h1>
+              <p className="text-lg">Confidence and Clarity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Porfolio;
