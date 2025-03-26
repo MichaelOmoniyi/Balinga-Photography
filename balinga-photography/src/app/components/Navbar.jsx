@@ -1,11 +1,14 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
+  // Handles active link styling based on current page
   useEffect(() => {
     const navbarLinks = document.querySelectorAll(
       "#home, #about, #info, #gallaries, #blog, #contact, #videos, #home-l, #about-l, #info-l, #gallaries-l, #blog-l, #contact-l, #videos-l"
@@ -32,20 +35,53 @@ const Navbar = () => {
     });
   }, [pathname]);
 
-  // useEffect(() => {
-  //   const body = document.getElementsByTagName("body")
+  // Handles navbar dropdown/display
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  //   if (isOpen) {
-  //     body.style = "overflow: hidden;"
-  //   }
-  // }, [])
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
+  // Handles navbar transition
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const scrollTreshold = window.innerHeight; // Get fresh value
+
+      if (
+        currentScrollPos > prevScrollPos &&
+        currentScrollPos > scrollTreshold
+      ) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
     <div>
       <header>
         <nav>
-          <div className="navbar-mobile">
-            <div className="nav-display">
+          <div
+            className={`navbar-mobile transition-transform duration-1000 ${
+              isVisible ? "translate-y-0" : "-translate-y-24"
+            }`}
+          >
+            <div className="nav-display md:px-10">
               <div className="nav-toggler">
                 <input
                   type="checkbox"
@@ -88,7 +124,7 @@ const Navbar = () => {
                   ></span>
                 </label>
               </div>
-              <div className="navbar-links">
+              <div className="navbar-links md:text-xl">
                 <ul>
                   <li>
                     <a id="home" href="/">
@@ -130,7 +166,11 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="navbar-lg">
+          <div
+            className={`navbar-lg transition-transform duration-1000 ${
+              isVisible ? "translate-y-0" : "-translate-y-24"
+            }`}
+          >
             <div className="nav-display justify-between gap-8 lg:gap-16">
               <div className="navbar-links w-1/2">
                 <ul>
