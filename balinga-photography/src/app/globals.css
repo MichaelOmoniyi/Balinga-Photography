@@ -175,7 +175,7 @@ section {
 /* Navbar styling */
 .navbar-mobile {
   font-family: "Playfair Display", serif;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -355,6 +355,10 @@ section {
   }
 
   .navbar-lg {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
     font-family: "Playfair Display", serif;
     display: block;
     width: 100%;
@@ -640,40 +644,40 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.photos-1 {
-  background-image: url(/images/photos-1.jpg);
+.photo-1 {
+  background-image: url(/images/photo-1.jpg);
 }
 
-.photos-2 {
-  background-image: url(/images/photos-2.jpg);
+.photo-2 {
+  background-image: url(/images/photo-2.jpg);
 }
 
-.photos-3 {
-  background-image: url(/images/photos-3.jpg);
+.photo-3 {
+  background-image: url(/images/photo-3.jpg);
 }
 
-.photos-4 {
-  background-image: url(/images/photos-4.jpg);
+.photo-4 {
+  background-image: url(/images/photo-4.jpg);
 }
 
-.photos-5 {
-  background-image: url(/images/photos-5.jpg);
+.photo-5 {
+  background-image: url(/images/photo-5.jpg);
 }
 
-.photos-6 {
-  background-image: url(/images/photos-6.jpg);
+.photo-6 {
+  background-image: url(/images/photo-6.jpg);
 }
 
-.photos-7 {
-  background-image: url(/images/photos-7.jpg);
+.photo-7 {
+  background-image: url(/images/photo-7.jpg);
 }
 
-.photos-8 {
-  background-image: url(/images/photos-8.jpg);
+.photo-8 {
+  background-image: url(/images/photo-8.jpg);
 }
 
-.photos-9 {
-  background-image: url(/images/photos-9.jpg);
+.photo-9 {
+  background-image: url(/images/photo-9.jpg);
 }
 
 .photos-description {
@@ -1160,6 +1164,11 @@ section {
   }
 }
 
+/* Global Highlight component styles */
+.highlight {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* Footer */
 footer .container {
   padding: 0 !important;
@@ -1240,6 +1249,11 @@ footer .footer-links {
   color: #969696;
 }
 
+.go-up:hover {
+  color: #434343;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
   footer .container {
     padding-bottom: 4rem !important;
@@ -1299,4 +1313,11 @@ footer .footer-links {
 /* Blur other image frames keeping the current hovered frame visible */
 .blurFrame {
   filter: blur(3px);
+}
+
+/* Applies a zoom effect to objects */
+.zoomEffect {
+  scale: 90%;
+  opacity: 1;
+  transition: all .5s ease-in;
 }
