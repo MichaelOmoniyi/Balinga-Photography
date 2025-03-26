@@ -11,9 +11,18 @@ import {
   faPinterest,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import zoomEffect from "../Hooks/zoomEffect";
 
 const Footer = () => {
+  zoomEffect(".transitionEffect");
   const pathname = usePathname();
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Enables smooth scrolling
+    });
+  };
 
   useEffect(() => {
     const FooterLinks = document.querySelectorAll(
@@ -40,37 +49,37 @@ const Footer = () => {
         <div className="container">
           <div className="footer-links">
             <ul>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="home" href="/">
                   Home
                 </a>
               </li>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="about" href="/about">
                   About
                 </a>
               </li>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="info" href="/info">
                   Info
                 </a>
               </li>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="gallaries" href="/gallaries">
                   Gallaries
                 </a>
               </li>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="blog" href="/blog">
                   Blog
                 </a>
               </li>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="contact" href="/contact">
                   Contact
                 </a>
               </li>
-              <li>
+              <li className="transitionEffect scale-110 opacity-0">
                 <a id="videos" href="/videos">
                   Videos
                 </a>
@@ -79,25 +88,39 @@ const Footer = () => {
           </div>
           <div className="sub-footer">
             <div className="icons">
-              <a href="https://www.facebook.com/share/18jzqifpAY/">
+              <a
+                className="transitionEffect scale-110 opacity-0"
+                href="https://www.facebook.com/share/18jzqifpAY/"
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="https://x.com/Danrewaju?s=09">
+              <a
+                className="transitionEffect scale-110 opacity-0"
+                href="https://x.com/Danrewaju?s=09"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="https://www.instagram.com/balinga_?utm_source=qr&igsh=MTkxbjZmOWJmanFydQ==">
+              <a
+                className="transitionEffect scale-110 opacity-0"
+                href="https://www.instagram.com/balinga_?utm_source=qr&igsh=MTkxbjZmOWJmanFydQ=="
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              {/* <a href="">
+              {/* <a className="transitionEffect scale-110 opacity-0" href="">
                 <FontAwesomeIcon icon={faPinterest} />
               </a> */}
-              <a href="https://youtube.com/@balingaphotography?si=5yYd_vkstkEUFTP7">
+              <a
+                className="transitionEffect scale-110 opacity-0"
+                href="https://youtube.com/@balingaphotography?si=5yYd_vkstkEUFTP7"
+              >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>
-            <div className="copyright">@ 2024 Balinga</div>
-            <div className="go-up">
-              <FontAwesomeIcon icon={faArrowUp} />
+            <div className="copyright transitionEffect scale-110 opacity-0">
+              @ 2024 Balinga
+            </div>
+            <div className="go-up transitionEffect scale-110 opacity-0">
+              <FontAwesomeIcon icon={faArrowUp} onClick={scrollToTop} />
             </div>
           </div>
         </div>
