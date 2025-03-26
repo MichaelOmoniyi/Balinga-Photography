@@ -1,16 +1,19 @@
 "use client";
 import { React, useState } from "react";
 import emailjs from "@emailjs/browser";
+import zoomEffect from "@/app/Hooks/zoomEffect";
 
 const Form = () => {
+  zoomEffect(".transitionEffect");
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    jobType: "Select Job Type",
+    jobType: "",
     eventDate: "",
     location: "",
-    referral: "Choose your option",
+    referral: "",
     additionalInfo: "",
   });
 
@@ -64,24 +67,26 @@ const Form = () => {
   };
 
   return (
-    <div className="bg-slate-100 pt-8 pb-8 pl-8 pr-8 md:pr-12 md:pl-12 lg:pl-24 lg:pr-24">
-      <div className="form-container bg-white pt-8 pb-8 pr-8 pl-8 md:pr-12 md:pl-12 rounded-md">
+    <div className="py-8">
+      <div className="form-container bg-white py-8 px-8 md:px-12 rounded-md">
         <form action="#" method="POST" onSubmit={handleSubmit}>
-          <label htmlFor="name">
-            Your Name <span className="text-red-600">*</span>
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            placeholder="Enter your first name e.g Jane"
-            onChange={handleChange}
-            required
-          />
+          <div className="transitionEffect scale-110 opacity-0">
+            <label htmlFor="name">
+              Your Name <span className="text-red-600">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              placeholder="Enter your first name e.g Jane"
+              onChange={handleChange}
+              required
+            />
+          </div>
 
           <div className="md:flex md:gap-6 md:justify-between">
-            <div className="w-full flex flex-col">
+            <div className="transitionEffect scale-110 opacity-0 w-full flex flex-col">
               <label htmlFor="email">
                 Email <span className="text-red-600">*</span>
               </label>
@@ -96,7 +101,7 @@ const Form = () => {
               />
             </div>
 
-            <div className="w-full flex flex-col">
+            <div className="transitionEffect scale-110 opacity-0 w-full flex flex-col">
               <label htmlFor="phone">
                 Phone <span className="text-red-600">*</span>
               </label>
@@ -112,53 +117,60 @@ const Form = () => {
             </div>
           </div>
 
-          <label htmlFor="job-type">
-            Job Type <span className="text-red-600">*</span>
-          </label>
-          <select
-            id="job-type"
-            name="jobType"
-            value={formData.jobType}
-            onChange={handleChange}
-            required
-          >
-            <option value="default" disabled>
-              Select Job Type
-            </option>
-            <option value="wedding">Wedding Video Production</option>
-            <option value="wedding-photography">Wedding Photography</option>
-            <option value="wedding-full-coverage">Wedding Full Coverage</option>
-            <option value="headshot">Headshots</option>
-            <option value="video-production">Video Production (DOP)</option>
-            <option value="pre-wedding">Pre-wedding Shoot</option>
-            <option value="proposal">Proposal Shoot</option>
-            <option value="photo-session">
-              Photo Session (eg. Album cover, Birthday Shoot)
-            </option>
-            <option value="commercial-advert">Comercial/Advertising</option>
-            <option value="event">Event</option>
-            <option value="family">Family Portrait</option>
-            <option value="real-estate">Real Estate and Architecture</option>
-            <option value="maternity">Maternity</option>
-            <option value="newborn">Newborn</option>
-            <option value="graduation">Graduation Photo or Video</option>
-          </select>
+          <div className="transitionEffect scale-110 opacity-0">
+            <label htmlFor="job-type">
+              Job Type <span className="text-red-600">*</span>
+            </label>
+            <select
+              id="job-type"
+              name="jobType"
+              value={formData.jobType}
+              onChange={handleChange}
+              required
+              className="appearance-none"
+            >
+              <option value="" disabled>
+                Select Job Type
+              </option>
+              <option value="wedding">Wedding Video Production</option>
+              <option value="wedding-photography">Wedding Photography</option>
+              <option value="wedding-full-coverage">
+                Wedding Full Coverage
+              </option>
+              <option value="headshot">Headshots</option>
+              <option value="video-production">Video Production (DOP)</option>
+              <option value="pre-wedding">Pre-wedding Shoot</option>
+              <option value="proposal">Proposal Shoot</option>
+              <option value="photo-session">
+                Photo Session (eg. Album cover, Birthday Shoot)
+              </option>
+              <option value="commercial-advert">Comercial/Advertising</option>
+              <option value="event">Event</option>
+              <option value="family">Family Portrait</option>
+              <option value="real-estate">Real Estate and Architecture</option>
+              <option value="maternity">Maternity</option>
+              <option value="newborn">Newborn</option>
+              <option value="graduation">Graduation Photo or Video</option>
+            </select>
+          </div>
 
-          <label htmlFor="event-date">
-            Main Shoot / Event Date <span className="text-red-600">*</span>
-          </label>
-          <input
-            type="date"
-            id="event-date"
-            name="eventDate"
-            value={formData.eventDate}
-            placeholder="Choose date"
-            onChange={handleChange}
-            required
-          />
+          <div className="transitionEffect scale-110 opacity-0">
+            <label htmlFor="event-date">
+              Main Shoot / Event Date <span className="text-red-600">*</span>
+            </label>
+            <input
+              type="date"
+              id="event-date"
+              name="eventDate"
+              value={formData.eventDate}
+              placeholder="Choose date"
+              onChange={handleChange}
+              required
+            />
+          </div>
 
           <div className="md:flex md:gap-6 md:justify-between">
-            <div className="w-full flex flex-col">
+            <div className="transitionEffect scale-110 opacity-0 w-full flex flex-col">
               <label htmlFor="location">
                 Event / Shoot Location <span className="text-red-600">*</span>
               </label>
@@ -173,7 +185,7 @@ const Form = () => {
               />
             </div>
 
-            <div className="w-full flex flex-col">
+            <div className="transitionEffect scale-110 opacity-0 w-full flex flex-col">
               <label htmlFor="referral">
                 How did you hear about us?{" "}
                 <span className="text-red-600">*</span>
@@ -184,6 +196,7 @@ const Form = () => {
                 value={formData.referral}
                 onChange={handleChange}
                 required
+                className="appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'black\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M6 9l6 6 6-6\'/></svg>')] bg-no-repeat bg-right bg-[length:16px] cursor-pointer"
               >
                 <option value="" disabled>
                   Choose your option
@@ -197,14 +210,16 @@ const Form = () => {
             </div>
           </div>
 
-          <label htmlFor="additional-info">Additional Information</label>
-          <textarea
-            id="additional-info"
-            name="additionalInfo"
-            value={formData.additionalInfo}
-            placeholder="If you have any more information for me kindly drop them here"
-            onChange={handleChange}
-          ></textarea>
+          <div className="transitionEffect scale-110 opacity-0">
+            <label htmlFor="additional-info">Additional Information</label>
+            <textarea
+              id="additional-info"
+              name="additionalInfo"
+              value={formData.additionalInfo}
+              placeholder="If you have any more information for me kindly drop them here"
+              onChange={handleChange}
+            ></textarea>
+          </div>
 
           <button type="submit">Submit</button>
           {loading ? (
