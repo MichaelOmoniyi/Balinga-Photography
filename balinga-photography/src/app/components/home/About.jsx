@@ -10,15 +10,23 @@ const About = () => {
       <section className="section about">
         <div className="container md:h-auto">
           <div className="about-content-1" id="about-1">
-            <h1 className="h1 section-title revealed" data-reveal="right">
+            <h1
+              className="h1 text-gray-600 dark:text-gray-200 section-title revealed"
+              data-reveal="right"
+            >
               Hi, I’m Oni Daniel, a wedding, Lifestyle & Portrait Photographer
             </h1>
-            <p className="p">I am based in Lagos, Nigeria (Available to travel)</p>
+            <p className="p text-gray-500 dark:text-gray-400">
+              I am based in Lagos, Nigeria (Available to travel)
+            </p>
           </div>
           <div className="row about-image" id="about-2">
             <img src="/images/Smooth Portrait.jpg" alt="Balinga Portrait" />
           </div>
-          <div className="about-content-2" id="about-3">
+          <div
+            className="about-content-2 text-gray-500 dark:text-gray-300"
+            id="about-3"
+          >
             <p className="section-text">
               A passionate
               <em className="em">photograher</em>
@@ -45,7 +53,9 @@ const About = () => {
               facilis aliquid ea minus similique numquam eveniet expedita
               mollitia eaque amet?
             </p>
-            <button className="btn">Get to know Me</button>
+            <button className="btn text-gray-500 dark:text-gray-300 border-gray-500 dark:border-gray-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
+              Get to know Me
+            </button>
           </div>
         </div>
       </section>

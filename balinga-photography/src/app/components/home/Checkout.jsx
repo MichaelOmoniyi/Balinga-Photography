@@ -50,16 +50,18 @@ const Checkout = () => {
                   <Link href="/" legacyBehavior>
                     <a
                       ref={(el) => (checkoutLinksRef.current[index] = el)}
-                      className="check-out-link"
+                      className="check-out-link hover:text-gray-400"
                     >
-                      <h3>
+                      <h3 className="text-gray-600 dark:text-gray-200">
                         {title === "Portfolio"
                           ? "Take a look at my work"
                           : title === "Experience"
                           ? "Find out my process"
                           : "See my Offering"}
                       </h3>
-                      <h6>{title}</h6>
+                      <h6 className="text-gray-500 dark:text-gray-400">
+                        {title}
+                      </h6>
                     </a>
                   </Link>
                 </div>

@@ -34,7 +34,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-[calc(100vh-5.5rem)] mt-0">
+    <section className="relative w-full h-[calc(100vh-5.5rem)] mt-20">
       <div className="relative w-full h-full">
         {/* Carousel Wrapper */}
         <div className="relative w-full h-full overflow-hidden">

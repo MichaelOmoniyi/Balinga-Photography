@@ -8,7 +8,7 @@ const Quote = () => {
   return (
     <div>
       <section className="section quote">
-        <div className="container">
+        <div className="container text-gray-600 dark:text-gray-200">
           <h6 id="quote-1">- Unknown maybe me</h6>
           <h2 id="quote-2">
             Actually, it’s love itself that creates the most beautiful canvas,

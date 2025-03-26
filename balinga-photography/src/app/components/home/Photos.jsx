@@ -19,8 +19,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-1"></div>
                 <div className="photos-description">
-                  <h4>Moses Bliss and Marie Wiseborn</h4>
-                  <p>#MMbliss24</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">Moses Bliss and Marie Wiseborn</h4>
+                  <p className="text-gray-500 dark:text-gray-400">#MMbliss24</p>
                 </div>
               </a>
             </div>
@@ -30,8 +30,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-2"></div>
                 <div className="photos-description">
-                  <h4>The Wedding</h4>
-                  <p>13 June 2021</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">The Wedding</h4>
+                  <p className="text-gray-500 dark:text-gray-400">13 June 2021</p>
                 </div>
               </a>
             </div>
@@ -39,8 +39,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-3"></div>
                 <div className="photos-description">
-                  <h4>The Jacksons</h4>
-                  <p>13 June 2023</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">The Jacksons</h4>
+                  <p className="text-gray-500 dark:text-gray-400">13 June 2023</p>
                 </div>
               </a>
             </div>
@@ -50,8 +50,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-4"></div>
                 <div className="photos-description">
-                  <h4>Mayo and Emmanuel</h4>
-                  <p>13 July 2023</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">Mayo and Emmanuel</h4>
+                  <p className="text-gray-500 dark:text-gray-400">13 July 2023</p>
                 </div>
               </a>
             </div>
@@ -61,8 +61,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-5"></div>
                 <div className="photos-description">
-                  <h4>Chioma and love</h4>
-                  <p>13 June 2021</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">Chioma and love</h4>
+                  <p className="text-gray-500 dark:text-gray-400">13 June 2021</p>
                 </div>
               </a>
             </div>
@@ -70,8 +70,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-6"></div>
                 <div className="photos-description">
-                  <h4>Dana Bridal Portfolio</h4>
-                  <p>The shoot at Leicester</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">Dana Bridal Portfolio</h4>
+                  <p className="text-gray-500 dark:text-gray-400">The shoot at Leicester</p>
                 </div>
               </a>
             </div>
@@ -81,8 +81,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-7"></div>
                 <div className="photos-description">
-                  <h4>Anya Wedding</h4>
-                  <p>Grand Hotel Leicester</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">Anya Wedding</h4>
+                  <p className="text-gray-500 dark:text-gray-400">Grand Hotel Leicester</p>
                 </div>
               </a>
             </div>
@@ -92,8 +92,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-8"></div>
                 <div className="photos-description">
-                  <h4>Siri Bridal Portrait</h4>
-                  <p>London Uk</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">Siri Bridal Portrait</h4>
+                  <p className="text-gray-500 dark:text-gray-400">London Uk</p>
                 </div>
               </a>
             </div>
@@ -101,8 +101,8 @@ const Photos = () => {
               <a href="/" className="frame">
                 <div className="photo photo-9"></div>
                 <div className="photos-description">
-                  <h4>J & S</h4>
-                  <p>London Wedding</p>
+                  <h4 className="text-gray-600 dark:text-gray-200">J & S</h4>
+                  <p className="text-gray-500 dark:text-gray-400">London Wedding</p>
                 </div>
               </a>
             </div>
