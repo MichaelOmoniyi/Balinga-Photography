@@ -105,7 +105,7 @@ const Navbar = () => {
               </a>
             </div>
             <div
-              className={`navbar-extend ${isOpen ? "show" : "hidden"}`}
+              className={`navbar-extend md:px-10 ${isOpen ? "show" : "hidden"}`}
               id="navbar-extend"
             >
               <div className="nav-toggler">
