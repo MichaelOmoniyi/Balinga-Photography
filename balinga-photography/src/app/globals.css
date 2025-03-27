@@ -1085,7 +1085,8 @@ section {
   /* width: 332px; */
   width: 70vw;
   height: 125.73px;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -1149,7 +1150,8 @@ section {
 
 /* Global Highlight component styles */
 .highlight {
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: #000;
 }
 
 /* Footer */
