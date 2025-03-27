@@ -7,12 +7,10 @@ const frameFocus = (selectors) => {
     const handleMouseEnter = (event) => {
       photoFrames.forEach((f) => f.classList.add("blurFrame"));
       event.currentTarget.classList.remove("blurFrame");
-      console.log("Hovered: " + event.currentTarget);
     };
 
     const handleMouseLeave = () => {
       photoFrames.forEach((f) => f.classList.remove("blurFrame"));
-      console.log("Mouse left all frames");
     };
 
     photoFrames.forEach((frame) => {
