@@ -221,7 +221,7 @@ const Form = () => {
             ></textarea>
           </div>
 
-          <button type="submit">Submit</button>
+          <button className="transitionEffect scale-110 opacity-0" type="submit">Submit</button>
           {loading ? (
             <div className="w-full">
               <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
