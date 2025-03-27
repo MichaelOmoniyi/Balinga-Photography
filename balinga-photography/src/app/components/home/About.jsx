@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <section className="section about">
-        <div className="container md:h-auto">
+        <div className="container md-h-auto lg:h-[calc(75vh)]">
           <div className="about-content-1" id="about-1">
             <h1
               className="h1 text-gray-600 dark:text-gray-200 section-title revealed"
@@ -20,8 +20,12 @@ const About = () => {
               I am based in Lagos, Nigeria (Available to travel)
             </p>
           </div>
-          <div className="row about-image" id="about-2">
-            <img src="/images/Smooth Portrait.jpg" alt="Balinga Portrait" />
+          <div
+            className="row about-image w-full h-[calc(100vw)] md:h-full bg-cover bg-center bg-red"
+            style={{ backgroundImage: "url('/images/Smooth Portrait.jpg')" }}
+            id="about-2"
+          >
+            {/* <img src="/images/Smooth Portrait.jpg" alt="Balinga Portrait" /> */}
           </div>
           <div
             className="about-content-2 text-gray-500 dark:text-gray-300"
