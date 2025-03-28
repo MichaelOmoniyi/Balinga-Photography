@@ -3,9 +3,7 @@ import React, { useState, useEffect } from "react";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const FAQs = () => {
-  useEffect(() => {
-    useZoomEffect(".transitionEffect");
-  }, []); // Run only once on mount
+  useZoomEffect(".transitionEffect");
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -95,15 +93,15 @@ const FAQs = () => {
             Frequently Asked Questions
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="transitionEffect grid grid-cols-1 md:grid-cols-2 gap-6 scale-110 opacity-0">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`transitionEffect border border-gray-300 p-4 rounded-xl transition duration-500 ${
+              className={`border border-gray-300 p-4 rounded-xl transition duration-500 ${
                 openIndex === index
                   ? "bg-indigo-50 border-gray-500 dark:border-gray-100"
                   : ""
-              } scale-110 opacity-0`}
+              }`}
             >
               <button
                 className={`flex justify-between items-center w-full text-lg font-medium ${
