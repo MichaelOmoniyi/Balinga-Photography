@@ -119,8 +119,8 @@ const Footer = () => {
             <div className="copyright transitionEffect scale-110 opacity-0">
               @ 2024 Balinga
             </div>
-            <div className="go-up transitionEffect scale-110 opacity-0">
-              <FontAwesomeIcon icon={faArrowUp} onClick={scrollToTop} />
+            <div className="go-up transitionEffect scale-110 opacity-0" onClick={scrollToTop}>
+              <FontAwesomeIcon icon={faArrowUp}/>
             </div>
           </div>
         </div>
