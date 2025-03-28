@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import frameFocus from "@/app/Hooks/frameFocus";
+import useFrameFocus from "@/app/Hooks/useFrameFocus";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Porfolio = () => {
-  frameFocus(".frame");
+  useFrameFocus(".frame");
   useZoomEffect(".frame");
 
   return (

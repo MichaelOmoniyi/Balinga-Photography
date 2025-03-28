@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const frameFocus = (selectors) => {
+const useFrameFocus = (selectors) => {
   useEffect(() => {
     const photoFrames = document.querySelectorAll(selectors);
 
@@ -28,4 +28,4 @@ const frameFocus = (selectors) => {
   }, []);
 };
 
-export default frameFocus;
+export default useFrameFocus;
