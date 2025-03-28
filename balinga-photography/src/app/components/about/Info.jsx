@@ -1,11 +1,13 @@
 import React from 'react'
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Info = () => {
+  useZoomEffect(".transitionEffect")
   return (
     <div>
       <section>
         <div class="mx-auto max-w-screen-xl">
-          <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <h2 class="transitionEffect scale-110 opacity-0 mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Points About Me
           </h2>
           <div
@@ -13,7 +15,7 @@ const Info = () => {
             data-accordion="default-accordion"
           >
             <div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -34,7 +36,7 @@ const Info = () => {
                   creating unforgettable moments that lingers.
                 </p>
               </div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -55,7 +57,7 @@ const Info = () => {
                   compelling story.
                 </p>
               </div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -76,7 +78,7 @@ const Info = () => {
                   of the camera.
                 </p>
               </div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -98,7 +100,7 @@ const Info = () => {
               </div>
             </div>
             <div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -119,7 +121,7 @@ const Info = () => {
                   come.
                 </p>
               </div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -140,7 +142,7 @@ const Info = () => {
                   my approach to fit the occasion.
                 </p>
               </div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -161,7 +163,7 @@ const Info = () => {
                   brought to life.
                 </p>
               </div>
-              <div class="mb-10">
+              <div class="transitionEffect scale-110 opacity-0 mb-10">
                 <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
