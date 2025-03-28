@@ -2,7 +2,7 @@ import React from 'react'
 
 const Info = () => {
   return (
-    <div className="py-8">
+    <div>
       <section>
         <div class="mx-auto max-w-screen-xl">
           <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -27,13 +27,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What do you mean by "Figma assets"?
+                  Passionate Visual Storyteller
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  You will have access to download the full Figma project
-                  including all of the pages, the components, responsive pages,
-                  and also the icons, illustrations, and images included in the
-                  screens.
+                  I don’t just take photos; I capture emotions, and connections,
+                  creating unforgettable moments that lingers.
                 </p>
               </div>
               <div class="mb-10">
@@ -50,12 +48,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What does "lifetime access" exactly mean?
+                  Detail-Oriented
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  Once you have purchased either the design, code, or both
-                  packages, you will have access to all of the future updates
-                  based on the roadmap, free of charge.
+                  From lighting to composition, I ensure every shot tells a
+                  compelling story.
                 </p>
               </div>
               <div class="mb-10">
@@ -72,24 +69,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  How does support work?
+                  Relaxed & Friendly Approach
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  We're aware of the importance of well qualified support, that
-                  is why we decided that support will only be provided by the
-                  authors that actually worked on this project.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Feel free to{" "}
-                  <a
-                    href="#"
-                    class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    contact us
-                  </a>{" "}
-                  and we'll help you out as soon as we can.
+                  I make sure my clients feel comfortable and natural in front
+                  of the camera.
                 </p>
               </div>
               <div class="mb-10">
@@ -106,24 +90,10 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  I want to build more than one project. Is that allowed?
+                  Candid & Authentic Moments
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  You can use Windster for an unlimited amount of projects,
-                  whether it's a personal website, a SaaS app, or a website for
-                  a client. As long as you don't build a product that will
-                  directly compete with Windster either as a UI kit, theme, or
-                  template, it's fine.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Find out more information by{" "}
-                  <a
-                    href="#"
-                    class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                  >
-                    reading the license
-                  </a>
-                  .
+                  I love capturing real emotions rather than overly posed shots.
                 </p>
               </div>
             </div>
@@ -142,19 +112,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What does "free updates" include?
+                  Timeless Editing Style
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  The free updates that will be provided is based on the{" "}
-                  <a
-                    href="#"
-                    class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                  >
-                    roadmap
-                  </a>{" "}
-                  that we have laid out for this project. It is also possible
-                  that we will provide extra updates outside of the roadmap as
-                  well.
+                  My goal is to deliver images that remain stunning for years to
+                  come.
                 </p>
               </div>
               <div class="mb-10">
@@ -171,23 +133,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What does the free version include?
+                  Adaptable & Creative
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  The{" "}
-                  <a
-                    href="#"
-                    class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                  >
-                    free version
-                  </a>{" "}
-                  of Windster includes a minimal style guidelines, component
-                  variants, and a dashboard page with the mobile version
-                  alongside it.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">
-                  You can use this version for any purposes, because it is
-                  open-source under the MIT license.
+                  Whether it’s an intimate portrait or a lively event, I tailor
+                  my approach to fit the occasion.
                 </p>
               </div>
               <div class="mb-10">
@@ -204,18 +154,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What is the difference between Windster and Tailwind UI?
+                  Client-Centered Experience
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  Although both Windster and Tailwind UI are built for
-                  integration with Tailwind CSS, the main difference is in the
-                  design, the pages, the extra components and UI elements that
-                  Windster includes.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Additionally, Windster is a project that is still in
-                  development, and later it will include both the application,
-                  marketing, and e-commerce UI interfaces.
+                  Every session is a collaboration, ensuring your vision is
+                  brought to life.
                 </p>
               </div>
               <div class="mb-10">
@@ -232,27 +175,11 @@ const Info = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  Can I use Windster in open-source projects?
+                  Always Exploring
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400">
-                  Generally, it is accepted to use Windster in open-source
-                  projects, as long as it is not a UI library, a theme, a
-                  template, a page-builder that would be considered as an
-                  alternative to Windster itself.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">
-                  With that being said, feel free to use this design kit for
-                  your open-source projects.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Find out more information by{" "}
-                  <a
-                    href="#"
-                    class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                  >
-                    reading the license
-                  </a>
-                  .
+                  I’m constantly learning new techniques to refine my craft and
+                  bring fresh ideas to my work.
                 </p>
               </div>
             </div>
