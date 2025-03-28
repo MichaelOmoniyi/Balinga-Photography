@@ -7,10 +7,10 @@ import Form from "../contact/Form";
 import Gallery from "./Gallery";
 import Info from "./Info";
 import Highlight from "../Highlight";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const About = () => {
-  zoomEffect(".transitionEffect");
+  useZoomEffect(".transitionEffect");
   return (
     <div className="wrapper dark:bg-black overflow-hidden">
       <Marquee />

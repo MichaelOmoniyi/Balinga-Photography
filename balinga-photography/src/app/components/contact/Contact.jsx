@@ -6,10 +6,10 @@ import Porfolio from "./Porfolio";
 import Notice from "./Notice";
 import Highlight from "../Highlight";
 import FAQs from "./FAQs";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Contact = () => {
-  zoomEffect(".transitionEffect");
+  useZoomEffect(".transitionEffect");
   return (
     <div className="bg-slate-200 dark:bg-black">
       <Carousel />

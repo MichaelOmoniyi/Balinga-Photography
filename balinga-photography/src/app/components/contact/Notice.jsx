@@ -1,8 +1,8 @@
 import React from "react";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Notice = () => {
-  zoomEffect(".transitionEffect");
+  useZoomEffect(".transitionEffect");
 
   return (
     <div className="w-full py-8 md:flex md:flex-col md:items-center">

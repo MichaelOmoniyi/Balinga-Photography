@@ -11,10 +11,10 @@ import {
   faPinterest,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import zoomEffect from "../Hooks/zoomEffect";
+import useZoomEffect from "../Hooks/useZoomEffect";
 
 const Footer = () => {
-  zoomEffect(".transitionEffect");
+  useZoomEffect(".transitionEffect");
   const pathname = usePathname();
 
   const scrollToTop = () => {

@@ -1,8 +1,8 @@
 import React from "react";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Story = () => {
-    zoomEffect(".transitionEffect");
+  useZoomEffect(".transitionEffect");
 
   return (
     <div className="px-40">

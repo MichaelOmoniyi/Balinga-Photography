@@ -1,8 +1,8 @@
-import React from 'react'
-import zoomEffect from '../Hooks/zoomEffect';
+import React from "react";
+import useZoomEffect from "../Hooks/useZoomEffect";
 
 const Highlight = () => {
-  zoomEffect(".highlight");
+  useZoomEffect(".highlight");
 
   return (
     <div className="w-full flex justify-center py-8">
@@ -11,6 +11,6 @@ const Highlight = () => {
       </h4>
     </div>
   );
-}
+};
 
-export default Highlight
+export default Highlight;

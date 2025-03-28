@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const zoomEffect = (selectors) => {
+const useZoomEffect = (selectors) => {
   useEffect(() => {
     const elements = document.querySelectorAll(selectors);
 
@@ -24,7 +24,7 @@ const zoomEffect = (selectors) => {
     elements.forEach((element) => observer.observe(element));
 
     return () => observer.disconnect(); // Cleanup on unmount
-  }, []);
+  }, [selectors]);
 }
 
-export default zoomEffect
+export default useZoomEffect;

@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "../button";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Hero = () => {
-  zoomEffect(".transitionEffect");
+  useZoomEffect(".transitionEffect");
 
   return (
     <div className="flex justify-center items-center w-full flex-col md:flex-row md:h-[calc(70vh)] lg:h-[calc(110vh)] md:p-10">

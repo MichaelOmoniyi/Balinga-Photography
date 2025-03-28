@@ -1,6 +1,7 @@
 import React from "react";
 import frameFocus from "@/app/Hooks/frameFocus";
 
+
 const Gallery = () => {
     frameFocus(".frame")
 

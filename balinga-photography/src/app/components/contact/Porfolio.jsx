@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import frameFocus from "@/app/Hooks/frameFocus";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const Porfolio = () => {
   frameFocus(".frame");
-  zoomEffect(".frame")
+  useZoomEffect(".frame");
 
   return (
     <div className="py-8 px-8 md:px-12 lg:px-24 bg-white">

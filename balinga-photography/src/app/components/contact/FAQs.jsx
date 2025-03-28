@@ -1,9 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import zoomEffect from "@/app/Hooks/zoomEffect";
+import React, { useState, useEffect } from "react";
+import useZoomEffect from "@/app/Hooks/useZoomEffect";
 
 const FAQs = () => {
-  zoomEffect(".transitionEffect");
+  useEffect(() => {
+    useZoomEffect(".transitionEffect");
+  }, []); // Run only once on mount
 
   const [openIndex, setOpenIndex] = useState(null);
 
