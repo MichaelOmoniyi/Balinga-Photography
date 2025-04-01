@@ -59,6 +59,15 @@ const Hero = () => {
           ))}
         </div>
 
+        {/* Overlay */}
+        <div className="absolute h-full w-full top-0 left-0 flex flex-col justify-center items-center">
+          <div className="overlay absolute h-full w-full top-0 left-0 bg-gray-900 opacity-60 z-10"></div>
+          <div className="flex flex-col justify-center items-center gap-2 text-white z-20 px-9">
+            <h1 className="text-5xl text-center">Balinga Photography</h1>
+            <p className="md:text-lg text-center">...creating memories that linger</p>
+          </div>
+        </div>
+
         {/* Slider Indicators */}
         <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
           {images.map((_, index) => (
@@ -82,7 +91,7 @@ const Hero = () => {
           ❮
         </button>
         <button
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50"
+          className="absolute top-1/2 right-2 lg:mr-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50"
           onClick={goNext}
         >
           ❯
