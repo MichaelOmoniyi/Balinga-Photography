@@ -11,7 +11,7 @@ const Navbar = () => {
   // Handles active link styling based on current page
   useEffect(() => {
     const navbarLinks = document.querySelectorAll(
-      "#home, #about, #info, #gallaries, #blog, #contact, #videos, #home-l, #about-l, #info-l, #gallaries-l, #blog-l, #contact-l, #videos-l"
+      "#home, #about, #info, #galleries, #blog, #contact, #videos, #home-l, #about-l, #info-l, #galleries-l, #blog-l, #contact-l, #videos-l"
     );
     navbarLinks.forEach((link) => {
       if (link.getAttribute("href") === "/") {
@@ -142,8 +142,8 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a id="gallaries" href="/gallaries">
-                      Gallaries
+                    <a id="galleries" href="/client-area">
+                      Galleries
                     </a>
                   </li>
                   <li>
@@ -201,8 +201,8 @@ const Navbar = () => {
               <div className="navbar-links w-1/2">
                 <ul>
                   <li>
-                    <a href="/galleries" id="gallaries-l">
-                      Gallaries
+                    <a href="/client-area" id="galleries-l">
+                      Galleries
                     </a>
                   </li>
                   <li>
