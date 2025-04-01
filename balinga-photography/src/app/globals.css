@@ -1306,3 +1306,8 @@ footer .footer-links {
   opacity: 1;
   transition: all .5s ease-in;
 }
+
+/* Component wrapper defining top margin due to navbar position */
+.wrapper {
+    margin-top: 5.5rem;
+}
