@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image"
 
 const images = [
   "/images/contact-page/Balinga-Photography-Logo-2.png",
@@ -45,8 +46,12 @@ const CarouselComponent = () => {
               className="bg-img absolute top-0 left-0 w-full h-full bg-center bg-cover blur-md z-0"
               style={{ backgroundImage: `url(${src})` }}
             ></div>
-            <img
+            <Image
               src={src}
+              width={500}
+              height={500}
+              quality={100}
+              unoptimized
               className={`${
                 index === 0
                   ? "relative w-full h-full object-cover"

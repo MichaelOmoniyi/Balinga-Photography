@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Hero = () => {
   const images = [
@@ -45,8 +46,12 @@ const Hero = () => {
                 currentSlide === index ? "opacity-100" : "opacity-0"
               }`}
             >
-              <img
+              <Image
                 src={src}
+                width={500}
+                height={500}
+                quality={100}
+                unoptimized
                 className="w-full h-full object-cover"
                 alt={`Slide ${index + 1}`}
               />
