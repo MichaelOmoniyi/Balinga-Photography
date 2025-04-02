@@ -72,7 +72,7 @@ const Highlight = dynamic(() => import("@/app/components/home/Highlight"), {
 
 export default function Home() {
   return (
-    <div className="dark:bg-black">
+    <div >
       <Hero />
       <About />
       <Quote />

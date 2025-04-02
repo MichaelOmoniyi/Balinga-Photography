@@ -63,7 +63,7 @@ const Highlight = dynamic(() => import("../Highlight"), {
 const About = () => {
   useZoomEffect(".transitionEffect");
   return (
-    <div className="wrapper dark:bg-black overflow-hidden">
+    <div className="wrapper overflow-hidden">
       <Marquee />
       <Hero />
       <div className="p-6 md:p-10">

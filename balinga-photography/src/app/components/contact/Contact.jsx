@@ -66,7 +66,7 @@ const FAQs = dynamic(() => import("./FAQs"), {
 const Contact = () => {
   useZoomEffect(".transitionEffect");
   return (
-    <div className="bg-slate-200 dark:bg-black">
+    <div>
       <Carousel />
       <div className="px-8 md:px-12 lg:px-24">
         <div className="py-8">
