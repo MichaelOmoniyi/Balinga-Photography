@@ -1,18 +1,27 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image"
+import Image from "next/image";
+import categories from "@/app/data/categories";
 
-const images = [
-  "/images/contact-page/Balinga-Photography-Logo-2.png",
-  "/images/contact-page/img-2.jpg",
-  "/images/contact-page/img-3.jpg",
-  "/images/contact-page/img-4.jpg",
-  "/images/contact-page/img-5.jpg",
+const Highlight = categories.Highlight;
+const Wedding = categories.Wedding[1];
+const Birthday = categories.Birthday[5];
+const Convocation = categories.Convocation[0];
+const Family = categories.Family[0];
+const TraditionalWedding = categories.TraditionalWedding[0];
+
+const data = [
+  Highlight,
+  Wedding,
+  Birthday,
+  Convocation,
+  Family,
+  TraditionalWedding,
 ];
 
 const CarouselComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const totalSlides = images.length;
+  const totalSlides = data.length;
 
   // Auto-slide every 3 seconds
   useEffect(() => {
@@ -35,7 +44,7 @@ const CarouselComponent = () => {
     <div className="relative w-full">
       {/* Carousel Wrapper */}
       <div className="carousel-wrapper relative overflow-hidden">
-        {images.map((src, index) => (
+        {data.map((category, index) => (
           <div
             key={index}
             className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out ${
@@ -44,10 +53,10 @@ const CarouselComponent = () => {
           >
             <div
               className="bg-img absolute top-0 left-0 w-full h-full bg-center bg-cover blur-md z-0"
-              style={{ backgroundImage: `url(${src})` }}
+              style={{ backgroundImage: `url(/images/${category.img[0]})` }}
             ></div>
             <Image
-              src={src}
+              src={`/images/${category.img[0]}`}
               width={500}
               height={500}
               quality={100}
@@ -63,8 +72,8 @@ const CarouselComponent = () => {
               <div className="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-20">
                 <div className="position absolute top-0 left-0flex w-full h-full bg-black opacity-50"></div>
                 <div className="relative flex flex-col w-full h-full justify-center items-center text-white z-30">
-                  <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
-                  <p className="text-base">Your story begins here...</p>
+                  <h1 className="text-5xl font-bold mb-4">{category.title}</h1>
+                  <p className="text-base">{category.subtitle}</p>
                 </div>
               </div>
             )}
