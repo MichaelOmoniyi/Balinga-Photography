@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   useFrameFocus(".frame");
+  useZoomEffect(".frame")
 
   return (
     <div>
