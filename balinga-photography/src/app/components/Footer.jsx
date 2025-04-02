@@ -45,7 +45,7 @@ const Footer = () => {
 
   return (
     <div>
-      <footer>
+      <footer className="bg-slate-50">
         <div className="container">
           <div className="footer-links">
             <ul>
@@ -117,10 +117,13 @@ const Footer = () => {
               </a>
             </div>
             <div className="copyright transitionEffect scale-110 opacity-0">
-              @ 2024 Balinga
+              <p>@ 2024 Balinga</p>
             </div>
-            <div className="go-up transitionEffect scale-110 opacity-0" onClick={scrollToTop}>
-              <FontAwesomeIcon icon={faArrowUp}/>
+            <div
+              className="go-up transitionEffect scale-110 opacity-0"
+              onClick={scrollToTop}
+            >
+              <FontAwesomeIcon icon={faArrowUp} />
             </div>
           </div>
         </div>

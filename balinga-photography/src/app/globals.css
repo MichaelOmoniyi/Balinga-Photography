@@ -1213,6 +1213,8 @@ footer .footer-links {
   align-items: center;
   gap: 1.5rem;
   color: #434343;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sub-footer .icons a:hover {
@@ -1239,7 +1241,7 @@ footer .footer-links {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 724px) {
   footer .container {
     padding-bottom: 4rem !important;
     margin-top: 4rem;
@@ -1262,9 +1264,15 @@ footer .footer-links {
     padding-inline: 4rem;
   }
 
+  .sub-footer .icons {
+    font-size: 1.5rem;
+  }
+
   .copyright {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
+    align-items: center;
     text-align: left;
   }
 
@@ -1276,6 +1284,9 @@ footer .footer-links {
   .go-up {
     grid-column: 3;
     grid-row: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
     justify-content: right;
   }
 }
