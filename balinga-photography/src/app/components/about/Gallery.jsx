@@ -1,7 +1,19 @@
 import React from "react";
 import useFrameFocus from "@/app/Hooks/useFrameFocus";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
-import Image from "next/image";
+import dynamic from "next/dynamic";
+import data from "@/app/data/miniPortfolio";
+
+
+// Lazy load component
+const ImageFrame = dynamic(() => import("./Frame"), {
+  loading: () => (
+    <div className="w-full p-4 flex justify-center items-center">
+      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false,
+});
 
 const Gallery = () => {
   useFrameFocus(".frame");
@@ -10,116 +22,7 @@ const Gallery = () => {
   return (
     <div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-1.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-2.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-3.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-4.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-5.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-6.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-7.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-8.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-9.jpg"
-            alt=""
-          />
-        </div>
-        <div className="frame scale-110 opacity-0">
-          <Image
-            width={500}
-            height={500}
-            quality={100}
-            unoptimized
-            class="h-auto max-w-full rounded-lg"
-            src="/images/mini-portfolio/img-10.jpg"
-            alt=""
-          />
-        </div>
+        {data.map((frame) => (<ImageFrame id={frame.id} href={frame.href} img={frame.img[0]} key={frame.id}/>))}
       </div>
     </div>
   );
