@@ -175,7 +175,7 @@ const Navbar = () => {
               <div className="navbar-links w-1/2">
                 <ul>
                   <li>
-                    <a href="/home" id="home-l">
+                    <a href="/" id="home-l">
                       Home
                     </a>
                   </li>
