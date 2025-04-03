@@ -83,7 +83,7 @@ const CarouselComponent = () => {
                       href={category.href}
                       className="px-8 py-2 text-lg md:text-xl lg:text-2xl rounded-3xl border border-solid bg-transparent border-white text-white transition-all hover:bg-white hover:text-black"
                     >
-                      Checkout Portfolio
+                      View Portfolio
                     </a>
                   </button>
                 </div>
