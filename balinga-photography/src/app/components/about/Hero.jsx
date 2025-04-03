@@ -25,7 +25,7 @@ const Hero = () => {
             Let me capture the love in your eyes, and go beyond to uncover the
             raw beauty of your spirit.
           </p>
-          <Button text={"Let's connect"} />
+          <Button text={"Let's connect"} href={"/contact"} />
         </div>
       </div>
     </div>

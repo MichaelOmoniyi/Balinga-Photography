@@ -26,7 +26,7 @@ const Connect = () => {
         <h1 className="text-3xl font-bold">
           Exploring the depths of human emotion through the art of photography.
         </h1>
-        <Button text={"Let's Connect"} />
+        <Button text={"Let's Connect"} href={"/contact"} />
       </div>
     </div>
   );
