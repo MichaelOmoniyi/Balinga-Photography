@@ -30,7 +30,7 @@ const Frame = ({ href, img, title, subtitle }) => {
           <p className="text-base text-center mb-4 md:mb-6">{subtitle}</p>
           <button>
             <a
-              href={href}
+              href={`/client-area/gallery/${id}`}
               target="_blank"
               className="px-8 py-2 text-lg md:text-xl lg:text-2xl rounded-3xl border border-solid bg-transparent border-white text-white transition-all hover:bg-white hover:text-black"
             >

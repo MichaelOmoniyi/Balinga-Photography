@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-const Frame = ({ id, href, img }) => {
+const Frame = ({ id, img }) => {
   return (
-    <a href={href}>
+    <a href={`/client-area/gallery/${id}`}>
       <div className="frame scale-110 opacity-0">
         <Image
           width={500}
