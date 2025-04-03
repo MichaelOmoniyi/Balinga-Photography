@@ -2,6 +2,7 @@
 import React from "react";
 import useFrameFocus from "@/app/Hooks/useFrameFocus";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
+import Button from "../Button";
 
 const Porfolio = () => {
   useFrameFocus(".frame");
@@ -20,6 +21,10 @@ const Porfolio = () => {
               <h1 className="text-5xl font-bold">Wedding</h1>
               <p className="text-lg">Elegance and Romance</p>
             </div>
+            <Button
+              text={"View Portfolio"}
+              href={"/client-area/?category=wedding"}
+            />
           </div>
         </div>
         <div
@@ -29,9 +34,13 @@ const Porfolio = () => {
           <div className="relative flex flex-col w-full h-full justify-end items-center text-white pb-8">
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-0"></div>
             <div className="flex flex-col justify-center items-center gap-4 z-10">
-              <h1 className="text-5xl font-bold">Portraits</h1>
+              <h1 className="text-5xl font-bold">Birthdays</h1>
               <p className="text-lg">Confidence and Clarity</p>
             </div>
+            <Button
+              text={"View Portfolio"}
+              href={"/client-area/?category=birthday"}
+            />
           </div>
         </div>
       </div>
