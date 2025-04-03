@@ -22,10 +22,8 @@ const Hero = () => {
         </div>
         <div>
           <p className="transitionEffect scale-110 opacity-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            voluptas excepturi odio vero quos fuga, quo cumque dolores autem
-            alias. Sequi ipsum corrupti quis assumenda dolor sunt? Quas, aut
-            debitis.
+            Let me capture the love in your eyes, and go beyond to uncover the
+            raw beauty of your spirit.
           </p>
           <Button text={"Let's connect"} />
         </div>
