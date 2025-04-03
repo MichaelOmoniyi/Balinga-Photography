@@ -1,6 +1,6 @@
 const categories = {
   Highlight: {
-    id: 1,
+    id: 634721,
     title: "Balinga Photography",
     subtitle: "...making memories that lingers",
     href: "",
@@ -8,14 +8,14 @@ const categories = {
   },
   Wedding: [
     {
-      id: 1,
+      id: 823491,
       title: "A Day to Remember",
       subtitle: "A breathtaking wedding filled with joy and romance.",
       href: "",
       img: "portfolio/wedding/Creative-shoot.jpg",
     },
     {
-      id: 2,
+      id: 823492,
       title: "Eternal Vows",
       subtitle: "A love story sealed in a magical wedding ceremony.",
       href: "",
@@ -29,7 +29,7 @@ const categories = {
       ],
     },
     {
-      id: 3,
+      id: 823493,
       title: "A Day to Remember",
       subtitle: "A breathtaking wedding filled with joy and romance.",
       href: "",
@@ -46,7 +46,7 @@ const categories = {
   ],
   Birthday: [
     {
-      id: 1,
+      id: 905837,
       title: "Golden Jubilee Bash",
       subtitle: "A grand 50th birthday celebration filled with elegance.",
       href: "",
@@ -61,7 +61,7 @@ const categories = {
       ],
     },
     {
-      id: 2,
+      id: 905838,
       title: "Sweet 16 Glow",
       subtitle: "A glamorous Sweet 16 birthday party full of surprises.",
       href: "",
@@ -75,7 +75,7 @@ const categories = {
       ],
     },
     {
-      id: 3,
+      id: 905839,
       title: "Kids Carnival Party",
       subtitle: "A fun-packed birthday celebration for the little ones.",
       href: "",
@@ -89,7 +89,7 @@ const categories = {
       ],
     },
     {
-      id: 4,
+      id: 905840,
       title: "Luxury Birthday Dinner",
       subtitle: "A classy and intimate birthday gathering with loved ones.",
       href: "",
@@ -106,7 +106,7 @@ const categories = {
       ],
     },
     {
-      id: 5,
+      id: 905841,
       title: "Themed Costume Party",
       subtitle: "An exciting and creative birthday celebration with themes.",
       href: "",
@@ -117,7 +117,7 @@ const categories = {
       ],
     },
     {
-      id: 6,
+      id: 905842,
       title: "Outdoor Picnic Celebration",
       subtitle: "A fresh-air birthday bash under the open sky.",
       href: "",
@@ -135,7 +135,7 @@ const categories = {
       ],
     },
     {
-      id: 7,
+      id: 905843,
       title: "Surprise Birthday Party",
       subtitle: "An unexpected celebration with friends and family.",
       href: "",
@@ -146,7 +146,7 @@ const categories = {
       ],
     },
     {
-      id: 8,
+      id: 905844,
       title: "Celebrity-Style Birthday",
       subtitle: "A high-profile birthday event with an exclusive feel.",
       href: "",
@@ -162,7 +162,7 @@ const categories = {
       ],
     },
     {
-      id: 9,
+      id: 905845,
       title: "Game Night Birthday",
       subtitle: "A thrilling and competitive birthday celebration with games.",
       href: "",
@@ -177,7 +177,7 @@ const categories = {
       ],
     },
     {
-      id: 10,
+      id: 905846,
       title: "Beachfront Birthday Bliss",
       subtitle: "A cool and refreshing birthday celebration by the ocean.",
       href: "",
@@ -190,7 +190,7 @@ const categories = {
       ],
     },
     {
-      id: 11,
+      id: 905847,
       title: "Glow in the Dark Party",
       subtitle: "A neon-lit birthday celebration full of excitement.",
       href: "",
@@ -202,7 +202,7 @@ const categories = {
       ],
     },
     {
-      id: 12,
+      id: 905848,
       title: "Traditional Birthday Celebration",
       subtitle: "A cultural and heritage-rich birthday event.",
       href: "",
@@ -214,7 +214,7 @@ const categories = {
       ],
     },
     {
-      id: 13,
+      id: 905849,
       title: "Traditional Birthday Celebration",
       subtitle: "...",
       href: "",
@@ -227,7 +227,7 @@ const categories = {
   ],
   Convocation: [
     {
-      id: 1,
+      id: 758214,
       title: "Graduation Gala",
       subtitle: "A well-deserved celebration of academic achievements.",
       href: "",
@@ -241,7 +241,7 @@ const categories = {
       ],
     },
     {
-      id: 2,
+      id: 758215,
       title: "Class of Success",
       subtitle: "A convocation party filled with pride and excitement.",
       href: "",
@@ -260,7 +260,7 @@ const categories = {
   ],
   Family: [
     {
-      id: 1,
+      id: 382176,
       title: "Family Reunion Bliss",
       subtitle: "A heartwarming gathering with generations of love.",
       href: "",
@@ -280,7 +280,7 @@ const categories = {
       ],
     },
     {
-      id: 2,
+      id: 382177,
       title: "Thanksgiving Get-Together",
       subtitle: "A special moment of gratitude and bonding with family.",
       href: "",
@@ -298,7 +298,7 @@ const categories = {
   ],
   TraditionalWedding: [
     {
-      id: 1,
+      id: 719635,
       title: "Cultural Love Affair",
       subtitle: "A rich and colorful traditional wedding ceremony.",
       href: "",

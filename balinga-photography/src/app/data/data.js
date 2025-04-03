@@ -1,14 +1,13 @@
 const data = [
   {
-    id: 1,
+    id: 823491,
     title: "A Day to Remember",
     subtitle: "A breathtaking wedding filled with joy and romance.",
     img: ["portfolio/wedding/Creative-shoot.jpg"],
     tag: "wedding",
-    href: "",
   },
   {
-    id: 2,
+    id: 823492,
     title: "Eternal Vows",
     subtitle: "A love story sealed in a magical wedding ceremony.",
     img: [
@@ -20,10 +19,9 @@ const data = [
       "portfolio/wedding/2/IMG_2797.jpg",
     ],
     tag: "wedding",
-    href: "",
   },
   {
-    id: 3,
+    id: 823493,
     title: "A Day to Remember",
     subtitle: "...",
     img: [
@@ -36,10 +34,9 @@ const data = [
       "portfolio/wedding/1/IMG_2186.jpg",
     ],
     tag: "wedding",
-    href: "",
   },
   {
-    id: 4,
+    id: 905837,
     title: "Golden Jubilee Bash",
     subtitle: "A grand 50th birthday celebration filled with elegance.",
     img: [
@@ -52,10 +49,9 @@ const data = [
       "portfolio/birthday/1/Opeyemi-3.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 5,
+    id: 905838,
     title: "Sweet 16 Glow",
     subtitle: "A glamorous Sweet 16 birthday party full of surprises.",
     img: [
@@ -67,10 +63,9 @@ const data = [
       "portfolio/birthday/2/_F3A0108.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 6,
+    id: 905839,
     title: "Kids Carnival Party",
     subtitle: "A fun-packed birthday celebration for the little ones.",
     img: [
@@ -82,10 +77,9 @@ const data = [
       "portfolio/birthday/3/_F3A8650.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 7,
+    id: 905840,
     title: "Luxury Birthday Dinner",
     subtitle: "A classy and intimate birthday gathering with loved ones.",
     img: [
@@ -100,10 +94,9 @@ const data = [
       "portfolio/birthday/4/_MG_1918BW.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 8,
+    id: 905841,
     title: "Themed Costume Party",
     subtitle: "An exciting and creative birthday celebration with themes.",
     img: [
@@ -112,10 +105,9 @@ const data = [
       "portfolio/birthday/5/_MG_6952.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 9,
+    id: 905842,
     title: "Outdoor Picnic Celebration",
     subtitle: "A fresh-air birthday bash under the open sky.",
     img: [
@@ -131,10 +123,9 @@ const data = [
       "portfolio/birthday/6/_MG_9849.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 10,
+    id: 905843,
     title: "Surprise Birthday Party",
     subtitle: "An unexpected celebration with friends and family.",
     img: [
@@ -143,10 +134,9 @@ const data = [
       "portfolio/birthday/7/CF3A9452.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 11,
+    id: 905844,
     title: "Celebrity-Style Birthday",
     subtitle: "A high-profile birthday event with an exclusive feel.",
     img: [
@@ -160,10 +150,9 @@ const data = [
       "portfolio/birthday/8/CF3A9800.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 12,
+    id: 905845,
     title: "Game Night Birthday",
     subtitle: "A thrilling and competitive birthday celebration with games.",
     img: [
@@ -176,10 +165,9 @@ const data = [
       "portfolio/birthday/9/DSC_2298.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 13,
+    id: 905846,
     title: "Beachfront Birthday Bliss",
     subtitle: "A cool and refreshing birthday celebration by the ocean.",
     img: [
@@ -190,10 +178,9 @@ const data = [
       "portfolio/birthday/10/IMG_0113.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 14,
+    id: 905847,
     title: "Glow in the Dark Party",
     subtitle: "A neon-lit birthday celebration full of excitement.",
     img: [
@@ -203,10 +190,9 @@ const data = [
       "portfolio/birthday/11/IMG_0222.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 15,
+    id: 905848,
     title: "Traditional Birthday Celebration",
     subtitle: "A cultural and heritage-rich birthday event.",
     img: [
@@ -216,10 +202,9 @@ const data = [
       "portfolio/birthday/12/IMG_2508.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 16,
+    id: 905849,
     title: "Traditional Birthday Celebration",
     subtitle: "...",
     img: [
@@ -228,10 +213,9 @@ const data = [
       "portfolio/birthday/13/IMG_2598.jpg",
     ],
     tag: "birthday",
-    href: "",
   },
   {
-    id: 17,
+    id: 758214,
     title: "Graduation Gala",
     subtitle: "A well-deserved celebration of academic achievements.",
     img: [
@@ -243,10 +227,9 @@ const data = [
       "portfolio/convocation/1/_MG_0341.jpg",
     ],
     tag: "convocation",
-    href: "",
   },
   {
-    id: 18,
+    id: 758215,
     title: "Class of Success",
     subtitle: "A convocation party filled with pride and excitement.",
     img: [
@@ -261,10 +244,9 @@ const data = [
       "portfolio/convocation/2/_MG_9605.jpg",
     ],
     tag: "convocation",
-    href: "",
   },
   {
-    id: 19,
+    id: 382176,
     title: "Family Reunion Bliss",
     subtitle: "A heartwarming gathering with generations of love.",
     img: [
@@ -282,10 +264,9 @@ const data = [
       "portfolio/family/1/Mr-Clement-Family-Pics.jpg",
     ],
     tag: "family",
-    href: "",
   },
   {
-    id: 20,
+    id: 382177,
     title: "Thanksgiving Get-Together",
     subtitle: "A special moment of gratitude and bonding with family.",
     img: [
@@ -299,10 +280,9 @@ const data = [
       "portfolio/family/2/DSC_8907-BW.jpg",
     ],
     tag: "family",
-    href: "",
   },
   {
-    id: 21,
+    id: 719635,
     title: "Cultural Love Affair",
     subtitle: "A rich and colorful traditional wedding ceremony.",
     img: [
@@ -322,7 +302,6 @@ const data = [
       "portfolio/traditional-wedding/1/IMG_2665.jpg",
     ],
     tag: "traditionalWedding",
-    href: "",
   },
 ];
 
