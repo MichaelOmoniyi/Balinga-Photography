@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.frame:hover > .overlay {
+    transform: translateY(-100%);
+    opacity: 1;
+}
