@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Frame = ({ id, img }) => {
   return (
-    <a href={`/client-area/gallery/${id}`}>
+    <a href={`/client-area/gallery/${id}`} target="_blank">
       <div className="frame scale-110 opacity-0">
         <Image
           width={500}
