@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import categories from "@/app/data/categories";
+import Btn from "./Btn";
 
 const Highlight = categories.Highlight;
 const Wedding = categories.Wedding[1];
@@ -78,14 +79,15 @@ const CarouselComponent = () => {
                   <p className="text-base md:text-xl text-center mb-4 md:mb-6">
                     {category.subtitle}
                   </p>
-                  <button>
+                  {/* <button>
                     <a
                       href={category.href}
                       className="px-8 py-2 text-lg md:text-xl lg:text-2xl rounded-3xl border border-solid bg-transparent border-white text-white transition-all hover:bg-white hover:text-black"
                     >
                       View Portfolio
                     </a>
-                  </button>
+                  </button> */}
+                  <Btn text={"View Portfolio"} href={category.href} />
                 </div>
               </div>
             )}
