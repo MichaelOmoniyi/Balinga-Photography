@@ -64,7 +64,9 @@ const Hero = () => {
           <div className="overlay absolute h-full w-full top-0 left-0 bg-gray-900 opacity-60 z-10"></div>
           <div className="flex flex-col justify-center items-center gap-2 text-white z-20 px-9">
             <h1 className="text-5xl text-center">Balinga Photography</h1>
-            <p className="md:text-lg text-center">...creating memories that linger</p>
+            <p className="md:text-lg text-center">
+              ...creating memories that linger
+            </p>
           </div>
         </div>
 
