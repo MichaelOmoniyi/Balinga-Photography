@@ -35,7 +35,7 @@ const ImageCategories = ({ category }) => {
             </p>
           ) : (
             filteredData.map((frame) => (
-              <ImageFrame img={frame.img[0]} title={frame.title} subtitle={frame.subtitle} key={frame.id} />
+              <ImageFrame id={frame.id} img={frame.img[0]} title={frame.title} subtitle={frame.subtitle} key={frame.id} />
             ))
           )}
         </div>
