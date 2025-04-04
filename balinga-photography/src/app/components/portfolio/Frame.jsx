@@ -3,14 +3,14 @@ import Image from "next/image";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
 import useFrameFocus from "@/app/Hooks/useFrameFocus";
 
-const Frame = ({ href, img, title, subtitle }) => {
+const Frame = ({ id, img, title, subtitle }) => {
   useZoomEffect(".frame");
-  useFrameFocus(".frame")
+  useFrameFocus(".frameFocus");
   return (
-    <div className="frame h-auto scale-110 opacity-0 relative rounded-lg overflow-hidden">
+    <div className="frame frameFocus h-auto scale-110 opacity-0 relative rounded-lg overflow-hidden">
       <div
         className="bg-img absolute top-0 left-0 w-full h-full bg-center bg-cover blur-sm z-0"
-        style={{ backgroundColor: "red" }}
+        style={{ backgroundColor: "black" }}
       ></div>
       <Image
         width={500}
