@@ -12,7 +12,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "all"
-                  ? "border-gray-600 dark:border-gray-500"
+                  ? "border-red-950 dark:border-gray-500"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("all")}
