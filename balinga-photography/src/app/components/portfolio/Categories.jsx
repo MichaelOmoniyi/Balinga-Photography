@@ -12,7 +12,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "all"
-                  ? "border-red-950 dark:border-gray-500"
+                  ? "border-red-950 text-gray-400 dark:border-gray-500 dark:text-gray-300"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("all")}
@@ -22,7 +22,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "wedding"
-                  ? "border-gray-600 dark:border-gray-500"
+                  ? "border-red-950 text-gray-400 dark:border-gray-500 dark:text-gray-300"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("wedding")}
@@ -32,7 +32,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "traditionalWedding"
-                  ? "border-gray-600 dark:border-gray-500"
+                  ? "border-red-950 text-gray-400 dark:border-gray-500 dark:text-gray-300"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("traditionalWedding")}
@@ -42,7 +42,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "birthday"
-                  ? "border-gray-600 dark:border-gray-500"
+                  ? "border-red-950 text-gray-400 dark:border-gray-500 dark:text-gray-300"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("birthday")}
@@ -52,7 +52,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "convocation"
-                  ? "border-gray-600 dark:border-gray-500"
+                  ? "border-red-950 text-gray-400 dark:border-gray-500 dark:text-gray-300"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("convocation")}
@@ -62,7 +62,7 @@ const Categories = ({categoryType}) => {
             <span
               className={`${
                 category === "family"
-                  ? "border-gray-600 dark:border-gray-500"
+                  ? "border-red-950 text-gray-400 dark:border-gray-500 dark:text-gray-300"
                   : null
               } py-1 border-b-2 border-transparent hover:cursor-pointer flex items-center`}
               onClick={() => setCategory("family")}

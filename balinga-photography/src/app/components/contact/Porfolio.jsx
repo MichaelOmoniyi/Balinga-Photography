@@ -2,7 +2,7 @@
 import React from "react";
 import useFrameFocus from "@/app/Hooks/useFrameFocus";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
-import Button from "../Button";
+import Btn from "../Btn";
 
 const Porfolio = () => {
   useFrameFocus(".frame");
@@ -21,7 +21,7 @@ const Porfolio = () => {
               <h1 className="text-5xl font-bold">Wedding</h1>
               <p className="text-lg">Elegance and Romance</p>
             </div>
-            <Button
+            <Btn
               text={"View Portfolio"}
               href={"/client-area/?category=wedding"}
             />
@@ -37,7 +37,7 @@ const Porfolio = () => {
               <h1 className="text-5xl font-bold">Birthdays</h1>
               <p className="text-lg">Confidence and Clarity</p>
             </div>
-            <Button
+            <Btn
               text={"View Portfolio"}
               href={"/client-area/?category=birthday"}
             />
