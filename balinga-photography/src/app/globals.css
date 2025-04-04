@@ -180,7 +180,7 @@ section {
   left: 0;
   width: 100%;
   background-color: #000;
-  z-index: 1000;
+  z-index: 900;
 }
 
 .nav-display {
@@ -356,7 +356,7 @@ section {
 
   .navbar-lg {
     position: fixed;
-    z-index: 1000;
+    z-index: 900;
     top: 0;
     left: 0;
     font-family: "Playfair Display", serif;
