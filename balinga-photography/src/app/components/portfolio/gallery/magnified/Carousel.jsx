@@ -39,7 +39,7 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
   return (
     <div className="relative flex justify-center items-center h-full w-full">
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-black/50 hover:bg-white/80 dark:hover:bg-black/80"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-300/60 dark:bg-black/50 hover:bg-gray-300/80 dark:hover:bg-black/80"
         onClick={goPrev}
       >
         ❮
@@ -56,7 +56,7 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
       />
 
       <button
-        className="absolute top-1/2 right-2 lg:mr-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-black/50 hover:bg-white/80 dark:hover:bg-black/80"
+        className="absolute top-1/2 right-2 lg:mr-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-300/60 dark:bg-black/50 hover:bg-gray-300/80 dark:hover:bg-black/80"
         onClick={goNext}
       >
         ❯
