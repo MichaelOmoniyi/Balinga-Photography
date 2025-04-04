@@ -2,6 +2,7 @@
 import { React, useEffect } from "react";
 import useFadeIn from "@/app/Hooks/useFadeIn";
 import useFrameFocus from "@/app/Hooks/useFrameFocus";
+import Image from "next/image";
 
 const Photos = () => {
   useFadeIn(
@@ -16,7 +17,7 @@ const Photos = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 w-full" id="photo-1">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/905838" target="_blank" className="frame">
                 <div className="photo photo-1"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -29,7 +30,7 @@ const Photos = () => {
           </div>
           <div className="row lg:gap-4">
             <div className="col-sm-6" id="photo-2">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/905839" target="_blank" className="frame">
                 <div className="photo photo-2"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -42,7 +43,7 @@ const Photos = () => {
               </a>
             </div>
             <div className="col-sm-6" id="photo-3">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/905846" target="_blank" className="frame">
                 <div className="photo photo-3"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -57,7 +58,7 @@ const Photos = () => {
           </div>
           <div className="row">
             <div className="col-lg-12 w-full" id="photo-4">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/758214" target="_blank" className="frame">
                 <div className="photo photo-4"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -72,7 +73,7 @@ const Photos = () => {
           </div>
           <div className="row lg:gap-4">
             <div className="col-sm-6" id="photo-5">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/823493" target="_blank" className="frame">
                 <div className="photo photo-5"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -85,7 +86,7 @@ const Photos = () => {
               </a>
             </div>
             <div className="col-sm-6" id="photo-6">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/905840" target="_blank" className="frame">
                 <div className="photo photo-6"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -100,7 +101,7 @@ const Photos = () => {
           </div>
           <div className="row">
             <div className="col-lg-12 w-full" id="photo-7">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/758215" target="_blank" className="frame">
                 <div className="photo photo-7"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -115,7 +116,7 @@ const Photos = () => {
           </div>
           <div className="row lg:gap-4">
             <div className="col-sm-6" id="photo-8">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/905842" target="_blank" className="frame">
                 <div className="photo photo-8"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
@@ -126,7 +127,7 @@ const Photos = () => {
               </a>
             </div>
             <div className="col-sm-6" id="photo-9">
-              <a href="/" className="frame">
+              <a href="/client-area/gallery/382176" target="_blank" className="frame">
                 <div className="photo photo-9"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">J & S</h4>

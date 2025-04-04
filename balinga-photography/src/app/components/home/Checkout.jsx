@@ -6,6 +6,7 @@ import useFadeIn from '@/app/Hooks/useFadeIn';
 
 const Checkout = () => {
   useFadeIn(".check-out-link, .check-out-img");
+  const hrefArray = ["/client-area/"]
   const checkoutLinksRef = useRef([]);
   const checkoutImagesRef = useRef([]);
 
@@ -47,7 +48,7 @@ const Checkout = () => {
             <div className="col-sm-6">
               {["Portfolio", "Experience", "Pricing"].map((title, index) => (
                 <div key={index}>
-                  <Link href="/" legacyBehavior>
+                  <Link href={`${hrefArray[index]}`} legacyBehavior>
                     <a
                       ref={(el) => (checkoutLinksRef.current[index] = el)}
                       className="check-out-link hover:text-gray-400"
