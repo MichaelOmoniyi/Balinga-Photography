@@ -87,7 +87,10 @@ const CarouselComponent = () => {
                       View Portfolio
                     </a>
                   </button> */}
-                  <Btn text={"View Portfolio"} href={category.href} />
+                  <Btn
+                    text={"View Portfolio"}
+                    href={`/client-area/gallery/${category.id}`}
+                  />
                 </div>
               </div>
             )}
