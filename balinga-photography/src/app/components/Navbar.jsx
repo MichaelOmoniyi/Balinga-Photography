@@ -99,7 +99,7 @@ const Navbar = () => {
                 <img
                   src="images/Balinga-Photogrphy-png-1.png"
                   className="w-56 h-auto"
-                  alt="Daniel home"
+                  alt="Balinga Photography"
                 />
                 {/* <h1 className="h1">Balinga Photography</h1> */}
               </a>
@@ -195,7 +195,7 @@ const Navbar = () => {
                 <img
                   src="images/Balinga-Photogrphy-png-1.png"
                   className="w-56 h-auto"
-                  alt="Daniel home"
+                  alt="Balinga Photography"
                 />
               </a>
               <div className="navbar-links w-1/2">
