@@ -1,63 +1,43 @@
 const data = [
   {
-    id: 1,
+    id: 905844,
     img: ["/images/mini-portfolio/img-1.jpg"],
-    tag: "wedding",
-    href: "",
   },
   {
-    id: 2,
+    id: 905840,
     img: ["/images/mini-portfolio/img-2.jpg"],
-    tag: "wedding",
-    href: "",
   },
   {
-    id: 3,
+    id: 823491,
     img: ["/images/mini-portfolio/img-3.jpg"],
-    tag: "wedding",
-    href: "",
   },
   {
-    id: 4,
+    id: 905842,
     img: ["/images/mini-portfolio/img-4.jpg"],
-    tag: "birthday",
-    href: "",
   },
   {
-    id: 5,
+    id: 905839,
     img: ["/images/mini-portfolio/img-5.jpg"],
-    tag: "birthday",
-    href: "",
   },
   {
-    id: 6,
+    id: 382176,
     img: ["/images/mini-portfolio/img-6.jpg"],
-    tag: "birthday",
-    href: "",
   },
   {
-    id: 7,
+    id: 905841,
     img: ["/images/mini-portfolio/img-7.jpg"],
-    tag: "birthday",
-    href: "",
   },
   {
-    id: 8,
+    id: 758215,
     img: ["/images/mini-portfolio/img-8.jpg"],
-    tag: "birthday",
-    href: "",
   },
   {
-    id: 9,
+    id: 823492,
     img: ["/images/mini-portfolio/img-9.jpg"],
-    tag: "birthday",
-    href: "",
   },
   {
-    id: 9,
+    id: 905845,
     img: ["/images/mini-portfolio/img-10.jpg"],
-    tag: "birthday",
-    href: "",
   },
 ];
 
