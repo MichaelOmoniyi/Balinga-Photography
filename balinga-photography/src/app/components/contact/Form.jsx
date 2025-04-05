@@ -2,6 +2,8 @@
 import { React, useState } from "react";
 import emailjs from "@emailjs/browser";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Form = () => {
   useZoomEffect(".transitionEffect");
@@ -167,6 +169,14 @@ const Form = () => {
               onChange={handleChange}
               required
             />
+            {/* <DatePicker
+              selected={formData.eventDate}
+              name="eventDate"
+              onChange={handleChange}
+              className="relative w-full border border-solid border-gray-600 rounded-md px-4 py-2 mb-2 text-gray-600 bg-slate-50 transition-all  focus:outline-none focus:border-2 focus:border-gray-800 z-50"
+              dateFormat="dd-MM-yyyy"
+              placeholderText="Select Date"
+            /> */}
           </div>
 
           <div className="md:flex md:gap-6 md:justify-between">
