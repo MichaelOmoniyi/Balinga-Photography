@@ -97,7 +97,7 @@ const Navbar = () => {
               </div>
               <a href="/" className="navbar-brand">
                 <img
-                  src="images/Balinga-Photogrphy-png-1.png"
+                  src="/images/Balinga-Photogrphy-png-1.png"
                   className="w-56 h-auto"
                   alt="Balinga Photography"
                 />
@@ -193,7 +193,7 @@ const Navbar = () => {
               </div>
               <a href="/">
                 <img
-                  src="images/Balinga-Photogrphy-png-1.png"
+                  src="/images/Balinga-Photogrphy-png-1.png"
                   className="w-56 h-auto"
                   alt="Balinga Photography"
                 />
