@@ -1,12 +1,9 @@
-// import Hero from "@/app/components/home/Hero";
-// import About from "@/app/components/home/About";
-// import Quote from "@/app/components/home/Quote";
-// import Photos from "@/app/components/home/Photos";
-// import Checkout from "@/app/components/home/Checkout";
-// import Connect from "@/app/components/home/Connect";
-// import Highlight from "@/app/components/home/Highlight";
+export const metadata = {
+  title: "Balinga Photography",
+  description: "Capturing your best moments",
+};
+
 import dynamic from "next/dynamic";
-import Head from "next/head";
 
 const Hero = dynamic(() => import("@/app/components/home/Hero"), {
   loading: () => (
@@ -74,10 +71,6 @@ const Highlight = dynamic(() => import("@/app/components/home/Highlight"), {
 export default function Home() {
   return (
     <>
-      <head>
-        <title>Balinga Photography</title>
-        <meta name="description" content="Capturing your best moments" />
-      </head>
       <Hero />
       <About />
       <Quote />

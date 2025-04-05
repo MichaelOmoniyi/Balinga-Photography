@@ -1,22 +1,29 @@
 "use client";
-import React, { useEffect } from "react";
-import Head from "next/head";
-import Main from "../components/portfolio/Main";
+import React, { useState, useEffect } from "react";
 import "../components/portfolio/style.css";
 import { useSearchParams } from "next/navigation";
+import dynamic from "next/dynamic";
+
+const Main = dynamic(() => import("../components/portfolio/Main"), {
+  loading: () => (
+    <div className="w-full p-4 flex justify-center items-center">
+      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false,
+});
 
 const Page = () => {
   const searchParams = useSearchParams();
   const category = searchParams.get("category");
 
-  useEffect(() => console.log(category), []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    document.title = "Check out our Projects - Balinga Photography";
+  });
 
   return (
     <>
-      <head>
-        <title>Check out our Projects - Balinga Photography</title>
-        <meta name="description" content="Capturing your best moments" />
-      </head>
       <Main category={category ? category : "all"} />
     </>
   );

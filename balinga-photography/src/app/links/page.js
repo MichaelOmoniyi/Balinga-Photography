@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Links from "../components/linksPage/Links";
 import "../components/linksPage/style.css"
 
