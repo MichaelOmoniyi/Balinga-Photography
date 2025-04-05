@@ -15,7 +15,7 @@ const Links = () => {
         <div className="bg-darken w-full h-full bg-black opacity-45"></div>
       </div>
       <main>
-        <div className="profile w-full relative z-10 flex flex-col justify-center items-center text-white pt-14">
+        <div className="profile w-full relative z-10 flex flex-col justify-center items-center text-white pt-28">
           <div className="profileImg w-28 h-28 rounded-full bg-slate-50 dark:bg-gray-700 mb-4 lg:mb-10"></div>
           <h1 className="text-3xl mb-1 lg:mb-3">Balinga</h1>
           <p>Photographer & Creator</p>
