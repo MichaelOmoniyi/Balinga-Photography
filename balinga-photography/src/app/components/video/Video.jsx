@@ -1,4 +1,15 @@
 import React from "react";
+import dynamic from "next/dynamic";
+
+// Lazy load components
+const VideoFrame = dynamic(() => import("./VideoFrame"), {
+  loading: () => (
+    <div className="w-full p-4 flex justify-center items-center">
+      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false,
+});
 
 const Video = () => {
   return (
@@ -11,18 +22,7 @@ const Video = () => {
           Best Videogarphy Team in Nigeria
         </p>
       </div>
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/lCAeRuVuCrM?si=x-xpIAcMkjf13ee_"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <VideoFrame />
     </div>
   );
 };
