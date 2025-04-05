@@ -19,10 +19,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <head>
-        <title>Balinga Photography</title>
-        <meta name="description" content="Capturing your best moments" />
-      </head>
       <body className="bg-slate-50 dark:bg-black">
         {loading ? (
           <div className="fixed top-0 left-0 w-screen h-screen bg-white flex justify-center items-center">

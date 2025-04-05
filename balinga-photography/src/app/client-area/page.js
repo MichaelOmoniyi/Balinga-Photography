@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Head from "next/head";
 import Main from "../components/portfolio/Main";
 import "../components/portfolio/style.css";
 import { useSearchParams } from "next/navigation";
@@ -11,9 +12,13 @@ const Page = () => {
   useEffect(() => console.log(category), []);
 
   return (
-    <div>
+    <>
+      <head>
+        <title>Check out our Projects - Balinga Photography</title>
+        <meta name="description" content="Capturing your best moments" />
+      </head>
       <Main category={category ? category : "all"} />
-    </div>
+    </>
   );
 };
 

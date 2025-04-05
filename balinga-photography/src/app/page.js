@@ -6,6 +6,7 @@
 // import Connect from "@/app/components/home/Connect";
 // import Highlight from "@/app/components/home/Highlight";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const Hero = dynamic(() => import("@/app/components/home/Hero"), {
   loading: () => (
@@ -72,7 +73,11 @@ const Highlight = dynamic(() => import("@/app/components/home/Highlight"), {
 
 export default function Home() {
   return (
-    <div >
+    <>
+      <head>
+        <title>Balinga Photography</title>
+        <meta name="description" content="Capturing your best moments" />
+      </head>
       <Hero />
       <About />
       <Quote />
@@ -80,6 +85,6 @@ export default function Home() {
       <Checkout />
       <Connect />
       <Highlight />
-    </div>
+    </>
   );
 }
