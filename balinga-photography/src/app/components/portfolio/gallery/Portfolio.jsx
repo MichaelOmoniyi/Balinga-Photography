@@ -26,6 +26,23 @@ const Gallery = dynamic(() => import("./Gallery"), {
   ),
   ssr: false,
 });
+const Contact = dynamic(() => import("@/app/components/contact/Form"), {
+  loading: () => (
+    <div className="w-full p-4 flex justify-center items-center">
+      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false,
+});
+const Highlight = dynamic(() => import("@/app/components/Highlight"), {
+  loading: () => (
+    <div className="w-full p-4 flex justify-center items-center">
+      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false,
+});
+
 
 
 const Portfolio = ({ id }) => {
@@ -54,6 +71,8 @@ const Portfolio = ({ id }) => {
         <Header filteredData={filteredData} />
         <Gallery images={shuffledImg} title={filteredData[0]?.title} />
       </div>
+      <div className="p-6 py-3 md:p-10 md:py-5 bg-slate-50/90"><Contact /></div>
+      <div className="p-6 py-3 md:p-10 md:py-5"><Highlight /></div>
     </div>
   );
 };

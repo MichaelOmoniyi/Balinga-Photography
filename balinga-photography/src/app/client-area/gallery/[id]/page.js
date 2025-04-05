@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Portfolio from "@/app/components/portfolio/gallery/Portfolio";
 import "../../../components/portfolio/style.css";
+import "../../../components/contact/style.css";
 import data from "@/app/data/data";
 
 const Page = () => {
