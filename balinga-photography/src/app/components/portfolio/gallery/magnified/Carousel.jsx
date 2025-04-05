@@ -3,14 +3,20 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const CarouselGallery = ({ images, colIndex, currentIndex }) => {
-  const totalCol = images.length; // Total number of columns
+  const totalCol = images.length;
+
+  // Instead of initializing state with props, update them directly when props change
   const [currentCol, setCurrentCol] = useState(colIndex);
   const [currentSlide, setCurrentSlide] = useState(currentIndex);
 
+  // Ensure state updates when props change
+  useEffect(() => {
+    setCurrentCol(colIndex);
+    setCurrentSlide(currentIndex);
+  }, [colIndex, currentIndex]); // <- Dependency array ensures re-render when props change
+
   useEffect(() => {
     console.log("Carousel-Current Slide:", currentSlide);
-    setCurrentCol(colIndex);
-    setCurrentSlide(currentIndex)
     console.log("Carousel-Current col:", currentCol);
   }, [currentSlide, currentCol]);
 
@@ -19,7 +25,7 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
       const newSlide = prev + 1;
       if (newSlide >= images[currentCol].length) {
         setCurrentCol((prevCol) => (prevCol + 1) % totalCol);
-        return 0; // Move to first slide of the next column
+        return 0;
       }
       return newSlide;
     });
@@ -29,8 +35,10 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
     setCurrentSlide((prev) => {
       const newSlide = prev - 1;
       if (newSlide < 0) {
-        setCurrentCol((prevCol) => (prevCol === 0 ? totalCol - 1 : prevCol - 1));
-        return images[(currentCol - 1 + totalCol) % totalCol].length - 1; // Move to last slide of the previous column
+        setCurrentCol((prevCol) =>
+          prevCol === 0 ? totalCol - 1 : prevCol - 1
+        );
+        return images[(currentCol - 1 + totalCol) % totalCol].length - 1;
       }
       return newSlide;
     });
@@ -39,7 +47,7 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
   return (
     <div className="relative flex justify-center items-center h-full w-full">
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-300/60 dark:bg-black/50 hover:bg-gray-300/80 dark:hover:bg-black/80"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-black/50 hover:bg-white/80 dark:hover:bg-black/80"
         onClick={goPrev}
       >
         ❮
@@ -56,13 +64,12 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
       />
 
       <button
-        className="absolute top-1/2 right-2 lg:mr-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-300/60 dark:bg-black/50 hover:bg-gray-300/80 dark:hover:bg-black/80"
+        className="absolute top-1/2 right-2 lg:mr-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-black/50 hover:bg-white/80 dark:hover:bg-black/80"
         onClick={goNext}
       >
         ❯
       </button>
 
-      {/* Slide Indicators */}
       <div className="absolute bottom-4 flex space-x-2">
         {images[currentCol].map((_, index) => (
           <span
