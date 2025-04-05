@@ -42,7 +42,7 @@ const data = [
     img: [
       "portfolio/birthday/1/IG3.jpg",
       "portfolio/birthday/1/IG4.jpg",
-      "portfolio/birthday/1/IG8.jpg",
+      "portfolio/birthday/1/IG-8.jpg",
       "portfolio/birthday/1/OPE_IG.jpg",
       "portfolio/birthday/1/Ope1.jpg",
       "portfolio/birthday/1/Opeyemi-2.jpg",
