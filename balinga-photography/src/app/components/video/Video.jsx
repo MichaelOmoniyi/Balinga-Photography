@@ -13,7 +13,7 @@ const VideoFrame = dynamic(() => import("./VideoFrame"), {
 
 const Video = () => {
   return (
-    <div className="wrapper dark:bg-black">
+    <div className="wrapper dark:bg-black pb-20">
       <div className="flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 py-20">
         <h1 className="text-gray-600 dark:text-gray-200 text-5xl text-center">
           Event Videography, capturing one frame at a time.
