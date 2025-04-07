@@ -72,7 +72,7 @@ const Portfolio = ({ id }) => {
         <Gallery images={shuffledImg} title={filteredData[0]?.title} />
       </div>
       <div className="p-6 py-3 md:p-10 md:py-5 bg-slate-50/90"><Contact /></div>
-      <div className="p-6 py-3 md:p-10 md:py-5"><Highlight /></div>
+      <div className="p-6 py-3 md:p-10 md:py-5 md:pb-0"><Highlight /></div>
     </div>
   );
 };
