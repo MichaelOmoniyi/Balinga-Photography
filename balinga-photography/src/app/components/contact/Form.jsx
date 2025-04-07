@@ -70,7 +70,7 @@ const Form = () => {
 
   return (
     <div className="py-8">
-      <div className="form-container bg-white shadow-lg py-8 px-8 md:px-12 rounded-md">
+      <div className="form-container bg-white shadow-2xl py-8 px-8 md:px-12 rounded-md">
         <form action="#" method="POST" onSubmit={handleSubmit}>
           <div className="transitionEffect scale-110 opacity-0">
             <label htmlFor="name">
