@@ -38,7 +38,7 @@ const Main = ({
         <h1 className="font-bold text-xl">{title}</h1>
         {/* Close Button */}
         <button
-          className="absolute top-5 right-5 text-gray-600 dark:text-gray-200 text-2xl"
+          className="absolute top-5 right-5 text-gray-400 dark:text-gray-200 text-2xl"
           onClick={handleCloseCarouselGallery}
         >
           <X size={32} />
