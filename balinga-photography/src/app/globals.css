@@ -114,7 +114,8 @@ body {
   text-align: center;
 }
 
-.navbar-links li a {
+.navbar-links li a,
+.navbar-links li button {
   width: 100%;
   font-family: "Playfair Display", serif;
   text-decoration: none;
@@ -122,29 +123,32 @@ body {
   color: #969696;
 }
 
-.navbar-links li a::after {
+.navbar-links li a::after,
+.navbar-links li button::after {
   content: "";
   opacity: 0;
-  transition: opacity .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.navbar-links li:hover > a::after {
-  width: .5rem;
+.navbar-links li:hover > a::after,
+.navbar-links li:hover > button::after {
+  width: 0.5rem;
   background-color: #969696;
-  height: .5rem;
+  height: 0.5rem;
   border-radius: 999px;
   /* position: relative; */
   position: absolute;
   opacity: 1;
-  margin-left: .5rem;
-  margin-top: .5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
   /* display: flex;
   margin-left: 47%;
   opacity: 1; */
   /* margin-right: 47%; */
 }
 
-.navbar-links li a:active {
+.navbar-links li a:active,
+.navbar-links li button:active {
   color: #434343;
 }
 
@@ -315,7 +319,7 @@ section {
 .nav-toggler-icon-extend::before {
   content: "";
   display: block;
-  background-color: #000;
+  background-color: #969696;
   width: 100%;
   height: 2px;
   position: absolute;
@@ -349,6 +353,10 @@ section {
   top: 0;
 }
 
+.navbar-extend .dropdown {
+  gap: 1rem;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-mobile {
     display: none;
@@ -375,13 +383,33 @@ section {
     margin-bottom: auto;
   }
 
-  .navbar-links li a {
+  .navbar-links li a,
+  .navbar-links li button {
     color: #fff;
     font-family: "Playfair Display", serif;
   }
 
-  .navbar-links li:hover > a::after {
+  .navbar-links li:hover > a::after,
+  .navbar-links li:hover > button::after {
     color: #fff;
+  }
+
+  .navbar-links .dropdown-lg {
+    display: flex !important;
+    flex-direction: column !important;
+    width: auto;
+    height: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-links .dropdown-lg li,
+  .navbar-links .dropdown-lg li a {
+    width: 100%;
+    color: #969696;
+  }
+
+  .navbar-links .dropdown-lg li a:hover {
+    color: #434343;
   }
 }
 
@@ -1315,17 +1343,16 @@ footer .footer-links {
 .zoomEffect {
   scale: 90%;
   opacity: 1;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 /* Component wrapper defining top margin due to navbar position */
 .wrapper {
-    margin-top: 5.5rem;
+  margin-top: 5.5rem;
 }
 
 /* Carousel styles */
-.carousel-wrapper
-{
+.carousel-wrapper {
   margin-top: 5.5rem;
   width: 100%;
   height: 80vh;
