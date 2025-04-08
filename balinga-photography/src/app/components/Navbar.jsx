@@ -15,7 +15,7 @@ const Navbar = () => {
   // Handles active link styling based on current page
   useEffect(() => {
     const navbarLinks = document.querySelectorAll(
-      "#home, #about, #info, #galleries, #blog, #contact, #videos, #home-l, #about-l, #info-l, #galleries-l, #blog-l, #contact-l, #videos-l"
+      "#home, #about, #info, #galleries, #blog, #contact, #videos, #pricing, #testimonials, #experience, #home-l, #about-l, #info-l, #galleries-l, #blog-l, #contact-l, #videos-l, #pricing-l, #testimonials-l, #experince-l"
     );
     navbarLinks.forEach((link) => {
       if (link.getAttribute("href") === "/") {
@@ -152,13 +152,13 @@ const Navbar = () => {
                     {showInfoDropdown && (
                       <ul className="dropdown ml-4 mt-2">
                         <li>
-                          <a href="/pricing">Pricing</a>
+                          <a href="/pricing" id="pricing">Pricing</a>
                         </li>
                         <li>
-                          <a href="/testimonials">Testimonials</a>
+                          <a href="/testimonials" id="testimonials">Testimonials</a>
                         </li>
                         <li>
-                          <a href="/experience">Experience</a>
+                          <a href="/experience" id="experience">Experience</a>
                         </li>
                       </ul>
                     )}
@@ -226,13 +226,13 @@ const Navbar = () => {
                         onMouseLeave={() => setShowInfoDropdown(false)}
                       >
                         <li>
-                          <a href="/pricing">Pricing</a>
+                          <a href="/pricing" id="pricing-l">Pricing</a>
                         </li>
                         <li>
-                          <a href="/testimonials">Testimonials</a>
+                          <a href="/testimonials" id="testimonials-l">Testimonials</a>
                         </li>
                         <li>
-                          <a href="/experience">Experience</a>
+                          <a href="/experience" id="experience-l">Experience</a>
                         </li>
                       </ul>
                     )}
