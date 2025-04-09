@@ -1369,3 +1369,64 @@ footer .footer-links {
     height: 80vh;
   }
 }
+
+/* Padding styles for diffrent setions across various pages ensuring consistency */
+.section {
+  padding-inline: 1rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .section {
+    padding-inline: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-inline: 3rem;
+    margin-top: 4rem;
+  }
+}
+
+.sectionFirst {
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .sectionFirst {
+    padding-inline: 2rem;
+    padding-block: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionFirst {
+    padding-inline: 3rem;
+    padding-block: 4rem;
+  }
+}
+
+.sectionEnclosed {
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .sectionEnclosed {
+    padding-inline: 2rem;
+    padding-block: 4rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionEnclosed {
+    padding-inline: 3rem;
+    padding-block: 4rem;
+    margin-top: 4rem;
+  }
+}
