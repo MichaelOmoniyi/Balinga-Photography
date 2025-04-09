@@ -1,12 +1,6 @@
 "use client";
 import React from "react";
-import Marquee from "./Marquee";
-// import Hero from "./Hero";
-// import Story from "./Story";
-// import Form from "../contact/Form";
-// import Gallery from "./Gallery";
-// import Info from "./Info";
-// import Highlight from "../Highlight";
+import Marquee from "../Marquee";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
 import dynamic from "next/dynamic";
 
