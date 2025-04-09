@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Frame from "./Frame";
 import Main from "./magnified/Main";
 
@@ -12,7 +11,6 @@ const Gallery = ({ images, title }) => {
     setIsOpen(false);
   };
 
-  // Handles navbar dropdown/display
     useEffect(() => {
       if (isOpen) {
         document.body.style.overflow = "hidden";
@@ -44,8 +42,6 @@ const Gallery = ({ images, title }) => {
                   setCurrentIndex(imgIndex);
                   setColIndex(colIndex)
                   setIsOpen(true);
-                  console.log("Clicked-imgIndex: ", imgIndex)
-                  console.log("Clicke-colIndex: ", colIndex)
                 }}
               >
                 <Frame imgIndex={imgIndex} img={img} />
