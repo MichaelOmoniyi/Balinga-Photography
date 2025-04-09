@@ -38,12 +38,12 @@ const Navbar = () => {
       }
 
       if (galleryPattern.test(pathname)) {
-        navbarLinks[2].classList.add("active");
+        navbarLinks[3].classList.add("active");
         navbarLinks[10].classList.add("active-ls");
       }
 
       if (infoPattern.test(pathname)) {
-        navbarLinks[3].classList.add("active");
+        navbarLinks[2].classList.add("active");
         navbarLinks[9].classList.add("active-ls");
       }
     });
