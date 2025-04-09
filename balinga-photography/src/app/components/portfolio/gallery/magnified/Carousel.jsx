@@ -15,33 +15,30 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
     setCurrentSlide(currentIndex);
   }, [colIndex, currentIndex]); // <- Dependency array ensures re-render when props change
 
-  useEffect(() => {
-    console.log("Carousel-Current Slide:", currentSlide);
-    console.log("Carousel-Current col:", currentCol);
-  }, [currentSlide, currentCol]);
-
   const goNext = () => {
-    setCurrentSlide((prev) => {
-      const newSlide = prev + 1;
-      if (newSlide >= images[currentCol].length) {
-        setCurrentCol((prevCol) => (prevCol + 1) % totalCol);
-        return 0;
-      }
-      return newSlide;
-    });
+    const nextSlide = currentSlide + 1;
+    const slidesInCurrent = images[currentCol].length;
+
+    if (nextSlide >= slidesInCurrent) {
+      const nextCol = (currentCol + 1) % totalCol;
+      setCurrentCol(nextCol);
+      setCurrentSlide(0);
+    } else {
+      setCurrentSlide(nextSlide);
+    }
   };
 
   const goPrev = () => {
-    setCurrentSlide((prev) => {
-      const newSlide = prev - 1;
-      if (newSlide < 0) {
-        setCurrentCol((prevCol) =>
-          prevCol === 0 ? totalCol - 1 : prevCol - 1
-        );
-        return images[(currentCol - 1 + totalCol) % totalCol].length - 1;
-      }
-      return newSlide;
-    });
+    const prevSlide = currentSlide - 1;
+
+    if (prevSlide < 0) {
+      const prevCol = (currentCol - 1 + totalCol) % totalCol;
+      const lastSlide = images[prevCol].length - 1;
+      setCurrentCol(prevCol);
+      setCurrentSlide(lastSlide);
+    } else {
+      setCurrentSlide(prevSlide);
+    }
   };
 
   return (
@@ -59,7 +56,7 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
         quality={100}
         unoptimized
         className="max-h-full w-auto"
-        src={`/images/${images[currentCol][currentSlide]}`}
+        src={`/images/${images[currentCol]?.[currentSlide] || images[0][0]}`}
         alt={`Gallery Image ${currentSlide + 1}`}
       />
 
