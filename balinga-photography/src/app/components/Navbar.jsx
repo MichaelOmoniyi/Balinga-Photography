@@ -15,7 +15,7 @@ const Navbar = () => {
   // Handles active link styling based on current page
   useEffect(() => {
     const navbarLinks = document.querySelectorAll(
-      "#home, #about, #info, #galleries, #blog, #contact, #videos, #pricing, #testimonials, #experience, #home-l, #about-l, #info-l, #galleries-l, #blog-l, #contact-l, #videos-l, #pricing-l, #testimonials-l, #experince-l"
+      "#home, #about, #galleries, #blog, #contact, #videos, #pricing, #testimonials, #experience, #home-l, #about-l, #galleries-l, #blog-l, #contact-l, #videos-l, #pricing-l, #testimonials-l, #experince-l"
     );
     navbarLinks.forEach((link) => {
       if (link.getAttribute("href") === "/") {
@@ -38,13 +38,22 @@ const Navbar = () => {
       }
 
       if (galleryPattern.test(pathname)) {
-        navbarLinks[3].classList.add("active");
-        navbarLinks[10].classList.add("active-ls");
+        navbarLinks.forEach((link) => {
+          if (link.getAttribute("href") === "/client-area") {
+            if (link.id.slice(-2) === "-l") {
+              link.classList.add("active-ls");
+            } else {
+              link.classList.add("active");
+            }
+          } else {
+            link.classList.remove("active");
+            link.classList.remove("active-ls");
+          }
+        });
       }
 
       if (infoPattern.test(pathname)) {
-        navbarLinks[2].classList.add("active");
-        navbarLinks[9].classList.add("active-ls");
+        document.querySelectorAll(".info").forEach((element) => {element.classList.add("active")})
       }
     });
 
@@ -81,7 +90,7 @@ const Navbar = () => {
         <nav>
           {/* MOBILE NAV */}
           <div
-            className={`navbar-mobile transition-transform duration-1000 ${
+            className={`navbar-mobile bg-black transition-transform duration-1000 ${
               isVisible ? "translate-y-0" : "-translate-y-24"
             }`}
           >
@@ -96,7 +105,7 @@ const Navbar = () => {
                   className="navbar-input"
                 />
                 <label htmlFor="nav-btn" className="nav-label">
-                  <span className="nav-toggler-icon" id="hamburger"></span>
+                  <span className="nav-toggler-icon bg-gray-200 after:bg-gray-200 before:bg-gray-200" id="hamburger"></span>
                 </label>
               </div>
               <a href="/" className="navbar-brand">
@@ -109,7 +118,7 @@ const Navbar = () => {
             </div>
 
             <div
-              className={`navbar-extend md:px-10 ${isOpen ? "show" : "hidden"}`}
+              className={`navbar-extend bg-white dark:bg-gray-950 md:px-10 ${isOpen ? "show" : "hidden"}`}
               id="navbar-extend"
             >
               <div className="nav-toggler">
@@ -123,7 +132,7 @@ const Navbar = () => {
                 />
                 <label htmlFor="nav-btn-extend" className="nav-label-extend">
                   <span
-                    className="nav-toggler-icon-extend"
+                    className="nav-toggler-icon-extend text-gray-200 after:bg-gray-200 before:bg-gray-200"
                     id="hamburger"
                   ></span>
                 </label>
@@ -132,54 +141,59 @@ const Navbar = () => {
               <div className="navbar-links md:text-xl">
                 <ul>
                   <li>
-                    <a id="home" href="/">
+                    <a id="home" href="/" className="text-gray-200">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a id="about" href="/about">
+                    <a id="about" href="/about" className="text-gray-200">
                       About
                     </a>
                   </li>
                   <li className="relative">
                     <button
                       onClick={() => setShowInfoDropdown((prev) => !prev)}
-                      id="info"
-                      className="w-full"
+                      className="info w-full text-gray-200"
                     >
                       Info
                     </button>
                     {showInfoDropdown && (
                       <ul className="dropdown ml-4 mt-2">
                         <li>
-                          <a href="/pricing" id="pricing">Pricing</a>
+                          <a href="/pricing" id="pricing">
+                            Pricing
+                          </a>
                         </li>
                         <li>
-                          <a href="/testimonials" id="testimonials">Testimonials</a>
+                          <a href="/testimonials" id="testimonials">
+                            Testimonials
+                          </a>
                         </li>
                         <li>
-                          <a href="/experience" id="experience">Experience</a>
+                          <a href="/experience" id="experience">
+                            Experience
+                          </a>
                         </li>
                       </ul>
                     )}
                   </li>
                   <li>
-                    <a id="galleries" href="/client-area">
+                    <a id="galleries" href="/client-area" className="text-gray-200">
                       Galleries
                     </a>
                   </li>
                   <li>
-                    <a id="blog" href="/blog">
+                    <a id="blog" href="/blog" className="text-gray-200">
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a id="contact" href="/contact">
+                    <a id="contact" href="/contact" className="text-gray-200">
                       Contact
                     </a>
                   </li>
                   <li>
-                    <a id="videos" href="/videos">
+                    <a id="videos" href="/videos" className="text-gray-200">
                       Videos
                     </a>
                   </li>
@@ -190,7 +204,7 @@ const Navbar = () => {
 
           {/* LARGE SCREEN NAV */}
           <div
-            className={`navbar-lg transition-transform duration-1000 ${
+            className={`navbar-lg bg-black transition-transform duration-1000 ${
               isVisible ? "translate-y-0" : "-translate-y-24"
             }`}
           >
@@ -198,12 +212,12 @@ const Navbar = () => {
               <div className="navbar-links w-1/2">
                 <ul className="flex gap-4">
                   <li>
-                    <a href="/" id="home-l">
+                    <a href="/" id="home-l" className="text-gray-200">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/about" id="about-l">
+                    <a href="/about" id="about-l" className="text-gray-200">
                       About
                     </a>
                   </li>
@@ -213,28 +227,47 @@ const Navbar = () => {
                     onMouseLeave={() => setShowInfoDropdown(false)}
                   >
                     <button
-                      id="info-l"
-                      className="focus:outline-none"
+                      className="info focus:outline-none text-gray-200"
                       onClick={(e) => e.preventDefault()} // prevent accidental clicks
                     >
                       Info
                     </button>
                     {showInfoDropdown && (
-                      <ul
-                        className="dropdown-lg absolute top-full left-0 bg-white shadow-xl rounded-sm space-y-1"
+                      <div
+                        className="dropdown-lg absolute top-full left-0 pt-9"
                         onMouseEnter={() => setShowInfoDropdown(true)}
                         onMouseLeave={() => setShowInfoDropdown(false)}
                       >
-                        <li>
-                          <a href="/pricing" id="pricing-l">Pricing</a>
-                        </li>
-                        <li>
-                          <a href="/testimonials" id="testimonials-l">Testimonials</a>
-                        </li>
-                        <li>
-                          <a href="/experience" id="experience-l">Experience</a>
-                        </li>
-                      </ul>
+                        <div className="w-auto h-auto flex flex-col gap-4 py-4 px-6 bg-white dark:bg-black shadow-xl rounded-md space-y-1">
+                          <span className="w-full">
+                            <a
+                              href="/pricing"
+                              id="pricing-l"
+                              className="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                            >
+                              Pricing
+                            </a>
+                          </span>
+                          <span className="w-full">
+                            <a
+                              href="/testimonials"
+                              id="testimonials-l"
+                              className="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                            >
+                              Testimonials
+                            </a>
+                          </span>
+                          <span className="w-full">
+                            <a
+                              href="/experience"
+                              id="experience-l"
+                              className="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                            >
+                              Experience
+                            </a>
+                          </span>
+                        </div>
+                      </div>
                     )}
                   </li>
                 </ul>
@@ -251,22 +284,22 @@ const Navbar = () => {
               <div className="navbar-links w-1/2">
                 <ul className="flex gap-4">
                   <li>
-                    <a href="/client-area" id="galleries-l">
+                    <a href="/client-area" id="galleries-l" className="text-gray-200">
                       Galleries
                     </a>
                   </li>
                   <li>
-                    <a href="/blog" id="blog-l">
+                    <a href="/blog" id="blog-l" className="text-gray-200">
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a href="/contact" id="contact-l">
+                    <a href="/contact" id="contact-l" className="text-gray-200">
                       Contact
                     </a>
                   </li>
                   <li>
-                    <a href="/videos" id="videos-l">
+                    <a href="/videos" id="videos-l" className="text-gray-200">
                       Videos
                     </a>
                   </li>
