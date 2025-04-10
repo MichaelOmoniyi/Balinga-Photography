@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Hear from our esteemed customers - Balinga Photography Prices",
+  title: "Hear from our esteemed clients - Balinga Photography Prices",
   description: "Testimonials",
 };
 
