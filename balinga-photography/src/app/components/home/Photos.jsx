@@ -77,7 +77,7 @@ const Photos = () => {
                 <div className="photo photo-5"></div>
                 <div className="photos-description">
                   <h4 className="text-gray-600 dark:text-gray-200">
-                    Chioma and love
+                    Philip and Esther
                   </h4>
                   <p className="text-gray-500 dark:text-gray-400">
                     13 June 2021
