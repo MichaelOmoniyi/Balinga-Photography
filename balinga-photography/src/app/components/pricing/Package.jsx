@@ -4,7 +4,7 @@ import Btn from "./Btn";
 
 const Package = () => {
   return (
-    <div className="sectionFirst bg-black dark:bg-slate-200 text-slate-50 dark:text-gray-600 overflow-hidden">
+    <div className="enclosedSectionFirst bg-black dark:bg-slate-200 text-slate-50 dark:text-gray-600 overflow-hidden">
       <h1 className="transitionEffect scale-110 opacity-0 font-mono uppercase text-center text-lg mb-6 lg:mb-12">
         Wedding Photography package
       </h1>

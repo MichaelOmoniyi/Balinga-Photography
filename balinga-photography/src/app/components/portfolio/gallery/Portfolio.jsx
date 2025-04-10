@@ -43,8 +43,6 @@ const Highlight = dynamic(() => import("@/app/components/Highlight"), {
   ssr: false,
 });
 
-
-
 const Portfolio = ({ id }) => {
   const [filteredData, setFilteredData] = useState([]);
   const [shuffledImg, setShuffledImg] = useState([]);
@@ -67,12 +65,16 @@ const Portfolio = ({ id }) => {
   return (
     <div>
       <Hero filteredData={filteredData} />
-      <div className="p-6 md:p-10">
+      <div className="section">
         <Header filteredData={filteredData} />
         <Gallery images={shuffledImg} title={filteredData[0]?.title} />
       </div>
-      <div className="p-6 py-3 md:p-10 md:py-5 bg-slate-50/90"><Contact /></div>
-      <div className="p-6 py-3 md:p-10 md:py-5 md:pb-0"><Highlight /></div>
+      <div className="section bg-slate-50/90">
+        <Contact />
+      </div>
+      <div className="highlightSection">
+        <Highlight />
+      </div>
     </div>
   );
 };

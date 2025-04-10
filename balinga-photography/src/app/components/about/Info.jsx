@@ -6,7 +6,7 @@ const Info = () => {
   return (
     <div>
       <section>
-        <div class="mx-auto max-w-screen-xl">
+        <div class="section mx-auto max-w-screen-xl">
           <h2 class="transitionEffect scale-110 opacity-0 mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Points About Me
           </h2>

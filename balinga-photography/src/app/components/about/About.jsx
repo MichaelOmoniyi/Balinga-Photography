@@ -60,15 +60,15 @@ const About = () => {
     <div className="wrapper overflow-hidden">
       <Marquee />
       <Hero />
-      <div className="p-6 md:p-10">
-        <Story />
-        <p className="transitionEffect font-serif font-bold text-xl text-black dark:text-white mt-6 px-5 md:px-20 lg:px-40 scale-110 opacity-0">
-          If you’re ready to step in front of my lens and experience the magic
-          of photography, reach out. I can’t wait to create with you!
-        </p>
-        <Form />
-        <Gallery />
-        <Info />
+      <Story />
+      <p className="transitionEffect font-serif font-bold text-xl text-black dark:text-white mt-6 px-5 md:px-20 lg:px-40 scale-110 opacity-0">
+        If you’re ready to step in front of my lens and experience the magic of
+        photography, reach out. I can’t wait to create with you!
+      </p>
+      <Form />
+      <Gallery />
+      <Info />
+      <div className="highlightSection">
         <Highlight />
       </div>
     </div>

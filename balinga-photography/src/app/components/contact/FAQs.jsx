@@ -86,7 +86,7 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="pb-8">
+    <section className="section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="transitionEffect text-4xl font-bold text-gray-900 dark:text-white scale-110 opacity-0">

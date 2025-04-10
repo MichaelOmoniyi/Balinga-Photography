@@ -39,11 +39,9 @@ const Main = ({ category }) => {
   return (
     <div className="bg-slate-200 dark:bg-black">
       <Carousel />
-      <div className="p-6 pb-0 md:p-10 md:pb-0 md:px-12 mb-10 md:mb-16">
-        <Categories categoryType={category} />
-      </div>
+      <Categories categoryType={category} />
       <Connect />
-      <div className="p-6 md:p-10 md:pb-0 md:px-12 lg:px-24">
+      <div className="highlightSection">
         <Highlight />
       </div>
     </div>

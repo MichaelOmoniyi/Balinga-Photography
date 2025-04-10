@@ -1390,20 +1390,20 @@ footer .footer-links {
   }
 }
 
-.sectionFirst {
+.enclosedSectionFirst {
   padding-inline: 1rem;
   padding-block: 2.5rem;
 }
 
 @media screen and (min-width: 720px) {
-  .sectionFirst {
+  .enclosedSectionFirst {
     padding-inline: 2rem;
     padding-block: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .sectionFirst {
+  .enclosedSectionFirst {
     padding-inline: 3rem;
     padding-block: 4rem;
   }
@@ -1428,5 +1428,24 @@ footer .footer-links {
     padding-inline: 3rem;
     padding-block: 4rem;
     margin-top: 4rem;
+  }
+}
+
+.highlightSection {
+  padding-inline: 1rem;
+  padding-block: 2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .highlightSection {
+    padding-inline: 2rem;
+    padding-top: 6rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .highlightSection {
+    padding-inline: 3rem;
   }
 }

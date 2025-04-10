@@ -83,7 +83,7 @@ const Pricing = () => {
       <PricingPackages />
       <Testimoinals />
       <Connect />
-      <div className="md:pt-16">
+      <div className="highlightSection">
         <Highlight />
       </div>
     </div>

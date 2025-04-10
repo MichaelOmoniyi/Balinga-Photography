@@ -83,7 +83,9 @@ const Main = () => {
       <Book />
       <Testimonial2 />
       <Checkout />
-      <div className="sectionEnclosed"><Highlight /></div>
+      <div className="highlightSection">
+        <Highlight />
+      </div>
     </div>
   );
 };

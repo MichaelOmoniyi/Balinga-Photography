@@ -5,7 +5,7 @@ import ImageCategories from "./ImageCategories";
 const Categories = ({categoryType}) => {
   const [category, setCategory] = useState(categoryType);
   return (
-    <div>
+    <div className="section">
       <header>
         <div className="w-full py-4 mb-4 overflow-hidden">
           <div className="w-full flex gap-4 text-gray-700 dark:text-gray-500 overflow-auto">

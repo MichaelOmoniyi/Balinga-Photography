@@ -9,7 +9,7 @@ const Porfolio = () => {
   useZoomEffect(".frame");
 
   return (
-    <div className="py-8 px-8 md:px-12 lg:px-24 bg-white">
+    <div className="sectionEnclosed bg-white">
       <div class="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-8">
         <div
           className="frame w-full h-[calc(100vw) lg:h-[calc(90vh)] bg-cover bg-center bg-no-repeat bg-black scale-110 opacity-0"

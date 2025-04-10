@@ -21,7 +21,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((frame) => (<ImageFrame id={frame.id} img={frame.img[0]} key={frame.id}/>))}
       </div>
     </div>
