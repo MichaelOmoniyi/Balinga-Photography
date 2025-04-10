@@ -1,12 +1,22 @@
 import React from 'react'
 import { X } from 'lucide-react';
+import dynamic from 'next/dynamic';
+
+const VideoFrame = dynamic(() => import("./VideoFrame"), {
+  loading: () => (
+    <div className="w-full p-4 flex justify-center items-center">
+      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false,
+});
 
 const Video = ({isOpen, closeVideo}) => {
   return (
     <div
       className={`${
         isOpen ? "translate-y-0" : "-translate-y-full opacity-0"
-      } videoMagnified flex flex-col gap-4 justify-between fixed inset-0 w-full h-screen top-0 left-0 p-6 md:p-8 md:px-12 bg-black/95 text-gray-600 dark:text-gray-200 overflow-auto`}
+      } videoMagnified flex justify-center items-center fixed inset-0 w-screen h-screen top-0 left-0 p-6 md:p-8 md:px-12 bg-black/95 text-gray-600 dark:text-gray-200 overflow-auto`}
     >
       {/* Close Button */}
       <button
@@ -15,6 +25,7 @@ const Video = ({isOpen, closeVideo}) => {
       >
         <X size={32} />
       </button>
+      <VideoFrame />
     </div>
   );
 }

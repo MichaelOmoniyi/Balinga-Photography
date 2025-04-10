@@ -1,21 +1,21 @@
 import React from 'react'
 
-const VideoFrame = () => {
+const GalleryFrame = ({src}) => {
   return (
-    <div className="section transitionEffect scale-110 opacity-0">
+    <div className="w-full transitionEffect scale-110 opacity-0">
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/PQBllE0LRdw?si=vEL7TZr2iokm7G3T"
+        src={src}
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
-        className="w-full h-[calc(100vw)] lg:h-[calc(100vh-9rem)]"
+        className="w-full h-[calc(100vw)] md:h-[calc((100vw/2)-2rem)] lg:h-[calc((100vw/4)-4rem)]"
         allowfullscreen
       ></iframe>
     </div>
   );
 }
 
-export default VideoFrame
+export default GalleryFrame

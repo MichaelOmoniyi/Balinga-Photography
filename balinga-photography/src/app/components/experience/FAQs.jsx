@@ -86,11 +86,11 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="section">
+    <section className="section w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="transitionEffect text-4xl font-bold text-gray-900 dark:text-white scale-110 opacity-0">
-            Frequently Asked Questions
+        <div className="mb-16">
+          <h2 className="transitionEffect text-xl font-mono font-bold text-gray-900 dark:text-white scale-110 opacity-0">
+            FAQ
           </h2>
         </div>
         <div className="transitionEffect grid grid-cols-1 md:grid-cols-2 gap-6 scale-110 opacity-0">
