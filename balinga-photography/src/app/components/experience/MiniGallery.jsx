@@ -11,6 +11,7 @@ const MiniGallery = () => {
           height={500}
           quality={100}
           unoptimized
+          priority
           className="w-full h-[calc(100vw)] md:h-[calc((100vw/2)-2rem)] lg:h-[calc((100vw/2)-8rem)] object-cover"
         />
         <p className="my-4 text-gray-400">Images that linger</p>
