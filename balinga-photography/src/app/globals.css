@@ -120,7 +120,6 @@ body {
   font-family: "Playfair Display", serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #969696;
 }
 
 .navbar-links li a::after,
@@ -183,7 +182,6 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #000;
   z-index: 900;
 }
 
@@ -198,13 +196,6 @@ section {
 
 .navbar-lg {
   display: none;
-}
-
-.nav-display h1 {
-  /* font-size: 1.1rem; */
-  font-size: 16px;
-  color: #000;
-  margin-left: 1rem;
 }
 
 .nav-toggler {
@@ -233,7 +224,6 @@ section {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #fff;
   position: relative;
   border-radius: 5px;
 }
@@ -242,7 +232,6 @@ section {
 .nav-toggler-icon::before {
   content: "";
   display: block;
-  background-color: #fff;
   width: 100%;
   height: 2px;
   position: absolute;
@@ -275,7 +264,6 @@ section {
 .navbar-extend {
   width: 100%;
   height: 100vh;
-  background-color: #fff;
   position: absolute;
   top: 0;
   padding-inline: 15px;
@@ -310,7 +298,6 @@ section {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #969696;
   position: relative;
   border-radius: 5px;
 }
@@ -319,7 +306,6 @@ section {
 .nav-toggler-icon-extend::before {
   content: "";
   display: block;
-  background-color: #969696;
   width: 100%;
   height: 2px;
   position: absolute;
@@ -370,7 +356,6 @@ section {
     font-family: "Playfair Display", serif;
     display: block;
     width: 100%;
-    background-color: #000;
   }
 
   .nav-display {
@@ -385,31 +370,12 @@ section {
 
   .navbar-links li a,
   .navbar-links li button {
-    color: #fff;
     font-family: "Playfair Display", serif;
   }
 
   .navbar-links li:hover > a::after,
   .navbar-links li:hover > button::after {
     color: #fff;
-  }
-
-  .navbar-links .dropdown-lg {
-    display: flex !important;
-    flex-direction: column !important;
-    width: auto;
-    height: auto;
-    padding: 1rem 1.5rem;
-  }
-
-  .navbar-links .dropdown-lg li,
-  .navbar-links .dropdown-lg li a {
-    width: 100%;
-    color: #969696;
-  }
-
-  .navbar-links .dropdown-lg li a:hover {
-    color: #434343;
   }
 }
 
