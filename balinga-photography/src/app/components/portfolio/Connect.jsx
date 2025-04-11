@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Connect = () => {
   return (
-    <div className="bg-slate-50 flex flex-col md:gap-6 lg:gap-10 md:grid md:grid-rows-2 grid-cols-2 mt-10 md:mt-16">
+    <div className="bg-slate-50 flex flex-col md:gap-6 lg:gap-10 md:grid md:grid-rows-2 grid-cols-2 mt-10 md:mt-16 mb-0">
       <div className="py-4 md:row-start-1 md:col-start-1 md:p-6 md:pl-12 md:pr-0">
         <p className="font-mono text-base">
           Let’s begin this journey together, where every step is a new
