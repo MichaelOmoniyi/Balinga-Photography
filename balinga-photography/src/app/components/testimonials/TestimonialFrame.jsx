@@ -13,6 +13,7 @@ const TesimonialFrame = ({ img, title, description }) => {
           quality={100}
           unoptimized
           className="w-full h-full object-cover rounded-t-md"
+          alt="Client Photograph"
         />
       </div>
       <div className="mb-4 p-4">

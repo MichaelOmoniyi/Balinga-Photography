@@ -16,7 +16,7 @@ const Hero = ({ filteredData }) => {
         quality={100}
         unoptimized
         className="relative w-auto h-full object-cover mr-auto ml-auto z-10"
-        alt=""
+        alt="Gallery Hero Photograph"
       />
       <div className="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-20">
         <div className="position absolute top-0 left-0flex w-full h-full bg-black opacity-50"></div>

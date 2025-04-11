@@ -18,6 +18,7 @@ const Connect = () => {
           quality={100}
           unoptimized
           className="w-full h-full object-cover"
+          alt="Lady smiling"
         />
       </div>
       <div className="transitionEffect scale-110 opacity-0 mb-4 md:mb-0 md:pr-8 md:row-start-2 md:col-start-1">

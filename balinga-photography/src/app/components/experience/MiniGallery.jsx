@@ -13,6 +13,7 @@ const MiniGallery = () => {
           unoptimized
           priority
           className="w-full h-[calc(100vw)] md:h-[calc((100vw/2)-2rem)] lg:h-[calc((100vw/2)-8rem)] object-cover"
+          alt="Birthday Photograph for lady with glowing background"
         />
         <p className="my-4 text-gray-400">Images that linger</p>
       </div>
@@ -24,6 +25,7 @@ const MiniGallery = () => {
           quality={100}
           unoptimized
           className="w-full h-[calc(100vw)] md:h-[calc((100vw/2)-2rem)] lg:h-[calc((100vw/2)-8rem)] object-cover"
+          alt="Portrait photo"
         />
         <p className="my-4 text-gray-400">Images that linger</p>
       </div>

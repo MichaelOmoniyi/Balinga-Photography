@@ -16,6 +16,7 @@ const PricingPackages = () => {
             quality={100}
             unoptimized
             className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
+            alt="traditional wedding photograph"
           />
           <div className="overlay absolute top-0 left-0 w-full h-full overflow-hidden">
             <div className="initial relative w-full h-full flex flex-col justify-center items-center gap-2 bg-black/50 text-white text-lg font-serif translate-y-0 opacity-100 transition duration-500">
@@ -48,6 +49,7 @@ const PricingPackages = () => {
             quality={100}
             unoptimized
             className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
+            alt="wedding photography"
           />
           <div className="overlay absolute top-0 left-0 w-full h-full overflow-hidden">
             <div className="initial relative w-full h-full flex flex-col justify-center items-center gap-2 bg-black/50 text-white text-lg font-serif translate-y-0 opacity-100 transition duration-500">
@@ -80,6 +82,7 @@ const PricingPackages = () => {
             quality={100}
             unoptimized
             className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
+            alt="birthday photograph"
           />
           <div className="overlay absolute top-0 left-0 w-full h-full overflow-hidden">
             <div className="initial relative w-full h-full flex flex-col justify-center items-center gap-2 bg-black/50 text-white text-lg font-serif translate-y-0 opacity-100 transition duration-500">

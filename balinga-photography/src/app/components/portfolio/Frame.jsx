@@ -19,7 +19,7 @@ const Frame = ({ id, img, title, subtitle }) => {
         unoptimized
         className="relative h-full max-w-full rounded-lg object-cover z-10"
         src={`/images/${img}`}
-        alt=""
+        alt="Photo frame"
       />
       <div className="overlay absolute w-full h-full -translate-y-full lg:-translate-y-0 lg:opacity-0 transition-all duration-1000 flex flex-col justify-center items-center z-20 overflow-hidden">
         <div className="position absolute flex w-full h-full bg-black opacity-50"></div>

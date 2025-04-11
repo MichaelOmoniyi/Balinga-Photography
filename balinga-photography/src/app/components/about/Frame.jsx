@@ -12,7 +12,7 @@ const Frame = ({ id, img }) => {
           unoptimized
           class="h-auto max-w-full rounded-lg"
           src={img}
-          alt=""
+          alt="gallery photos"
         />
       </div>
     </a>

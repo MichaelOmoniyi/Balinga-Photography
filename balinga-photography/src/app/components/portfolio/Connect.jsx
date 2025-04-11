@@ -19,7 +19,7 @@ const Connect = () => {
           unoptimized
           className="relative h-full w-full object-cover"
           src="/images/connect-img.jpg"
-          alt=""
+          alt="Family photograph"
         />
       </div>
       <div className="py-4 row-start-3 pb-4 md:row-start-2 md:col-start-1 md:p-6 md:pl-12 md:pr-0">

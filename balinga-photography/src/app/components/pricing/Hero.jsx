@@ -12,6 +12,7 @@ const Hero = () => {
         priority
         unoptimized
         className="w-full h-full object-cover"
+        alt="Man holding fiance's hand"
       />
       <div className="absolute w-full h-full top-0 bg-black/50 text-white z-10 flex justify-center items-center font-bold text-3xl">
         Stories that linger...

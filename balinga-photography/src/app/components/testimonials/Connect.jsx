@@ -18,6 +18,7 @@ const Connect = () => {
           quality={100}
           unoptimized
           className="w-full h-full object-cover"
+          alt="traditional wedding photograph"
         />
       </div>
       <div className="mb-4 md:mb-0 md:col-start-1 md:row-start-2">

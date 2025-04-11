@@ -33,6 +33,7 @@ const Hero = () => {
         quality={100}
         unoptimized
         className="w-full h-full object-cover"
+        alt="client photograph"
       />
       <div
         className="overlay absolute top-0 left-0 h-full w-full bg-black/20 flex hover:cursor-pointer justify-center items-center"

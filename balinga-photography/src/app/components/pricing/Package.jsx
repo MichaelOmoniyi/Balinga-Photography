@@ -22,6 +22,7 @@ const Package = () => {
             quality={100}
             unoptimized
             className="transitionEffect scale-110 opacity-0 w-full h-[calc(100vw)] lg:h-[calc(100vh-9rem)] object-cover mb-2"
+            alt="traditional wedding photograph"
           />
         </div>
         <div className="transitionEffect scale-110 opacity-0 md:row-start-4 md:col-span-2 md:px-14 lg:px-28 w-full text-center flex items-center">

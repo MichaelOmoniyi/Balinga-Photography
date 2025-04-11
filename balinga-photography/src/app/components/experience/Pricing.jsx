@@ -12,7 +12,7 @@ const Pricing = () => {
           quality={100}
           unoptimized
           className="w-full h-full object-cover md:object-top"
-          alt=""
+          alt="Wedding photograph"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-50 flex justify-center items-center p-4 md:px-8 lg:px-24">
           <div className="w-full flex flex-col lg:flex-row gap-4 lg:justify-between">
