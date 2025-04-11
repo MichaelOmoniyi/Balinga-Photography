@@ -9,6 +9,7 @@ const Hero = () => {
         width={500}
         height={500}
         quality={100}
+        priority
         unoptimized
         className="w-full h-full object-cover"
       />
