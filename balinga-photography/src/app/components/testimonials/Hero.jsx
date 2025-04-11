@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <div className="relative w-full h-[calc(100vh-7rem)]">
       <Image
-        src="/images/img-sub.png"
+        src="/images/_MG_0319.jpg"
         width={500}
         height={500}
         quality={100}
