@@ -71,9 +71,9 @@ const CarouselComponent = () => {
             {index === 0 ? null : (
               <div className="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-20">
                 <div className="position absolute top-0 left-0flex w-full h-full bg-black opacity-50"></div>
-                <div className="relative flex flex-col w-full h-full justify-center items-center text-white z-30">
-                  <h1 className="text-5xl font-bold mb-4">{category.title}</h1>
-                  <p className="text-base">{category.subtitle}</p>
+                <div className="relative flex flex-col w-full h-full justify-center items-center text-white p-4 z-30">
+                  <h1 className="text-5xl font-bold text-center mb-4">{category.title}</h1>
+                  <p className="text-base text-center">{category.subtitle}</p>
                 </div>
               </div>
             )}
