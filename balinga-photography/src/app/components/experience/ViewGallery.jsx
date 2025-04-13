@@ -4,7 +4,7 @@ import Btn from '../Btn';
 
 const ViewGallery = () => {
   return (
-    <div className="mt-10 md:mt-16 relative">
+    <div className="w-full overflow-hidden mt-10 md:mt-16 relative">
       <div className="relative w-full h-[calc(100vw)] md:h-[calc(80vh)] transitionEffect scale-110 opacity-0">
         <Image
           src="/images/portfolio/wedding/Creative-shoot.jpg"

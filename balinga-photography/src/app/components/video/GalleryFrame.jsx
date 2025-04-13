@@ -2,7 +2,7 @@ import React from 'react'
 
 const GalleryFrame = ({src}) => {
   return (
-    <div className="w-full transitionEffect scale-110 opacity-0">
+    <div className="w-full">
       <iframe
         width="560"
         height="315"
@@ -11,7 +11,7 @@ const GalleryFrame = ({src}) => {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
-        className="w-full h-[calc(100vw)] md:h-[calc((100vw/2)-2rem)] lg:h-[calc((100vw/4)-4rem)]"
+        className="transitionEffect scale-110 opacity-0 w-full h-[calc(100vw)] md:h-[calc((100vw/2)-2rem)] lg:h-[calc((100vw/4)-4rem)]"
         allowfullscreen
       ></iframe>
     </div>

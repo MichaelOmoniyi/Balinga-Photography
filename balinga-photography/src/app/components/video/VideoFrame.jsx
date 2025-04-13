@@ -2,7 +2,7 @@ import React from 'react'
 
 const VideoFrame = () => {
   return (
-    <div className="section_ transitionEffect scale-110 opacity-0">
+    <div className="section_">
       <iframe
         width="560"
         height="315"
@@ -11,7 +11,7 @@ const VideoFrame = () => {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
-        className="w-full h-[calc(100vw)] lg:h-[calc(100vh-9rem)]"
+        className="transitionEffect scale-110 opacity-0 w-full h-[calc(100vw)] lg:h-[calc(100vh-9rem)]"
         allowfullscreen
       ></iframe>
     </div>

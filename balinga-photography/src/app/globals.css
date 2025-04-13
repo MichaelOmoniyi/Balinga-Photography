@@ -1341,6 +1341,8 @@ footer .footer-links {
 
 /* Padding styles for diffrent setions across various pages ensuring consistency */
 .section_ {
+  width: 100%;
+  overflow: hidden;
   padding-inline: 1rem;
   margin-top: 2.5rem;
 }
@@ -1360,6 +1362,8 @@ footer .footer-links {
 }
 
 .enclosedSectionFirst {
+  width: 100%;
+  overflow: hidden;
   padding-inline: 1rem;
   padding-block: 2.5rem;
 }
@@ -1379,6 +1383,8 @@ footer .footer-links {
 }
 
 .sectionEnclosed {
+  width: 100%;
+  overflow: hidden;
   padding-inline: 1rem;
   padding-block: 2.5rem;
   margin-top: 2.5rem;
@@ -1401,6 +1407,8 @@ footer .footer-links {
 }
 
 .highlightSection {
+  width: 100%;
+  overflow: hidden;
   padding-inline: 1rem;
   padding-block: 2.5rem;
 }
