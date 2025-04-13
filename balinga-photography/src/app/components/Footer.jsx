@@ -16,6 +16,9 @@ import useZoomEffect from "../Hooks/useZoomEffect";
 const Footer = () => {
   useZoomEffect(".transitionEffect");
   const pathname = usePathname();
+  const [showInfoDropdown, setShowInfoDropdown] = useState(false);
+  const galleryPattern = /\/gallery/;
+  const infoPattern = /pricing|testimonials|experience/;
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -26,7 +29,7 @@ const Footer = () => {
 
   useEffect(() => {
     const FooterLinks = document.querySelectorAll(
-      "#home, #about, #info, #gallaries, #blog, #contact, #videos"
+      "#home, #about, #info, #gallaries, #blog, #contact, #videos, #pricing, #testimonials, #experience"
     );
     FooterLinks.forEach((link) => {
       if (link.getAttribute("href") === "/") {
@@ -41,6 +44,14 @@ const Footer = () => {
         link.classList.remove("active");
       }
     });
+
+    if (galleryPattern.test(pathname)) {
+      document.getElementById("gallaries").classList.add("active");
+    }
+
+    if (infoPattern.test(pathname)) {
+      document.getElementsByClassName("info").classList.add("active");
+    }
   }, [pathname]);
 
   return (
@@ -59,10 +70,54 @@ const Footer = () => {
                   About
                 </a>
               </li>
-              <li className="transitionEffect scale-110 opacity-0">
-                <a id="info" href="/info">
+              <li
+                className="relative group"
+                onMouseEnter={() => setShowInfoDropdown(true)}
+                onMouseLeave={() => setShowInfoDropdown(false)}
+              >
+                <button
+                  className="info focus:outline-none  text-gray-600 dark:text-gray-200"
+                  onClick={(e) => e.preventDefault()} // prevent accidental clicks
+                >
                   Info
-                </a>
+                </button>
+                {showInfoDropdown && (
+                  <div
+                    className="dropdown-lg absolute top-full left-0 pt-1"
+                    onMouseEnter={() => setShowInfoDropdown(true)}
+                    onMouseLeave={() => setShowInfoDropdown(false)}
+                  >
+                    <div className="w-auto h-auto flex flex-col gap-4 py-4 px-6 bg-white dark:bg-black shadow-xl rounded-md space-y-1">
+                      <span className="w-full">
+                        <a
+                          href="/pricing"
+                          id="pricing"
+                          className="text-gray-500 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                        >
+                          Pricing
+                        </a>
+                      </span>
+                      <span className="w-full">
+                        <a
+                          href="/testimonials"
+                          id="testimonials"
+                          className="text-gray-500 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                        >
+                          Testimonials
+                        </a>
+                      </span>
+                      <span className="w-full">
+                        <a
+                          href="/experience"
+                          id="experience"
+                          className="text-gray-500 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                        >
+                          Experience
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                )}
               </li>
               <li className="transitionEffect scale-110 opacity-0">
                 <a id="gallaries" href="/gallaries">
