@@ -52,6 +52,7 @@ const Hero = () => {
                 height={500}
                 quality={100}
                 unoptimized
+                priority
                 className="w-full h-full object-cover"
                 alt={`Slide ${index + 1}`}
               />
