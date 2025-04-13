@@ -4,7 +4,7 @@ import Btn from "./Btn";
 
 const Connect = () => {
   return (
-    <div className="section md:grid md:grid-cols-2 md:grid-rows-4 md:h-[calc(100vh)] gap-4">
+    <div className="section_ md:grid md:grid-cols-2 md:grid-rows-4 md:h-[calc(100vh)] gap-4">
       <div className="transitionEffect scale-110 opacity-0 col-start-1 row-start-1">
         <h1 className="font-mono text-base font-semibold mb-4 md:mb-0">
           Let's Get to Know Each Other

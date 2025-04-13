@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="section text-center md:text-left md:px-20 lg:px-40 transitionEffect scale-110 opacity-0">
+    <div className="section_ text-center md:text-left md:px-20 lg:px-40 transitionEffect scale-110 opacity-0">
       <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white font-serif mb-4">
         Universal Photographer
       </h1>

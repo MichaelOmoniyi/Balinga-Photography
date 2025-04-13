@@ -68,7 +68,7 @@ const Contact = () => {
   return (
     <div>
       <Carousel />
-      <div className="section">
+      <div className="section_">
         <h1 className="transitionEffect text-3xl font-bold mb-8 dark:text-white scale-110 opacity-0">
           Begin Your Timeless Story
         </h1>

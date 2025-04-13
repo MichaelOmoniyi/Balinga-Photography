@@ -2,7 +2,7 @@ import React from 'react'
 
 const VideoFrame = () => {
   return (
-    <div className="section transitionEffect scale-110 opacity-0">
+    <div className="section_ transitionEffect scale-110 opacity-0">
       <iframe
         width="560"
         height="315"

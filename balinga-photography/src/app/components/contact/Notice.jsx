@@ -5,7 +5,7 @@ const Notice = () => {
   useZoomEffect(".transitionEffect");
 
   return (
-    <div className="section w-full md:flex md:flex-col md:items-center">
+    <div className="section_ w-full md:flex md:flex-col md:items-center">
       <h2 className="transitionEffect text-2xl font-bold text-center mb-4 dark:text-white scale-110 opacity-0">
         Notice!!!
       </h2>

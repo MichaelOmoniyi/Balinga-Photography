@@ -582,7 +582,7 @@ section {
 
 .quote h2 {
   font-family: "Qunicy Cf", serif;
-  font-size: 30.8px;
+  font-size: 20.8px;
   transform: translateX(-70vw);
   opacity: 0;
   transition: all 0.5s ease-in;
@@ -609,6 +609,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   .quote h2 {
+    font-size: 30.8px;
     padding-right: 150px;
   }
 }
@@ -1337,20 +1338,20 @@ footer .footer-links {
 }
 
 /* Padding styles for diffrent setions across various pages ensuring consistency */
-.section {
-  padding-inline: 1rem;
+.section_ {
+  padding-inline: 0rem;
   margin-top: 2.5rem;
 }
 
 @media screen and (min-width: 720px) {
-  .section {
+  .section_ {
     padding-inline: 2rem;
     margin-top: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .section {
+  .section_ {
     padding-inline: 3rem;
     margin-top: 4rem;
   }

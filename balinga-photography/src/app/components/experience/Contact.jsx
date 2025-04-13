@@ -13,7 +13,7 @@ const Form = dynamic(() => import("@/app/components/contact/Form"), {
 
 const Contact = () => {
   return (
-    <div className='section'>
+    <div className='section_'>
       <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white font-serif mb-4">
         Get in Touch Now
       </h1>

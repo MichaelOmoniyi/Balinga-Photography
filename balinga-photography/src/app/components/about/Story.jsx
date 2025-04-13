@@ -5,7 +5,7 @@ const Story = () => {
   useZoomEffect(".transitionEffect");
 
   return (
-    <div className="section">
+    <div className="section_">
       <h1 className="transitionEffect text-gray-600 dark:text-white text-center font-bold mb-6 scale-110 opacity-0">
         IT'S A FUN READ
       </h1>

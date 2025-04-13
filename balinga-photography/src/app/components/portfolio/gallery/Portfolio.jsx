@@ -65,11 +65,11 @@ const Portfolio = ({ id }) => {
   return (
     <div>
       <Hero filteredData={filteredData} />
-      <div className="section">
+      <div className="section_">
         <Header filteredData={filteredData} />
         <Gallery images={shuffledImg} title={filteredData[0]?.title} />
       </div>
-      <div className="section bg-slate-50/90">
+      <div className="section_ bg-slate-50/90">
         <Contact />
       </div>
       <div className="highlightSection">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PricingPackages = () => {
   return (
-    <div className="section">
+    <div className="section_">
       <h1 className="transitionEffect scale-110 opacity-0 font-mono uppercase text-center text-lg mb-4 dark:text-slate-50">
         Pricing & Packages
       </h1>

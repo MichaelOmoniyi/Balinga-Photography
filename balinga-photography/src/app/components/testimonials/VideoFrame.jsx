@@ -2,7 +2,7 @@ import React from 'react'
 
 const VideoFrame = () => {
   return (
-    <div className="w-full section">
+    <div className="w-full section_">
       <iframe
         width="560"
         height="315"

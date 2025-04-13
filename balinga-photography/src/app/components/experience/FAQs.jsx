@@ -86,7 +86,7 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="section w-full">
+    <section className="section_ w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="transitionEffect text-xl font-mono font-bold text-gray-900 dark:text-white scale-110 opacity-0">

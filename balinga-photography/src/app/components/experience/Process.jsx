@@ -2,7 +2,7 @@ import React from "react";
 
 const Process = () => {
   return (
-    <div class="section overflow-hidden">
+    <div class="section_ overflow-hidden">
       <h2 class="transitionEffect scale-110 opacity-0 mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
         How does this work?
       </h2>

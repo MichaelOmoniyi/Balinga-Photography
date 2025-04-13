@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MiniGallery = () => {
   return (
-    <div className="section text-center grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+    <div className="section_ text-center grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
       <div>
         <Image
           src="/images/portfolio/birthday/12/IMG_2444.jpg"

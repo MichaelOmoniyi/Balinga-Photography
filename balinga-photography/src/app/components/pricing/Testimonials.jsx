@@ -29,7 +29,7 @@ const CarouselComponent = () => {
   };
 
   return (
-    <div className="section relative w-full h-full md:h-[calc(70vh)] lg:h-[calc(90vh)] md:grid md:grid-cols-2 md:grid-rows-3 text-gray-600 dark:text-slate-50">
+    <div className="section_ relative w-full h-full md:h-[calc(70vh)] lg:h-[calc(90vh)] md:grid md:grid-cols-2 md:grid-rows-3 text-gray-600 dark:text-slate-50">
       <div className="mb-4 md:mb-0 md:row-start-1 md:col-start-2">
         <h1 className="font-mono uppercase text-right text-lg">Testimonials</h1>
       </div>

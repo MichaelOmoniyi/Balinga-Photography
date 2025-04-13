@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Pricing = () => {
   return (
-    <div className="section w-full relative">
+    <div className="section_ w-full relative">
       <div className="relaive w-full h-[calc(100vw)] md:h-[calc(80vh)]">
         <Image
           src="/images/portfolio/wedding/2/IMG_2683.jpg"
