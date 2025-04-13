@@ -1,5 +1,5 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useState, useEffect} from "react";
 import Image from "next/image";
 import { PlayCircle } from "lucide-react";
 import Video from "./Video";
@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-[calc(100vh-7rem)] relative">
+    <div className="relative w-full h-[calc(100vh-7rem)]">
       <Image
         src="/images/check-out-img-1.jpg"
         width={500}
@@ -36,12 +36,12 @@ const Hero = () => {
         alt="Man holding fiance's hand"
       />
       <div
-        className="overlay absolute top-0 left-0 h-full w-full bg-black/20 flex hover:cursor-pointer justify-center items-center"
+        className="overlay absolute top-0 left-0 h-full w-full bg-black/50 text-white flex flex-col hover:cursor-pointer justify-center items-center px-4"
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
       >
-        <h1 className="text-3xl mb-6">Making memories that linger...</h1>
+        <h1 className="text-3xl text-center font-serif mb-6">Making memories that linger...</h1>
         <PlayCircle size={100} />
       </div>
       <Video isOpen={isOpen} closeVideo={closeVideo} />
