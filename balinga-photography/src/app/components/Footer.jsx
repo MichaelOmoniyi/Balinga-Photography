@@ -31,6 +31,15 @@ const Footer = () => {
     const FooterLinks = document.querySelectorAll(
       "#home, #about, #info, #gallaries, #blog, #contact, #videos, #pricing, #testimonials, #experience"
     );
+
+    if (galleryPattern.test(pathname)) {
+      document.querySelector("#gallaries").classList.add("active");
+    }
+
+    if (infoPattern.test(pathname)) {
+      document.querySelector(".info").classList.add("active");
+    }
+
     FooterLinks.forEach((link) => {
       if (link.getAttribute("href") === "/") {
         FooterLinks[0].classList.add("active");
@@ -44,29 +53,29 @@ const Footer = () => {
         link.classList.remove("active");
       }
     });
-
-    if (galleryPattern.test(pathname)) {
-      document.getElementById("gallaries").classList.add("active");
-    }
-
-    if (infoPattern.test(pathname)) {
-      document.getElementsByClassName("info").classList.add("active");
-    }
   }, [pathname]);
 
   return (
     <div>
       <footer className="bg-slate-50">
         <div className="container">
-          <div className="footer-links">
+          <div className="footer-links relative">
             <ul>
               <li className="transitionEffect scale-110 opacity-0">
-                <a id="home" href="/">
+                <a
+                  id="home"
+                  href="/"
+                  className="text-gray-400 hover:text-gray-600"
+                >
                   Home
                 </a>
               </li>
               <li className="transitionEffect scale-110 opacity-0">
-                <a id="about" href="/about">
+                <a
+                  id="about"
+                  href="/about"
+                  className="text-gray-400 hover:text-gray-600"
+                >
                   About
                 </a>
               </li>
@@ -76,23 +85,23 @@ const Footer = () => {
                 onMouseLeave={() => setShowInfoDropdown(false)}
               >
                 <button
-                  className="info focus:outline-none  text-gray-600 dark:text-gray-200"
+                  className="info focus:outline-none  text-gray-400 hover:text-gray-600"
                   onClick={(e) => e.preventDefault()} // prevent accidental clicks
                 >
                   Info
                 </button>
                 {showInfoDropdown && (
                   <div
-                    className="dropdown-lg absolute top-full left-0 pt-1"
+                    className="dropdown relative flex justify-center pt-1"
                     onMouseEnter={() => setShowInfoDropdown(true)}
                     onMouseLeave={() => setShowInfoDropdown(false)}
                   >
-                    <div className="w-auto h-auto flex flex-col gap-4 py-4 px-6 bg-white dark:bg-black shadow-xl rounded-md space-y-1">
+                    <div className="w-40 h-auto flex flex-col gap-4 py-4 px-6 bg-white shadow-xl rounded-md space-y-1">
                       <span className="w-full">
                         <a
                           href="/pricing"
                           id="pricing"
-                          className="text-gray-500 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                          className="text-gray-400 hover:text-gray-600 hover:cursor-pointer transition-all"
                         >
                           Pricing
                         </a>
@@ -101,7 +110,7 @@ const Footer = () => {
                         <a
                           href="/testimonials"
                           id="testimonials"
-                          className="text-gray-500 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                          className="text-gray-400 hover:text-gray-600 hover:cursor-pointer transition-all"
                         >
                           Testimonials
                         </a>
@@ -110,7 +119,7 @@ const Footer = () => {
                         <a
                           href="/experience"
                           id="experience"
-                          className="text-gray-500 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-500 hover:cursor-pointer transition-all"
+                          className="text-gray-400 hover:text-gray-600 hover:cursor-pointer transition-all"
                         >
                           Experience
                         </a>
@@ -120,22 +129,38 @@ const Footer = () => {
                 )}
               </li>
               <li className="transitionEffect scale-110 opacity-0">
-                <a id="gallaries" href="/gallaries">
+                <a
+                  id="gallaries"
+                  href="/client-area"
+                  className="text-gray-400 hover:text-gray-600"
+                >
                   Gallaries
                 </a>
               </li>
               <li className="transitionEffect scale-110 opacity-0">
-                <a id="blog" href="/blog">
+                <a
+                  id="blog"
+                  href="/blog"
+                  className="text-gray-400 hover:text-gray-600"
+                >
                   Blog
                 </a>
               </li>
               <li className="transitionEffect scale-110 opacity-0">
-                <a id="contact" href="/contact">
+                <a
+                  id="contact"
+                  href="/contact"
+                  className="text-gray-400 hover:text-gray-600"
+                >
                   Contact
                 </a>
               </li>
               <li className="transitionEffect scale-110 opacity-0">
-                <a id="videos" href="/videos">
+                <a
+                  id="videos"
+                  href="/videos"
+                  className="text-gray-400 hover:text-gray-600"
+                >
                   Videos
                 </a>
               </li>

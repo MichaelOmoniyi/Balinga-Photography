@@ -17,6 +17,28 @@ const Navbar = () => {
     const navbarLinks = document.querySelectorAll(
       "#home, #about, #galleries, #blog, #contact, #videos, #pricing, #testimonials, #experience, #home-l, #about-l, #galleries-l, #blog-l, #contact-l, #videos-l, #pricing-l, #testimonials-l, #experince-l"
     );
+
+    if (galleryPattern.test(pathname)) {
+      navbarLinks.forEach((link) => {
+        if (link.getAttribute("href") === "/client-area") {
+          if (link.id.slice(-2) === "-l") {
+            link.classList.add("active-ls");
+          } else {
+            link.classList.add("active");
+          }
+        } else {
+          link.classList.remove("active");
+          link.classList.remove("active-ls");
+        }
+      });
+    }
+
+    if (infoPattern.test(pathname)) {
+      document.querySelectorAll(".info").forEach((element) => {
+        element.classList.add("active");
+      });
+    }
+
     navbarLinks.forEach((link) => {
       if (link.getAttribute("href") === "/") {
         navbarLinks[0].classList.add("active");
@@ -35,25 +57,6 @@ const Navbar = () => {
       } else {
         link.classList.remove("active");
         link.classList.remove("active-ls");
-      }
-
-      if (galleryPattern.test(pathname)) {
-        navbarLinks.forEach((link) => {
-          if (link.getAttribute("href") === "/client-area") {
-            if (link.id.slice(-2) === "-l") {
-              link.classList.add("active-ls");
-            } else {
-              link.classList.add("active");
-            }
-          } else {
-            link.classList.remove("active");
-            link.classList.remove("active-ls");
-          }
-        });
-      }
-
-      if (infoPattern.test(pathname)) {
-        document.querySelectorAll(".info").forEach((element) => {element.classList.add("active")})
       }
     });
 
@@ -176,19 +179,31 @@ const Navbar = () => {
                       Info
                     </button>
                     {showInfoDropdown && (
-                      <ul className="dropdown ml-4 mt-2">
+                      <ul className="dropdown ml-4 mt-4">
                         <li>
-                          <a href="/pricing" id="pricing">
+                          <a
+                            href="/pricing"
+                            id="pricing"
+                            className="text-gray-500 dark:text-gray-600"
+                          >
                             Pricing
                           </a>
                         </li>
                         <li>
-                          <a href="/testimonials" id="testimonials">
+                          <a
+                            href="/testimonials"
+                            id="testimonials"
+                            className="text-gray-500 dark:text-gray-600"
+                          >
                             Testimonials
                           </a>
                         </li>
                         <li>
-                          <a href="/experience" id="experience">
+                          <a
+                            href="/experience"
+                            id="experience"
+                            className="text-gray-500 dark:text-gray-600"
+                          >
                             Experience
                           </a>
                         </li>
