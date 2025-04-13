@@ -4,7 +4,7 @@ import Image from "next/image";
 const Pricing = () => {
   return (
     <div className="section_ w-full relative">
-      <div className="relaive w-full h-[calc(100vw)] md:h-[calc(80vh)]">
+      <div className="relaive w-full h-[calc(100vw)] md:h-[calc(80vh)] transitionEffect scale-110 opacity-0">
         <Image
           src="/images/portfolio/wedding/2/IMG_2683.jpg"
           width={500}
@@ -25,7 +25,10 @@ const Pricing = () => {
               </span>
             </div>
             <div className="text-center lg:text-right lg:flex lg:items-center">
-              <a href="/pricing" className="text-white font-medium text-lg hover:cursor-pointer">
+              <a
+                href="/pricing"
+                className="text-white font-medium text-lg hover:cursor-pointer"
+              >
                 <button className="w-10 h-10">❯</button>
               </a>
             </div>
