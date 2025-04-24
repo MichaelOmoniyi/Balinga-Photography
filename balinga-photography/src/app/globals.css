@@ -561,7 +561,7 @@ section {
 }
 
 /* Quote */
-.quote .container {
+.quote .container blockquote {
   width: 100%;
   padding-inline: 10px;
   display: flex;
@@ -569,7 +569,7 @@ section {
   /* gap: 1.2rem; */
 }
 
-.quote h6 {
+.quote cite {
   text-align: right;
   text-transform: uppercase;
   font-size: 16px;
@@ -580,7 +580,7 @@ section {
   transition: all 0.5s ease-in;
 }
 
-.quote h2 {
+.quote p {
   font-family: "Qunicy Cf", serif;
   font-size: 20.8px;
   transform: translateX(-70vw);
@@ -589,26 +589,28 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  .quote .container {
+  .quote .container blockquote {
     display: flex;
     flex-direction: row-reverse;
+    align-items: stretch;
   }
 
-  .quote h2 {
-    width: 60%;
+  .quote p {
+    width: 80%;
     padding-right: 10px;
     transform: translateX(-30vw);
   }
 
-  .quote h6 {
-    width: 40%;
+  .quote cite {
+    width: 20%;
     text-align: right;
-    transform: translateX(30vw);
+    transform: translateX(10vw);
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .quote h2 {
+  .quote p {
     font-size: 30.8px;
     padding-right: 150px;
   }
@@ -628,41 +630,6 @@ section {
   height: 85vw;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.photo-1 {
-  background-image: url(/images/photo-1.jpg);
-}
-
-.photo-2 {
-  background-image: url(/images/photo-2.jpg);
-}
-
-.photo-3 {
-  background-image: url(/images/photo-3.jpg);
-}
-
-.photo-4 {
-  background-image: url(/images/photo-4.jpg);
-}
-
-.photo-5 {
-  background-image: url(/images/photo-5.jpg);
-}
-
-.photo-6 {
-  background-image: url(/images/photo-6.jpg);
-}
-
-.photo-7 {
-  background-image: url(/images/photo-7.jpg);
-}
-
-.photo-8 {
-  background-image: url(/images/photo-8.jpg);
-}
-
-.photo-9 {
-  background-image: url(/images/photo-9.jpg);
 }
 
 .photos-description {
@@ -702,45 +669,12 @@ section {
   transition: all 0.5s ease-in;
 }
 
-@media screen and (min-width: 724px) {
-  .photo-5 {
-    background-position: 0 -10rem;
-  }
-
-  .photo-6 {
-    background-position: 0 -14rem;
-  }
-
-  .photo-8 {
-    background-position: 0 -20rem;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .photo .row {
     margin-bottom: 30px;
     /* gap: 10px; */
   }
-
-  .photo {
-    height: 85vh;
-  }
-
-  .photo-1,
-  .photo-4,
-  .photo-7 {
-    background-position: 0 -20rem;
-  }
-
-  .photo-5 {
-    background-position: center;
-  }
-
-  .photo-6,
-  .photo-8 {
-    background-position: 0 -15rem;
-  }
-
+  
   .photos .row .col-lg-12 {
     transform: translateX(-30vw);
   }

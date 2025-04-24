@@ -1,12 +1,13 @@
 "use client";
-import React from "react";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
-import useFadeIn from '@/app/Hooks/useFadeIn';
+import useFadeIn from "@/app/Hooks/useFadeIn";
+import usePerformanceMonitor from "@/app/Hooks/usePerformanceMonitor";
 
 const Checkout = () => {
+  usePerformanceMonitor("Checkout");
   useFadeIn(".check-out-link, .check-out-img");
-  const hrefArray = ["/client-area/"]
+  const hrefArray = ["/client-area/", "/experience", "/pricing"];
   const checkoutLinksRef = useRef([]);
   const checkoutImagesRef = useRef([]);
 
@@ -38,7 +39,6 @@ const Checkout = () => {
       });
     }
   }, []);
-
 
   return (
     <div>

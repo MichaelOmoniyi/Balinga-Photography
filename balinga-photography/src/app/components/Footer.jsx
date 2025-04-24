@@ -80,7 +80,7 @@ const Footer = () => {
                 </a>
               </li>
               <li
-                className="relative group"
+                className="relative group transitionEffect scale-110 opacity-0"
                 onMouseEnter={() => setShowInfoDropdown(true)}
                 onMouseLeave={() => setShowInfoDropdown(false)}
               >

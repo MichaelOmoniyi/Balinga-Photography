@@ -135,7 +135,7 @@ const Hero = () => {
                 quality={75}
                 priority={index === 0}
                 sizes="100vw"
-                className="w-full h-full object-cover"
+                className="w-[100vw] h-[calc(100vh-5.5rem)] object-cover"
                 alt={image.alt}
                 onLoad={() => handleImageLoad(index)}
               />
