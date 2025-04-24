@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
         </div>
         <div>
-          <p className="transitionEffect scale-110 opacity-0">
+          <p className="transitionEffect scale-110 opacity-0 mb-4">
             Let me capture the love in your eyes, and go beyond to uncover the
             raw beauty of your spirit.
           </p>
