@@ -38,7 +38,7 @@ const OptimizedImage = ({
       )}
 
       {error ? (
-        <div className="absolute w-full h-full top-0 left-0 inset-0 flex items-center justify-center bg-red-500">
+        <div className="absolute w-full h-full top-0 left-0 inset-0 flex items-center justify-center">
           <span className="text-gray-500">Failed to load image</span>
         </div>
       ) : (
