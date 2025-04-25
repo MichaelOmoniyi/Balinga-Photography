@@ -1,76 +1,45 @@
-import React from "react";
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
+import Marquee from "../Marquee";
 
-const Marquee = dynamic(() => import("../Marquee"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
-});
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
+);
 
 const Hero = dynamic(() => import("./Hero"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
 });
 
 const Package = dynamic(() => import("./Package"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
+  suspense: true,
 });
 
 const Btn = dynamic(() => import("../Btn"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
+  suspense: true,
 });
 
 const PricingPackages = dynamic(() => import("./PricingPackages"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
+  suspense: true,
 });
 
 const Testimoinals = dynamic(() => import("./Testimonials"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
+  suspense: true,
 });
 
 const Connect = dynamic(() => import("./Connect"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
+  suspense: true,
 });
 
 const Highlight = dynamic(() => import("../Highlight"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+  ssr: true,
+  suspense: true,
 });
 
 const Pricing = () => {
@@ -78,14 +47,16 @@ const Pricing = () => {
     <div className="wrapper overflow-x-hidden">
       <Marquee />
       <Hero />
-      <Package />
-      {/* <Btn text={"VIEW MORE PACKAGES"} href={""} /> */}
-      <PricingPackages />
-      <Testimoinals />
-      <Connect />
-      <div className="highlightSection">
-        <Highlight />
-      </div>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Package />
+        {/* <Btn text={"VIEW MORE PACKAGES"} href={""} /> */}
+        <PricingPackages />
+        <Testimoinals />
+        <Connect />
+        <div className="highlightSection">
+          <Highlight />
+        </div>
+      </Suspense>
     </div>
   );
 };

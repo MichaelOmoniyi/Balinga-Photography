@@ -4,82 +4,64 @@ export const metadata = {
 };
 
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
-// Above the fold components
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
+);
+
+// Above the fold components - No Suspense needed as they're critical
 const Hero = dynamic(() => import("@/app/components/home/Hero"), {
-  loading: () => (
-    <div className="w-full h-[calc(100vh-5.5rem)] mt-20 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: true, // Enable SSR for critical content
+  ssr: true,
 });
 
 const About = dynamic(() => import("@/app/components/home/About"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: true, // Enable SSR for critical content
+  ssr: true,
 });
 
-// Below the fold components
-const Quote = dynamic(() => import("@/app/components/home/Quote"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
+// Below the fold components - Grouped by loading priority
+const QuoteContent = dynamic(() => import("@/app/components/home/Quote"), {
   ssr: false,
+  suspense: true,
 });
 
-const Photos = dynamic(() => import("@/app/components/home/Photos"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
+const PhototsContent = dynamic(() => import("@/app/components/home/Photos"), {
   ssr: false,
+  suspense: true,
 });
 
-const Checkout = dynamic(() => import("@/app/components/home/Checkout"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
+const CheckoutContent = dynamic(() => import("@/app/components/home/Checkout"), {
   ssr: false,
+  suspense: true,
 });
 
-const Connect = dynamic(() => import("@/app/components/home/Connect"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
+const ConnectContent = dynamic(() => import("@/app/components/home/Connect"), {
   ssr: false,
+  suspense: true,
 });
 
-const Highlight = dynamic(() => import("@/app/components/home/Highlight"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
+const HighlightContent = dynamic(() => import("@/app/components/home/Highlight"), {
   ssr: false,
+  suspense: true,
 });
 
 export default function Home() {
   return (
     <>
+      {/* Critical content - loads immediately */}
       <Hero />
       <About />
-      <Quote />
-      <Photos />
-      <Checkout />
-      <Connect />
-      <Highlight />
+      
+      {/* Non-critical content - loads progressively */}
+      <Suspense fallback={<LoadingSpinner />}>
+        <QuoteContent />
+        <PhototsContent />
+        <CheckoutContent />
+        <ConnectContent />
+        <HighlightContent />
+      </Suspense>
     </>
   );
 }

@@ -3,24 +3,27 @@ export const metadata = {
   description: "Info about Balinga",
 };
 
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
-import React from "react";
 import "../components/contact/style.css";
 
-const About = dynamic(() => import("@/app/components/about/About"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
+);
+
+// Main content component
+const AboutContent = dynamic(() => import("@/app/components/about/About"), {
+  ssr: true,
+  suspense: true,
 });
 
 const Page = () => {
   return (
-    <>
-      <About />
-    </>
+    <Suspense fallback={<LoadingSpinner />}>
+      <AboutContent />
+    </Suspense>
   );
 };
 

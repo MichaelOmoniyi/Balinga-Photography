@@ -3,28 +3,28 @@ export const metadata = {
   description: "Capturing your best moments",
 };
 
-import React from "react";
+import React, { Suspense } from "react";
 import "../components/contact/style.css";
 import dynamic from "next/dynamic";
 
-const Main = dynamic(
-  () => import("@/app/components/experience/Main"),
-  {
-    loading: () => (
-      <div className="w-full p-4 flex justify-center items-center">
-        <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-      </div>
-    ),
-    ssr: false,
-  }
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
 );
 
-const page = () => {
+// Main content component
+const ExperienceContent = dynamic(() => import("@/app/components/experience/Main"), {
+  ssr: true,
+  suspense: true,
+});
+
+const Page = () => {
   return (
-    <div>
-      <Main />
-    </div>
+    <Suspense fallback={<LoadingSpinner />}>
+      <ExperienceContent />
+    </Suspense>
   );
 };
 
-export default page;
+export default Page;

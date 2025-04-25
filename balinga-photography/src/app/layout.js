@@ -1,14 +1,25 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { usePathname } from "next/navigation";
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import dynamic from "next/dynamic";
 
-const inter = Inter({ subsets: ['latin'] });
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
+);
+
+const Footer = dynamic(() => import("./components/Footer"), {
+  ssr: false,
+  suspense: true,
+});
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -31,7 +42,9 @@ export default function RootLayout({ children }) {
           <>
             <Navbar />
             <main>{children}</main>
-            <Footer />
+            <Suspense fallback={<LoadingSpinner />}>
+              <Footer />
+            </Suspense>
           </>
         )}
       </body>

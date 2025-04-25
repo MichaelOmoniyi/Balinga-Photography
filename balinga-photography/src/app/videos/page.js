@@ -3,27 +3,26 @@ export const metadata = {
   description: "Capturing your best moments",
 };
 
-import React from "react";
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
 
-const Main = dynamic(
-  () => import("@/app/components/video/Main"),
-  {
-    loading: () => (
-      <div className="w-full p-4 flex justify-center items-center">
-        <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-      </div>
-    ),
-    ssr: false,
-  }
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
 );
 
-const page = () => {
+const VideoContent = dynamic(() => import("@/app/components/video/Main"), {
+  ssr: true,
+  suspense: true,
+});
+
+const Page = () => {
   return (
-    <>
-      <Main />
-    </>
+    <Suspense fallback={<LoadingSpinner />}>
+      <VideoContent />
+    </Suspense>
   );
 };
 
-export default page;
+export default Page;

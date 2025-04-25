@@ -3,25 +3,28 @@ export const metadata = {
   description: "Photography Prices",
 };
 
-import React from "react";
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
 import "../components/pricing/style.css"
 
-const Pricing = dynamic(() => import("@/app/components/pricing/Main"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
-  ssr: false,
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
+);
+
+// Main content component
+const PricingContent = dynamic(() => import("@/app/components/pricing/Main"), {
+  ssr: true,
+  suspense: true,
 });
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
-      <Pricing />
-    </div>
+    <Suspense fallback={<LoadingSpinner />}>
+      <PricingContent />
+    </Suspense>
   );
 };
 
-export default page;
+export default Page;

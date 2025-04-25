@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import dynamic from "next/dynamic";
 import data from "@/app/data/data";
 
+const LoadingSpinner = () => (
+  <div className="w-full p-4 flex justify-center items-center">
+    <div className="w-10 h-10 border-4 border-gray-300 border-t-black dark:border-t-white rounded-full animate-spin"></div>
+  </div>
+);
+
 // Lazy load component
 const ImageFrame = dynamic(() => import("./Frame"), {
-  loading: () => (
-    <div className="w-full p-4 flex justify-center items-center">
-      <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
-    </div>
-  ),
   ssr: false,
+  suspense: true,
 });
 
 const ImageCategories = ({ category }) => {
@@ -35,7 +37,15 @@ const ImageCategories = ({ category }) => {
             </p>
           ) : (
             filteredData.map((frame) => (
-              <ImageFrame id={frame.id} img={frame.img[0]} title={frame.title} subtitle={frame.subtitle} key={frame.id} />
+              <Suspense fallback={<LoadingSpinner />}>
+                <ImageFrame
+                  id={frame.id}
+                  img={frame.img[0]}
+                  title={frame.title}
+                  subtitle={frame.subtitle}
+                  key={frame.id}
+                />
+              </Suspense>
             ))
           )}
         </div>
