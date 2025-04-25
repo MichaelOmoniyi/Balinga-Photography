@@ -30,9 +30,9 @@ const OptimizedImage = ({
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full h-full">
       {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute w-full h-full top-0 left-0 inset-0 flex items-center justify-center">
           <div className="w-8 h-8 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
         </div>
       )}
