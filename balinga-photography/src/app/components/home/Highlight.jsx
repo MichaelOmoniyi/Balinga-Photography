@@ -53,7 +53,7 @@ const Highlight = () => {
                 height={1080}
                 quality={75}
                 sizes="100vw"
-                className="w-full h-[100vw] lg:h-[70vh] object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+                className="w-full h-[100vw] lg:h-[90vh] object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                 style={{ objectPosition: "0 -5rem" }}
               />
             </div>
