@@ -838,16 +838,12 @@ section {
 }
 
 /* Connect */
-.connect-bg {
+.connect {
   width: 100%;
-  /* height: 95vh; */
-  background-image: url(/images/connect-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  height: 100%;
 }
 
-.connect-bg .overlay {
+.connect .overlay {
   height: 95vh;
   width: 100%;
   position: absolute;
@@ -925,7 +921,7 @@ section {
     height: 70vh;
   }
 
-  .connect-bg .overlay {
+  .connect .overlay {
     height: 70vh;
   }
 }
@@ -935,7 +931,7 @@ section {
     height: 100vh;
   }
 
-  .connect-bg .overlay {
+  .connect .overlay {
     height: 100%;
   }
 }
@@ -947,7 +943,8 @@ section {
   height: 200vw;
   overflow: hidden;
 }
-.highlight-container a {
+
+.highlight-images {
   width: 100%;
   height: 100%;
   display: flex;
@@ -955,49 +952,31 @@ section {
 }
 
 .highlight-container div {
+  width: 100%;
   height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
-.highlight-container div:nth-child(2),
-.highlight-container div:nth-child(3) {
-  height: 0;
-  transform: translateY(20vh);
-  opacity: 0;
-  transition: all 0.5s ease-in;
+.highlight-2,
+.highlight-3 {
+  display: none;
 }
 
-.highlight-container div:nth-child(4) {
+.highlight-4 {
   transform: translateX(70vw);
   opacity: 0;
   transition: all 0.5s ease-in;
 }
 
-.highlight-container div:nth-child(1) {
+.highlight-1 {
   transform: translateX(-70vw);
   opacity: 0;
   transition: all 0.5s ease-in;
-}
+  }
 
-.highlight-1 {
-  background-image: url(/images/highlight-1.jpg);
-}
-
-.highlight-2 {
-  background-image: url(/images/highlight-2.jpg);
-}
-
-.highlight-3 {
-  background-image: url(/images/highlight-3.jpg);
-}
-.highlight-4 {
-  background-image: url(/images/highlight-4.jpg);
-  background-position: 0 -5rem;
-}
-
-.highlight-container div:hover {
-  background-size: 120% !important;
+.highlight-container div:hover img {
+  transform: scale(1.2);
 }
 
 .highlight-container h4 {
@@ -1005,16 +984,13 @@ section {
   position: relative;
   top: -117vw;
   left: 12vw;
-  /* padding: 20px 40px; */
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: "Quincy Cf", serif;
   font-weight: 400;
-  /* width: 332px; */
   width: 70vw;
   height: 125.73px;
-  /* background-color: rgba(0, 0, 0, 0.6); */
   background-color: #000;
 }
 
@@ -1037,49 +1013,39 @@ section {
     width: 30vw;
     height: 150px;
   }
-  .highlight-container a {
+  .highlight-images {
     flex-direction: row;
     height: 100%;
   }
 
   .highlight-container div {
     height: 100%;
-    /* width: 25%; */
     flex-grow: 1;
   }
 
-  .highlight-container div:nth-child(2),
-  .highlight-container div:nth-child(3) {
+  .highlight-2,
+  .highlight-3 {
+    display: block;
     height: 100%;
     transform: translateY(20vh);
     opacity: 0;
     transition: all 0.5s ease-in;
   }
 
-  .highlight-container div:nth-child(1) {
+  .highlight-1 {
     transform: translateX(-15vw);
     opacity: 0;
     transition: all 0.5s ease-in;
   }
 
-  .highlight-container div:nth-child(4) {
+  .highlight-4 {
     transform: translateX(-15vw);
     opacity: 1;
     transition: all 0.5s ease-in;
   }
-
-  .highlight-1 {
-    background-position: 0 0;
-  }
-
-  .highlight-4 {
-    background-position: 0 0;
-  }
 }
 
-/* Global Highlight component styles */
 .highlight {
-  /* background-color: rgba(0, 0, 0, 0.4); */
   background-color: #000;
 }
 
