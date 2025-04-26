@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 import useZoomEffect from "@/app/Hooks/useZoomEffect";
 import useFrameFocus from "@/app/Hooks/useFrameFocus";
 
@@ -12,14 +12,14 @@ const Frame = ({ id, img, title, subtitle }) => {
         className="bg-img absolute top-0 left-0 w-full h-full bg-center bg-cover blur-sm z-0"
         style={{ backgroundColor: "black" }}
       ></div>
-      <Image
+      <OptimizedImage
         width={500}
         height={500}
-        quality={100}
-        unoptimized
+        quality={75}
         className="relative h-full max-w-full rounded-lg object-cover z-10"
         src={`/images/${img}`}
         alt="Photo frame"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div className="overlay absolute w-full h-full -translate-y-full lg:-translate-y-0 lg:opacity-0 transition-all duration-1000 flex flex-col justify-center items-center z-20 overflow-hidden">
         <div className="position absolute flex w-full h-full bg-black opacity-50"></div>

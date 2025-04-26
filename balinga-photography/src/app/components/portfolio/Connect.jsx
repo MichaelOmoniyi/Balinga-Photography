@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 
 const Connect = () => {
   return (
@@ -12,15 +12,15 @@ const Connect = () => {
         </p>
       </div>
       <div className="w-full h-[calc(100vw)] md:h-auto md:row-span-2 md:col-start-2">
-        <Image
-          width={500}
-          height={500}
-          quality={100}
-          unoptimized
-          className="relative h-full w-full object-cover"
-          src="/images/connect-img.jpg"
+        <OptimizedImage
+        width={500}
+        height={500}
+        quality={75}
+        className="relative h-full w-full object-cover"
+        src="/images/connect-img.jpg"
           alt="Family photograph"
-        />
+        sizes="100vw"
+      />
       </div>
       <div className="p-4 py-4 row-start-3 pb-4 md:row-start-2 md:col-start-1 md:p-6 md:pl-12 md:pr-0">
         <h1 className="text-3xl font-bold mb-4">
