@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 import Btn from "./Btn";
 
 const Package = () => {
@@ -15,15 +15,16 @@ const Package = () => {
           </h1>
         </div>
         <div className="mb-6 md:col-start-1 md:row-span-3 md:mb-0">
-          <Image
-            src="/images/portfolio/traditional-wedding/1/IMG_2616.jpg"
+          <OptimizedImage
+                src="/images/portfolio/traditional-wedding/1/IMG_2616.jpg"
             width={500}
             height={500}
-            quality={100}
-            unoptimized
-            className="transitionEffect scale-110 opacity-0 w-full h-[calc(100vw)] lg:h-[calc(100vh-9rem)] object-cover mb-2"
-            alt="traditional wedding photograph"
-          />
+                quality={75}
+                priority={true}
+                sizes="100vw"
+                className="transitionEffect scale-110 opacity-0 w-full h-[calc(100vw)] lg:h-[calc(100vh-9rem)] object-cover mb-2"
+                alt="traditional wedding photograph"
+              />
         </div>
         <div className="transitionEffect scale-110 opacity-0 md:row-start-4 md:col-span-2 md:px-14 lg:px-28 w-full text-center flex items-center">
           <p>

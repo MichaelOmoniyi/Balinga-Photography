@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 
 const PricingPackages = () => {
   return (
@@ -9,15 +9,15 @@ const PricingPackages = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="imageFrame relative w-full h-[calc(80vh)] md:h-[calc(80vh)] hover:cursor-pointer">
-          <Image
-            src="/images/portfolio/traditional-wedding/1/IMG_2616.jpg"
+          <OptimizedImage
+                src="/images/portfolio/traditional-wedding/1/IMG_2616.jpg"
             width={500}
             height={500}
-            quality={100}
-            unoptimized
-            className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
+                quality={75}
+                sizes="100vw"
+                className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
             alt="traditional wedding photograph"
-          />
+              />
           <div className="overlay absolute top-0 left-0 w-full h-full overflow-hidden">
             <div className="initial relative w-full h-full flex flex-col justify-center items-center gap-2 bg-black/50 text-white text-lg font-serif translate-y-0 opacity-100 transition duration-500">
               <h1 className="font-semibold">Engagement Pictures</h1>
@@ -42,15 +42,15 @@ const PricingPackages = () => {
           </div>
         </div>
         <div className="imageFrame relative w-full h-[calc(80vh)] md:h-[calc(80vh)] hover:cursor-pointer">
-          <Image
-            src="/images/portfolio/wedding/2/IMG_2690.jpg"
+          <OptimizedImage
+                src="/images/portfolio/wedding/2/IMG_2690.jpg"
             width={500}
             height={500}
-            quality={100}
-            unoptimized
-            className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
+                quality={75}
+                sizes="100vw"
+                className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
             alt="wedding photography"
-          />
+              />
           <div className="overlay absolute top-0 left-0 w-full h-full overflow-hidden">
             <div className="initial relative w-full h-full flex flex-col justify-center items-center gap-2 bg-black/50 text-white text-lg font-serif translate-y-0 opacity-100 transition duration-500">
               <h1 className="font-semibold">Wedding Pictures</h1>
@@ -75,15 +75,15 @@ const PricingPackages = () => {
           </div>
         </div>
         <div className="imageFrame relative w-full h-[calc(80vh)] md:h-[calc(80vh)] hover:cursor-pointer">
-          <Image
-            src="/images/portfolio/birthday/6/_MG_9847.jpg"
+          <OptimizedImage
+                src="/images/portfolio/birthday/6/_MG_9847.jpg"
             width={500}
             height={500}
-            quality={100}
-            unoptimized
-            className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
+                quality={75}
+                sizes="100vw"
+                className="relative transitionEffect scale-110 opacity-0 w-full h-full object-cover mb-2"
             alt="birthday photograph"
-          />
+              />
           <div className="overlay absolute top-0 left-0 w-full h-full overflow-hidden">
             <div className="initial relative w-full h-full flex flex-col justify-center items-center gap-2 bg-black/50 text-white text-lg font-serif translate-y-0 opacity-100 transition duration-500">
               <h1 className="font-semibold">Birthday Pictures</h1>

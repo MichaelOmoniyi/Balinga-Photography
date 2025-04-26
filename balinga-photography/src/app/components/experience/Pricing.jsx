@@ -1,19 +1,19 @@
 import React from "react";
-import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 
 const Pricing = () => {
   return (
     <div className="section_ w-full relative">
       <div className="relaive w-full h-[calc(100vw)] md:h-[calc(80vh)] transitionEffect scale-110 opacity-0">
-        <Image
-          src="/images/portfolio/wedding/2/IMG_2683.jpg"
-          width={500}
-          height={500}
-          quality={100}
-          unoptimized
-          className="w-full h-full object-cover md:object-top"
+        <OptimizedImage
+        src="/images/portfolio/wedding/2/IMG_2683.jpg"
+        width={500}
+        height={500}
+        quality={75}
+        className="w-full h-full object-cover md:object-top"
           alt="Wedding photograph"
-        />
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-50 flex justify-center items-center p-4 md:px-8 lg:px-24">
           <div className="w-full flex flex-col lg:flex-row gap-4 lg:justify-between">
             <div className="w-full flex flex-col gap-4 text-center lg:text-left">

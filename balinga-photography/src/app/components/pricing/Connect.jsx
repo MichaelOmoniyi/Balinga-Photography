@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 import Btn from "./Btn";
 
 const Connect = () => {
@@ -11,15 +11,15 @@ const Connect = () => {
         </h1>
       </div>
       <div className="transitionEffect scale-110 opacity-0 w-full h-[calc(100vw)] md:h-full mb-2 md:mb-0 md:row-span-3 md:col-start-2">
-        <Image
-          src="/images/portfolio/birthday/12/IMG_2490.jpg"
-          width={500}
-          height={500}
-          quality={100}
-          unoptimized
-          className="w-full h-full object-cover"
+        <OptimizedImage
+                src="/images/portfolio/birthday/12/IMG_2490.jpg"
+            width={500}
+            height={500}
+                quality={75}
+                sizes="100vw"
+                className="w-full h-full object-cover"
           alt="Lady smiling"
-        />
+              />
       </div>
       <div className="transitionEffect scale-110 opacity-0 mb-4 md:mb-0 md:pr-8 md:row-start-2 md:col-start-1">
         <h1 className="text-3xl font-serif">
