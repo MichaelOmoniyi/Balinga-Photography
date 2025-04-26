@@ -45,7 +45,7 @@ const Photos = () => {
                     quality={85}
                     priority
                     sizes="100vw"
-                    className="object-cover lg:object-[0_-20rem]"
+                    className="object-cover lg:object-[0_16rem]"
                     onLoad={handleImageLoad}
                   />
                 </div>
@@ -131,7 +131,7 @@ const Photos = () => {
                     height={1080}
                     quality={85}
                     sizes="100vw"
-                    className="object-cover lg:object-[0_-20rem]"
+                    className="object-cover lg:object-[0_11rem]"
                     onLoad={handleImageLoad}
                   />
                 </div>
@@ -161,7 +161,7 @@ const Photos = () => {
                     height={640}
                     quality={80}
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover md:object-[0_-10rem] lg:object-center"
+                    className="object-cover  md:object-[0_6rem] lg:object-[0_6rem] lg:object-center"
                     onLoad={handleImageLoad}
                   />
                 </div>
@@ -189,7 +189,7 @@ const Photos = () => {
                     height={640}
                     quality={80}
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover md:object-[0_-14rem] lg:object-[0_-15rem]"
+                    className="object-cover md:object-[0_-8rem] lg:object-[0_-7rem]"
                     onLoad={handleImageLoad}
                   />
                 </div>
@@ -219,7 +219,7 @@ const Photos = () => {
                     height={1080}
                     quality={85}
                     sizes="100vw"
-                    className="object-cover lg:object-[0_-20rem]"
+                    className="object-cover md:object-[0_10rem] lg:object-[0_20rem]"
                     onLoad={handleImageLoad}
                   />
                 </div>
@@ -249,7 +249,7 @@ const Photos = () => {
                     height={640}
                     quality={80}
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover md:object-[0_-20rem] lg:object-[0_-15rem]"
+                    className="object-cover md:object-[0_-10rem] lg:object-[0_-10rem]"
                     onLoad={handleImageLoad}
                   />
                 </div>

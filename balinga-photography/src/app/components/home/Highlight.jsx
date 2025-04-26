@@ -67,7 +67,7 @@ const Highlight = () => {
               /></a>
             </div>
           </span>
-          <h4 className="text-white text-5xl">@balinga</h4>
+          <h4 className="text-white text-5xl bg-black/70">@balinga</h4>
         </div>
       </section>
     </div>
