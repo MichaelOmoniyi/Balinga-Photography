@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import OptimizedImage from "../../../../components/OptimizedImage";
 
 const CarouselGallery = ({ images, colIndex, currentIndex }) => {
   const totalCol = images.length;
@@ -50,14 +50,15 @@ const CarouselGallery = ({ images, colIndex, currentIndex }) => {
         ❮
       </button>
 
-      <Image
-        width={500}
-        height={500}
-        quality={100}
-        unoptimized
-        className="max-h-full w-auto"
+      <OptimizedImage
+        width={1200}
+        height={800}
+        quality={85}
+        className="max-h-full w-auto object-contain"
         src={`/images/${images[currentCol]?.[currentSlide] || images[0][0]}`}
         alt={`Gallery Image ${currentSlide + 1}`}
+        sizes="95vw"
+        priority={true}
       />
 
       <button

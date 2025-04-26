@@ -55,7 +55,7 @@ const Portfolio = ({ id }) => {
           <Header filteredData={filteredData} />
           <Gallery images={shuffledImg} title={filteredData[0]?.title} />
         </div>
-        <div className="section_ bg-slate-50/90">
+        <div className="section_ pt-1 pb-16 bg-slate-50/40">
           <Contact />
         </div>
         <div className="highlightSection">

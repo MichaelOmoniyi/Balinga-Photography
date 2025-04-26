@@ -1,6 +1,6 @@
 import React from "react";
 import Btn from "./Btn";
-import Image from "next/image";
+import OptimizedImage from "../../OptimizedImage";
 
 const Hero = ({ filteredData }) => {
   return (
@@ -9,14 +9,14 @@ const Hero = ({ filteredData }) => {
         className="bg-img absolute top-0 left-0 w-full h-full bg-center bg-cover blur-sm z-0"
         style={{ backgroundImage: `url(/images/${filteredData[0]?.img[0]})` }}
       ></div>
-      <Image
-        src={`/images/${filteredData[0]?.img[0]}`}
+      <OptimizedImage
         width={500}
         height={500}
-        quality={100}
-        unoptimized
+        quality={75}
         className="relative w-auto h-full object-cover mr-auto ml-auto z-10"
-        alt="Gallery Hero Photograph"
+        src={`/images/${filteredData[0]?.img[0]}`}
+          alt="Gallery Hero Photograph"
+        sizes="100vw"
       />
       <div className="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-20">
         <div className="position absolute top-0 left-0flex w-full h-full bg-black opacity-50"></div>
