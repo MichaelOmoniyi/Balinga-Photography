@@ -2,11 +2,29 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { usePathname } from "next/navigation";
-import { Inter } from "next/font/google";
+import { Playfair_Display, Montserrat, Inter } from 'next/font/google';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import dynamic from "next/dynamic";
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-playfair',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 const LoadingSpinner = () => (
   <div className="w-full p-4 flex justify-center items-center">
@@ -19,8 +37,6 @@ const Footer = dynamic(() => import("./components/Footer"), {
   suspense: true,
 });
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const [loading, setLoading] = useState(false);
@@ -32,7 +48,7 @@ export default function RootLayout({ children }) {
   }, [pathname]); // Runs every time the route changes
 
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={`${playfair.variable} ${montserrat.variable} ${inter.variable}`}>
       <body className="bg-slate-50 dark:bg-black">
         {loading ? (
           <div className="fixed top-0 left-0 w-screen h-screen bg-white dark:bg-black flex justify-center items-center z-50">
